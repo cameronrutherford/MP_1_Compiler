@@ -1,9 +1,13 @@
-.data
+# Everything is in decimal for now
 
+.data
+# Change the arrays to be variable length
+error bit 1
 list dword 1 2 3 4 5 6 7
 
 .code
-
-mov $d0 $0
-lw $d1 list(6)
+# Labels are on their own line starting with a colon, and only use the first word
+:start <- This is the start
+mov $d0 $zer
+lw $d1 list[6]
 add $d0 $d1
