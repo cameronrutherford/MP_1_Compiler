@@ -1,14 +1,14 @@
 information = {}
-information["movi"] =   ('10000001', 5, 16)
+information["movi"] =   ('10000000', 5, 16)
 information["mov"]  =   ('00000000', 5,  5)
-information["add"]  =   ('00000010', 5,  5)
-information["addi"] =   ('10000011', 5, 16)
+information["add"]  =   ('00000001', 5,  5)
+information["addi"] =   ('10000001', 5, 16)
 information["ladd"] =   ('00001000', 5,  5)
 information["beq"]  =   ('01001011', 24, 0)
 information["jmp"]  =   ('00100000', 24, 0)
 information["loop"] =   ('00010000', 19, 5)
-information["lw"]   =   ('10010001', 5, 16)
-information["sw"]   =   ('10010010', 5, 16)
+information["lw"]   =   ('10000100', 5, 16)
+information["sw"]   =   ('10000101', 5, 16)
 
 registers = {
     "$spt" : bin(0)[2:].zfill(5),
@@ -64,7 +64,7 @@ if lines[0] == ".data":
         var_name = things.pop(0)
         var_size = things.pop(0)
         var_elements = things
-        offset_from_start = len(binary_tracker) # maybe don't calculate this every time?
+        offset_from_start = len(binary_tracker) + 32 # maybe don't calculate this every time?
         for x in var_elements:
             binary_tracker += format(int(x), '0%db' % data_size_identifiers[var_size])
         data[var_name] = (var_size, offset_from_start)
@@ -120,8 +120,27 @@ for line in lines:
 
     if instr in information.keys():
         current_bin = ''
-        if instr == 'mov':
+        if instr in ['mov', 'add']:
             current_bin = opcode + registers[args[0]] + registers[args[1]]
+        elif instr in ['movi','addi']:
+            current_bin = opcode + registers[args[0]] + bin(int(args[1]))[2:].zfill(19)
+        elif instr in ['lw', 'sw']:
+            arg2 = args[1]
+            arg2_bin = ''
+            # If we are dealing with an exact memory location
+            if arg2[0:2] == '0x':
+                arg2 = arg2[2:]
+                arg2_bin = bin(int(arg2, 16))[2:].zfill(19)
+            # If we are dealing with an exact memory location
+            elif arg2[0].isdigit():
+                arg2_bin = bin(int(arg2))[2:].zfill(19)
+            # We are dealing with a variable
+            else:
+                if '[' in arg2 and ']' in arg2:
+                    pass
+                else:
+                    arg2_bin = str(bin(data[arg2][1])[2:].zfill(19))
+            current_bin = opcode + registers[args[0]] + arg2_bin
         if current_bin != '':
             next_hex = hex(int(current_bin.ljust(32, '0'), 2))[2:].zfill(8)
             hex_output.append(next_hex.upper())
@@ -129,4 +148,6 @@ for line in lines:
     else:
         print("The function " + instr + "does not exist!")
 
-print(hex_output)
+with open("output.txt", "w") as f:
+    for x in hex_output:
+        f.write(x + '\n')
