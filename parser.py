@@ -7,6 +7,8 @@ information["mov"]  =   ('00000000', 5,  5)
 information["add"]  =   ('00000001', 5,  5)
 information["addi"] =   ('10000001', 5, 16)
 information["ladd"] =   ('00001001', 5,  5)
+information["ll"] =     ('00001001', 5,  19)
+information["ls"] =     ('00001001', 5,  19)
 information["beq"]  =   ('01000000', 24, 0)
 information["jmp"]  =   ('00100000', 24, 0)
 information["loop"] =   ('00010000', 19, 5)
@@ -44,8 +46,15 @@ registers = {
     "$d18" : bin(24)[2:].zfill(5),
     "$d19" : bin(25)[2:].zfill(5),
     "$fra" : bin(26)[2:].zfill(5),
-    "$flg" : bin(27)[2:].zfill(5)
-    }
+    "$flg" : bin(27)[2:].zfill(5),
+    # List Processor 128 bit argument registers, l is for list
+    "$l0" : bin(28)[2:].zfill(5),
+    "$l1" : bin(29)[2:].zfill(5),
+    # List Processor 128 bit result register 
+    "$lr" : bin(30)[2:].zfill(5),
+    # Julia's register. Just in case.
+    "chinchilla" :  bin(31)[2:].zfill(5)   
+}
 
 # Data will hold the name and information of all our variables
 data = {}
@@ -132,11 +141,11 @@ for line in lines:
     if instr in information.keys():
         current_bin = ''
         # giant case statement 
-        if instr in ['mov', 'add']:
+        if instr in ['mov', 'add', 'ladd']:
             current_bin = opcode + registers[args[0]] + registers[args[1]]
         elif instr in ['movi','addi']:
             current_bin = opcode + registers[args[0]] + bin(int(args[1]))[2:].zfill(19)
-        elif instr in ['lw', 'sw']:
+        elif instr in ['lw', 'sw', 'll', 'sl']:
             arg2 = args[1]
             arg2_bin = ''
             # If we are dealing with an exact memory location
