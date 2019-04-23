@@ -10,7 +10,7 @@ entity ListProc is
     port (
         CLOCK : in STD_LOGIC;
         reset : in STD_LOGIC;
-        opcode : in STD_LOGIC_VECTOR(7 downto 0);
+        opcode : in STD_LOGIC_VECTOR(3 downto 0);
         opA : in STD_LOGIC_VECTOR(4 downto 0);      -- operand register
         opB : in STD_LOGIC_VECTOR(4 downto 0);      -- operand register or memory location
         result : out STD_LOGIC_VECTOR(127 downto 0); 
@@ -45,9 +45,13 @@ type regArray is array (0 to 1) of std_logic_vector(127 downto 0);
 
 --alu signals
 signal intOpA : integer;
+signal A0, B0 : std_logic_vector(127 downto 0);
+signal A1, A2, A3, A4: signed(31 downto 0);
+signal B1, B2, B3, B4: signed(31 downto 0);
 signal chinchilla : unsigned (63 downto 0);
 signal ctrl : unsigned(3 downto 0);
 signal args : regArray;
+
 
 signal in0 : signed(31 downto 0);
 signal in1: signed(31 downto 0);
@@ -67,7 +71,22 @@ signal datain : std_logic_vector(127 downto 0);
 signal dataout : std_logic_vector(127 downto 0);
 
 begin
-    intOpA <= to_integer(unsigned(opA));
+    process(opA,  opB)
+    begin
+        A0 <= args(to_integer(signed( opA )))(127 downto 0);
+        B0 <= args(to_integer(signed( opB )))(127 downto 0);
+        A1 <= signed(A0(127 downto 96));
+        A2 <= signed(A0(95 downto 64));
+        A3 <= signed(A0(63 downto 32));
+        A4 <= signed(A0(31 downto 0));
+        B1 <= signed(B0(127 downto 96));
+        B2 <= signed(B0(95 downto 64));
+        B3 <= signed(B0(63 downto 32));
+        B4 <= signed(B0(31 downto 0));
+            
+    end process;
+    
+    intOpA <= to_integer(signed(opA));
     results : bit128_reg
         port map(
             load => ld,
@@ -99,32 +118,32 @@ begin
     -- TODO: ALU inputs A and B need to select from args, not be hard coded
     alu0 : alu
         port map (
-            A => signed(args(0)(127 downto 96)),
-            B => signed(args(1)(127 downto 96)),
+            A => A1,
+            B => B1,
             OP => unsigned(opcode),
             Y => concat(127 downto 96)
         );
         
     alu1 : alu
         port map (
-            A => signed(args(0)(95 downto 64)),
-            B => signed(args(1)(95 downto 64)),
+            A => A2,
+            B => B2,
             OP => unsigned(opcode),
             Y => concat(95 downto 64)
         );
 
     alu2 : alu
         port map (
-            A => signed(args(0)(63 downto 32)),
-            B => signed(args(1)(63 downto 32)),
+            A => A3,
+            B => B3,
             OP => unsigned(opcode),
             Y => concat(63 downto 32)
         );
         
     alu3 : alu
         port map (
-            A => signed(args(0)(31 downto 0)),
-            B => signed(args(1)(31 downto 0)),
+            A => A4,
+            B => B4,
             OP => unsigned(opcode),
             Y => concat(31 downto 0)
         );
