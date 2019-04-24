@@ -2,10 +2,10 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Wed Apr 24 11:29:02 2019
-# Process ID: 4288
+# Start of session at: Wed Apr 24 15:20:09 2019
+# Process ID: 4236
 # Current directory: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4892 Z:\CS-401-1-CompArch\FinalProject\MP_1_Compiler\ListProcessor\ListProcessor.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12180 Z:\CS-401-1-CompArch\FinalProject\MP_1_Compiler\ListProcessor\ListProcessor.xpr
 # Log file: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/vivado.log
 # Journal file: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor\vivado.jou
 #-----------------------------------------------------------
@@ -17,111 +17,45 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
 update_compile_order -fileset sources_1
-export_ip_user_files -of_objects  [get_files Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/cntrl_unit.vhd] -no_script -reset -force -quiet
-remove_files  Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/cntrl_unit.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
 synth_design -rtl -name rtl_1
 Command: synth_design -rtl -name rtl_1
 Starting synth_design
 Using part: xc7a100tcsg324-1
 Top: ListProc
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 968.508 ; gain = 113.133
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 916.742 ; gain = 112.594
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'ListProc' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:22]
-WARNING: [Synth 8-614] signal 'regArgs' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:67]
+WARNING: [Synth 8-614] signal 'regOutArray' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:71]
 WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:84]
-ERROR: [Synth 8-517] overlapping choice 8'b00001001 in case statement [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:76]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:76]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:78]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:79]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:80]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:81]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:83]
-ERROR: [Synth 8-285] failed synthesizing module 'ListProc' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:22]
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1021.520 ; gain = 166.145
----------------------------------------------------------------------------------
-RTL Elaboration failed
-1 Infos, 8 Warnings, 0 Critical Warnings and 3 Errors encountered.
-synth_design failed
-ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
-synth_design -rtl -name rtl_1
-Command: synth_design -rtl -name rtl_1
-Starting synth_design
-Using part: xc7a100tcsg324-1
-Top: ListProc
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1021.520 ; gain = 0.000
----------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'ListProc' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:22]
-WARNING: [Synth 8-614] signal 'regArgs' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:67]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:76]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:78]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:79]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:80]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:81]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:84]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:83]
-WARNING: [Synth 8-153] case item 8'b00010100 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:75]
-WARNING: [Synth 8-153] case item 8'b00010101 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:75]
-WARNING: [Synth 8-153] case item 8'b00010110 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:75]
-WARNING: [Synth 8-153] case item 8'b00010111 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:75]
-WARNING: [Synth 8-153] case item 8'b10010011 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:75]
-WARNING: [Synth 8-153] case item 8'b10010010 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:75]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:88]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:91]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:94]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:97]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:102]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:101]
+WARNING: [Synth 8-153] case item 8'b00010100 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:83]
+WARNING: [Synth 8-153] case item 8'b00010101 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:83]
+WARNING: [Synth 8-153] case item 8'b00010110 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:83]
+WARNING: [Synth 8-153] case item 8'b00010111 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:83]
+WARNING: [Synth 8-153] case item 8'b10010011 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:83]
+WARNING: [Synth 8-153] case item 8'b10010010 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:83]
+WARNING: [Synth 8-614] signal 'B' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:78]
+WARNING: [Synth 8-614] signal 'resultRegNdx' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:78]
+WARNING: [Synth 8-614] signal 'regWrite' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:78]
 	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'results' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:89]
+INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'results' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:109]
 INFO: [Synth 8-638] synthesizing module 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:14]
 	Parameter N bound to: 128 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'bit128_reg' (1#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:14]
 	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regA' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:98]
+INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regA' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:118]
 	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regB' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:107]
-INFO: [Synth 8-3491] module 'alu_block' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:6' bound to instance 'alus' of component 'alu_block' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:116]
-INFO: [Synth 8-638] synthesizing module 'alu_block' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:15]
-ERROR: [Synth 8-97] array index 127 out of range [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:38]
-ERROR: [Synth 8-285] failed synthesizing module 'alu_block' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:15]
-ERROR: [Synth 8-285] failed synthesizing module 'ListProc' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:22]
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1021.520 ; gain = 0.000
----------------------------------------------------------------------------------
-RTL Elaboration failed
-8 Infos, 14 Warnings, 0 Critical Warnings and 4 Errors encountered.
-synth_design failed
-ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
-synth_design -rtl -name rtl_1
-Command: synth_design -rtl -name rtl_1
-Starting synth_design
-Using part: xc7a100tcsg324-1
-Top: ListProc
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1021.520 ; gain = 0.000
----------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'ListProc' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:22]
-WARNING: [Synth 8-614] signal 'regArgs' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:67]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:76]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:78]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:79]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:80]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:81]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:84]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:83]
-WARNING: [Synth 8-153] case item 8'b00010100 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:75]
-WARNING: [Synth 8-153] case item 8'b00010101 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:75]
-WARNING: [Synth 8-153] case item 8'b00010110 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:75]
-WARNING: [Synth 8-153] case item 8'b00010111 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:75]
-WARNING: [Synth 8-153] case item 8'b10010011 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:75]
-WARNING: [Synth 8-153] case item 8'b10010010 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:75]
-	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'results' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:89]
-INFO: [Synth 8-638] synthesizing module 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:14]
-	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'bit128_reg' (1#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:14]
-	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regA' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:98]
-	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regB' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:107]
-INFO: [Synth 8-3491] module 'alu_block' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:6' bound to instance 'alus' of component 'alu_block' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:116]
+INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regB' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:127]
+INFO: [Synth 8-3491] module 'alu_block' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:6' bound to instance 'alus' of component 'alu_block' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:136]
 INFO: [Synth 8-638] synthesizing module 'alu_block' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:15]
 	Parameter N bound to: 32 - type: integer 
 INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:27' bound to instance 'alu0' of component 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:48]
@@ -137,68 +71,8 @@ INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject
 	Parameter N bound to: 32 - type: integer 
 INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:27' bound to instance 'alu3' of component 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:72]
 INFO: [Synth 8-256] done synthesizing module 'alu_block' (3#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:15]
-ERROR: [Synth 8-549] port width mismatch for port 'opA': port width = 128, actual width = 5 [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:116]
-ERROR: [Synth 8-549] port width mismatch for port 'opB': port width = 128, actual width = 5 [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:116]
-ERROR: [Synth 8-285] failed synthesizing module 'ListProc' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:22]
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1024.098 ; gain = 2.578
----------------------------------------------------------------------------------
-RTL Elaboration failed
-15 Infos, 16 Warnings, 0 Critical Warnings and 4 Errors encountered.
-synth_design failed
-ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
-synth_design -rtl -name rtl_1
-Command: synth_design -rtl -name rtl_1
-Starting synth_design
-Using part: xc7a100tcsg324-1
-Top: ListProc
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1024.098 ; gain = 0.000
----------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'ListProc' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:22]
-WARNING: [Synth 8-614] signal 'regArgs' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:67]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:76]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:78]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:79]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:80]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:81]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:84]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:83]
-WARNING: [Synth 8-153] case item 8'b00010100 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:75]
-WARNING: [Synth 8-153] case item 8'b00010101 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:75]
-WARNING: [Synth 8-153] case item 8'b00010110 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:75]
-WARNING: [Synth 8-153] case item 8'b00010111 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:75]
-WARNING: [Synth 8-153] case item 8'b10010011 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:75]
-WARNING: [Synth 8-153] case item 8'b10010010 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:75]
-	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'results' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:89]
-INFO: [Synth 8-638] synthesizing module 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:14]
-	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'bit128_reg' (1#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:14]
-	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regA' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:98]
-	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regB' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:107]
-INFO: [Synth 8-3491] module 'alu_block' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:6' bound to instance 'alus' of component 'alu_block' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:116]
-INFO: [Synth 8-638] synthesizing module 'alu_block' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:15]
-	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:27' bound to instance 'alu0' of component 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:48]
-INFO: [Synth 8-638] synthesizing module 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:36]
-	Parameter N bound to: 32 - type: integer 
-WARNING: [Synth 8-614] signal 'A' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:38]
-WARNING: [Synth 8-614] signal 'B' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:38]
-INFO: [Synth 8-256] done synthesizing module 'alu' (2#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:36]
-	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:27' bound to instance 'alu1' of component 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:56]
-	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:27' bound to instance 'alu2' of component 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:64]
-	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:27' bound to instance 'alu3' of component 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:72]
-INFO: [Synth 8-256] done synthesizing module 'alu_block' (3#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:15]
-WARNING: [Synth 8-3848] Net ready in module/entity ListProc does not have driver. [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:18]
-WARNING: [Synth 8-3848] Net ld in module/entity ListProc does not have driver. [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:58]
 INFO: [Synth 8-256] done synthesizing module 'ListProc' (4#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:22]
-WARNING: [Synth 8-3331] design ListProc has unconnected port ready
+WARNING: [Synth 8-3917] design ListProc has port ready driven by constant 1
 WARNING: [Synth 8-3331] design ListProc has unconnected port opA[4]
 WARNING: [Synth 8-3331] design ListProc has unconnected port opA[3]
 WARNING: [Synth 8-3331] design ListProc has unconnected port opA[2]
@@ -208,7 +82,7 @@ WARNING: [Synth 8-3331] design ListProc has unconnected port opB[3]
 WARNING: [Synth 8-3331] design ListProc has unconnected port opB[2]
 WARNING: [Synth 8-3331] design ListProc has unconnected port opB[1]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1025.746 ; gain = 1.648
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 971.105 ; gain = 166.957
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -217,20 +91,18 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin results:load to constant 0 [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:89]
-WARNING: [Synth 8-3295] tying undriven pin regA:load to constant 0 [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:98]
-WARNING: [Synth 8-3295] tying undriven pin regB:load to constant 0 [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:107]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1025.746 ; gain = 1.648
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 971.105 ; gain = 166.957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1025.746 ; gain = 1.648
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 971.105 ; gain = 166.957
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
 
 Processing XDC Constraints
 Initializing timing engine
@@ -240,9 +112,553 @@ INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-RTL Elaboration Complete:  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1366.523 ; gain = 342.426
-20 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 1315.078 ; gain = 510.930
+21 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1366.523 ; gain = 342.426
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 1315.078 ; gain = 512.621
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1320.398 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ListProc' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:23]
+WARNING: [Synth 8-614] signal 'regOutArray' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:71]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:84]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:88]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:91]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:94]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:97]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:102]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:101]
+WARNING: [Synth 8-153] case item 8'b00010100 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:83]
+WARNING: [Synth 8-153] case item 8'b00010101 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:83]
+WARNING: [Synth 8-153] case item 8'b00010110 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:83]
+WARNING: [Synth 8-153] case item 8'b00010111 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:83]
+WARNING: [Synth 8-153] case item 8'b10010011 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:83]
+WARNING: [Synth 8-153] case item 8'b10010010 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:83]
+WARNING: [Synth 8-614] signal 'B' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:78]
+WARNING: [Synth 8-614] signal 'resultRegNdx' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:78]
+WARNING: [Synth 8-614] signal 'regWrite' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:78]
+	Parameter N bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'results' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:14]
+	Parameter N bound to: 128 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bit128_reg' (1#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:14]
+	Parameter N bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regA' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:118]
+	Parameter N bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regB' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:127]
+INFO: [Synth 8-3491] module 'alu_block' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:6' bound to instance 'alus' of component 'alu_block' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'alu_block' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:15]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:27' bound to instance 'alu0' of component 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:36]
+	Parameter N bound to: 32 - type: integer 
+WARNING: [Synth 8-614] signal 'A' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:38]
+WARNING: [Synth 8-614] signal 'B' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'alu' (2#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:36]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:27' bound to instance 'alu1' of component 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:56]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:27' bound to instance 'alu2' of component 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:64]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:27' bound to instance 'alu3' of component 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'alu_block' (3#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:15]
+WARNING: [Synth 8-3848] Net memWrite in module/entity ListProc does not have driver. [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'ListProc' (4#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:23]
+WARNING: [Synth 8-3917] design ListProc has port ready driven by constant 1
+WARNING: [Synth 8-3331] design ListProc has unconnected port memWrite
+WARNING: [Synth 8-3331] design ListProc has unconnected port opA[4]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opA[3]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opA[2]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opA[1]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opB[4]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opB[3]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opB[2]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opB[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1356.285 ; gain = 35.887
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1356.285 ; gain = 35.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1356.285 ; gain = 35.887
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1356.285 ; gain = 35.887
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1356.285 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ListProc' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:23]
+WARNING: [Synth 8-614] signal 'regOutArray' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:71]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:84]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:88]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:91]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:94]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:97]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:102]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:101]
+WARNING: [Synth 8-153] case item 8'b00010100 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:83]
+WARNING: [Synth 8-153] case item 8'b00010101 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:83]
+WARNING: [Synth 8-153] case item 8'b00010110 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:83]
+WARNING: [Synth 8-153] case item 8'b00010111 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:83]
+WARNING: [Synth 8-153] case item 8'b10010011 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:83]
+WARNING: [Synth 8-153] case item 8'b10010010 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:83]
+WARNING: [Synth 8-614] signal 'B' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:78]
+WARNING: [Synth 8-614] signal 'resultRegNdx' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:78]
+WARNING: [Synth 8-614] signal 'regWrite' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:78]
+	Parameter N bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'results' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:14]
+	Parameter N bound to: 128 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bit128_reg' (1#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:14]
+	Parameter N bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regA' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:118]
+	Parameter N bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regB' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:127]
+INFO: [Synth 8-3491] module 'alu_block' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:6' bound to instance 'alus' of component 'alu_block' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'alu_block' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:15]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:27' bound to instance 'alu0' of component 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:36]
+	Parameter N bound to: 32 - type: integer 
+WARNING: [Synth 8-614] signal 'A' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:38]
+WARNING: [Synth 8-614] signal 'B' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'alu' (2#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:36]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:27' bound to instance 'alu1' of component 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:56]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:27' bound to instance 'alu2' of component 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:64]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:27' bound to instance 'alu3' of component 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'alu_block' (3#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:15]
+WARNING: [Synth 8-3848] Net memWrite in module/entity ListProc does not have driver. [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'ListProc' (4#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:23]
+WARNING: [Synth 8-3917] design ListProc has port ready driven by constant 1
+WARNING: [Synth 8-3331] design ListProc has unconnected port memWrite
+WARNING: [Synth 8-3331] design ListProc has unconnected port opA[4]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opA[3]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opA[2]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opA[1]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opB[4]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opB[3]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opB[2]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opB[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1363.227 ; gain = 6.941
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1363.227 ; gain = 6.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1363.227 ; gain = 6.941
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1373.055 ; gain = 16.770
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1373.055 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ListProc' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:23]
+WARNING: [Synth 8-614] signal 'regOutArray' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:71]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:83]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:87]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:90]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:93]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:96]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:101]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:100]
+WARNING: [Synth 8-153] case item 8'b00010100 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:82]
+WARNING: [Synth 8-153] case item 8'b00010101 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:82]
+WARNING: [Synth 8-153] case item 8'b00010110 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:82]
+WARNING: [Synth 8-153] case item 8'b00010111 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:82]
+WARNING: [Synth 8-153] case item 8'b10010011 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:82]
+WARNING: [Synth 8-153] case item 8'b10010010 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:82]
+WARNING: [Synth 8-614] signal 'B' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:78]
+WARNING: [Synth 8-614] signal 'resultRegNdx' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:78]
+WARNING: [Synth 8-614] signal 'regWrite' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:78]
+	Parameter N bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'results' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:117]
+INFO: [Synth 8-638] synthesizing module 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:14]
+	Parameter N bound to: 128 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bit128_reg' (1#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:14]
+	Parameter N bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regA' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:126]
+	Parameter N bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regB' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:135]
+INFO: [Synth 8-3491] module 'alu_block' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:6' bound to instance 'alus' of component 'alu_block' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'alu_block' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:15]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:27' bound to instance 'alu0' of component 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:36]
+	Parameter N bound to: 32 - type: integer 
+WARNING: [Synth 8-614] signal 'A' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:38]
+WARNING: [Synth 8-614] signal 'B' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'alu' (2#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:36]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:27' bound to instance 'alu1' of component 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:56]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:27' bound to instance 'alu2' of component 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:64]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:27' bound to instance 'alu3' of component 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'alu_block' (3#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:15]
+WARNING: [Synth 8-3848] Net memWrite in module/entity ListProc does not have driver. [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'ListProc' (4#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:23]
+WARNING: [Synth 8-3917] design ListProc has port ready driven by constant 1
+WARNING: [Synth 8-3331] design ListProc has unconnected port memWrite
+WARNING: [Synth 8-3331] design ListProc has unconnected port opA[4]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opA[3]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opA[2]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opA[1]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opB[4]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opB[3]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opB[2]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opB[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1383.418 ; gain = 10.363
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1383.418 ; gain = 10.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1383.418 ; gain = 10.363
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1400.590 ; gain = 27.535
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1400.590 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ListProc' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:23]
+WARNING: [Synth 8-614] signal 'regOutArray' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:71]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:83]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:87]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:90]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:93]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:96]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:101]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:100]
+WARNING: [Synth 8-153] case item 8'b00010100 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:82]
+WARNING: [Synth 8-153] case item 8'b00010101 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:82]
+WARNING: [Synth 8-153] case item 8'b00010110 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:82]
+WARNING: [Synth 8-153] case item 8'b00010111 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:82]
+WARNING: [Synth 8-153] case item 8'b10010011 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:82]
+WARNING: [Synth 8-153] case item 8'b10010010 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:82]
+WARNING: [Synth 8-614] signal 'B' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:78]
+WARNING: [Synth 8-614] signal 'resultRegNdx' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:78]
+WARNING: [Synth 8-614] signal 'regWrite' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:78]
+	Parameter N bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'results' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:117]
+INFO: [Synth 8-638] synthesizing module 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:14]
+	Parameter N bound to: 128 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bit128_reg' (1#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:14]
+	Parameter N bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regA' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:126]
+	Parameter N bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regB' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:135]
+INFO: [Synth 8-3491] module 'alu_block' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:6' bound to instance 'alus' of component 'alu_block' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'alu_block' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:15]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:27' bound to instance 'alu0' of component 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:36]
+	Parameter N bound to: 32 - type: integer 
+WARNING: [Synth 8-614] signal 'A' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:38]
+WARNING: [Synth 8-614] signal 'B' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'alu' (2#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:36]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:27' bound to instance 'alu1' of component 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:56]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:27' bound to instance 'alu2' of component 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:64]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:27' bound to instance 'alu3' of component 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'alu_block' (3#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:15]
+WARNING: [Synth 8-3848] Net memWrite in module/entity ListProc does not have driver. [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'ListProc' (4#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:23]
+WARNING: [Synth 8-3917] design ListProc has port ready driven by constant 1
+WARNING: [Synth 8-3331] design ListProc has unconnected port memWrite
+WARNING: [Synth 8-3331] design ListProc has unconnected port opA[4]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opA[3]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opA[2]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opA[1]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opB[4]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opB[3]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opB[2]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opB[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1400.590 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1400.590 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1400.590 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1440.672 ; gain = 40.082
+refresh_design
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'source' was cancelled
+INFO: [Common 17-344] 'refresh_design' was cancelled
+refresh_design
+WARNING: [Synth 8-2490] overwriting previous definition of module AND2 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:14]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND2B1 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND2B1L [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:38]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND2B2 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:51]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND3 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:62]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND3B1 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:74]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND3B2 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:86]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND3B3 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:98]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND4 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:110]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND4B1 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:123]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND4B2 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:136]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND4B3 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:149]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND4B4 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:162]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND5 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:175]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND5B1 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:189]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND5B2 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:203]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND5B3 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:217]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND5B4 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:231]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND5B5 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:245]
+WARNING: [Synth 8-2490] overwriting previous definition of module AUTOBUF [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:259]
+WARNING: [Synth 8-2490] overwriting previous definition of module BIBUF [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:270]
+WARNING: [Synth 8-2490] overwriting previous definition of module BITSLICE_CONTROL [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:280]
+WARNING: [Synth 8-2490] overwriting previous definition of module BSCANE2 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:424]
+WARNING: [Synth 8-2490] overwriting previous definition of module BSCAN_SPARTAN3 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:454]
+WARNING: [Synth 8-2490] overwriting previous definition of module BSCAN_SPARTAN3A [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:473]
+WARNING: [Synth 8-2490] overwriting previous definition of module BSCAN_SPARTAN6 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:494]
+WARNING: [Synth 8-2490] overwriting previous definition of module BSCAN_VIRTEX4 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:514]
+WARNING: [Synth 8-2490] overwriting previous definition of module BSCAN_VIRTEX5 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:531]
+WARNING: [Synth 8-2490] overwriting previous definition of module BSCAN_VIRTEX6 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:548]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUF [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:569]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFCE_LEAF [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:579]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFCE_ROW [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:594]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFG [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFGCE [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:619]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFGCE_1 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:634]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFGCE_DIV [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:645]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFGCTRL [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:663]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFGMUX [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:698]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFGMUX_1 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:711]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFGMUX_CTRL [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:724]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFGMUX_VIRTEX4 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:738]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFGP [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:752]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFG_GT [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:762]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFG_GT_SYNC [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:782]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFG_PS [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:798]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFH [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:808]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFHCE [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:818]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFIO [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:833]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFIO2 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:843]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFMR [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:861]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFMRCE [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:871]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFR [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:886]
+WARNING: [Synth 8-2490] overwriting previous definition of module CAPTUREE2 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:902]
+WARNING: [Synth 8-2490] overwriting previous definition of module CAPTURE_SPARTAN3 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:913]
+WARNING: [Synth 8-2490] overwriting previous definition of module CAPTURE_SPARTAN3A [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:923]
+WARNING: [Synth 8-2490] overwriting previous definition of module CAPTURE_VIRTEX4 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:933]
+WARNING: [Synth 8-2490] overwriting previous definition of module CAPTURE_VIRTEX5 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:943]
+WARNING: [Synth 8-2490] overwriting previous definition of module CAPTURE_VIRTEX6 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:953]
+WARNING: [Synth 8-2490] overwriting previous definition of module CARRY4 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:963]
+WARNING: [Synth 8-2490] overwriting previous definition of module CARRY8 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:981]
+WARNING: [Synth 8-2490] overwriting previous definition of module CFGLUT5 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:1000]
+WARNING: [Synth 8-2490] overwriting previous definition of module CMAC [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:1030]
+WARNING: [Synth 8-2490] overwriting previous definition of module CMACE4 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:1840]
+WARNING: [Synth 8-2490] overwriting previous definition of module DCIRESET [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:2756]
+WARNING: [Synth 8-2490] overwriting previous definition of module DCM [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:2766]
+WARNING: [Synth 8-2490] overwriting previous definition of module DCM_ADV [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:2812]
+WARNING: [Synth 8-2490] overwriting previous definition of module DCM_BASE [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:2883]
+WARNING: [Synth 8-2490] overwriting previous definition of module DCM_PS [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:2931]
+WARNING: [Synth 8-2490] overwriting previous definition of module DCM_SP [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:2989]
+WARNING: [Synth 8-2490] overwriting previous definition of module DNA_PORT [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3034]
+WARNING: [Synth 8-2490] overwriting previous definition of module DNA_PORTE2 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3048]
+WARNING: [Synth 8-2490] overwriting previous definition of module DPHY_DIFFINBUF [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3065]
+WARNING: [Synth 8-2490] overwriting previous definition of module DSP48 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3087]
+WARNING: [Synth 8-2490] overwriting previous definition of module DSP48A [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3160]
+WARNING: [Synth 8-2490] overwriting previous definition of module DSP48A1 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3234]
+WARNING: [Synth 8-2490] overwriting previous definition of module DSP48E [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3313]
+WARNING: [Synth 8-2490] overwriting previous definition of module DSP48E1 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3430]
+WARNING: [Synth 8-2490] overwriting previous definition of module DSP48E2 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3564]
+WARNING: [Synth 8-2490] overwriting previous definition of module EFUSE_USR [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3716]
+WARNING: [Synth 8-2490] overwriting previous definition of module FD [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3725]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDC [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3737]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDCE [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3750]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDCE_1 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3770]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDCP [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3784]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDCPE [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3801]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDCPE_1 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3819]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDCP_1 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3837]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDC_1 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3854]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDE [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3867]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDE_1 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3880]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDP [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3893]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDPE [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3906]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDPE_1 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3926]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDP_1 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3940]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDR [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3953]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDRE [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3966]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDRE_1 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3986]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDRS [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:4000]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDRSE [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:4018]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDRSE_1 [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:4038]
+INFO: [Common 17-14] Message 'Synth 8-2490' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1440.672 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ListProc' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:23]
+WARNING: [Synth 8-614] signal 'regOutArray' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:71]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:83]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:87]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:90]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:93]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:96]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:101]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 8 wide [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:100]
+WARNING: [Synth 8-153] case item 8'b00010100 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:82]
+WARNING: [Synth 8-153] case item 8'b00010101 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:82]
+WARNING: [Synth 8-153] case item 8'b00010110 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:82]
+WARNING: [Synth 8-153] case item 8'b00010111 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:82]
+WARNING: [Synth 8-153] case item 8'b10010011 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:82]
+WARNING: [Synth 8-153] case item 8'b10010010 will never be executed [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:82]
+WARNING: [Synth 8-614] signal 'B' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:78]
+WARNING: [Synth 8-614] signal 'resultRegNdx' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:78]
+WARNING: [Synth 8-614] signal 'regWrite' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:78]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:112]
+	Parameter N bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'results' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:14]
+	Parameter N bound to: 128 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bit128_reg' (1#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:14]
+	Parameter N bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regA' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:129]
+	Parameter N bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regB' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:138]
+INFO: [Synth 8-3491] module 'alu_block' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:6' bound to instance 'alus' of component 'alu_block' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'alu_block' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:15]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:27' bound to instance 'alu0' of component 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:36]
+	Parameter N bound to: 32 - type: integer 
+WARNING: [Synth 8-614] signal 'A' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:38]
+WARNING: [Synth 8-614] signal 'B' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'alu' (2#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:36]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:27' bound to instance 'alu1' of component 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:56]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:27' bound to instance 'alu2' of component 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:64]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu.vhd:27' bound to instance 'alu3' of component 'alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'alu_block' (3#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/alu_block.vhd:15]
+WARNING: [Synth 8-3848] Net memWrite in module/entity ListProc does not have driver. [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'ListProc' (4#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sources_1/new/ListProc.vhd:23]
+WARNING: [Synth 8-3917] design ListProc has port ready driven by constant 1
+WARNING: [Synth 8-3331] design ListProc has unconnected port memWrite
+WARNING: [Synth 8-3331] design ListProc has unconnected port opA[4]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opA[3]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opA[2]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opA[1]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opB[4]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opB[3]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opB[2]
+WARNING: [Synth 8-3331] design ListProc has unconnected port opB[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1440.672 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1440.672 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1440.672 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1441.293 ; gain = 0.621
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 24 12:28:41 2019...
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 24 16:44:42 2019...
