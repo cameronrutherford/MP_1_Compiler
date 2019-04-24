@@ -1,0 +1,184 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sun Nov 12 16:58:53 2017
+# Process ID: 9728
+# Current directory: C:/Users/kjones/Desktop/mips_fpga_nexsys4_ddr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7952 C:\Users\kjones\Desktop\mips_fpga_nexsys4_ddr\mips.xpr
+# Log file: C:/Users/kjones/Desktop/mips_fpga_nexsys4_ddr/vivado.log
+# Journal file: C:/Users/kjones/Desktop/mips_fpga_nexsys4_ddr\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/kjones/Desktop/mips_fpga_nexsys4_ddr/mips.xpr
+update_compile_order -fileset sources_1
+remove_files [get_files -filter {IS_AVAILABLE == 0}]
+synth_design -rtl -name rtl_1
+close_design
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+refresh_design
+import_files -norecurse C:/Users/kjones/Desktop/mips_fpga_nexsys4_ddr/mips.srcs/sources_1/imports/mips_new/mips_7seg_top.vhd
+update_compile_order -fileset sources_1
+import_files -norecurse C:/Users/kjones/Desktop/mips_7seg_top.vhd
+update_compile_order -fileset sources_1
+refresh_design
+remove_files [get_files -filter {IS_AVAILABLE == 0}]
+update_compile_order -fileset sources_1
+refresh_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top mips_7seg_top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
+set_property top mips_top [current_fileset]
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+close_design
+synth_design -rtl -name rtl_1
+close_design
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+refresh_design
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+close_hw
+open_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+close_design
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/kjones/Desktop/mips_fpga_nexsys4_ddr/mips.runs/impl_1/mips_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/kjones/Desktop/mips_fpga_nexsys4_ddr/mips.runs/impl_1/mips_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/kjones/Desktop/mips_fpga_nexsys4_ddr/mips.runs/impl_1/mips_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/kjones/Desktop/mips_fpga_nexsys4_ddr/mips.runs/impl_1/mips_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/kjones/Desktop/mips_fpga_nexsys4_ddr/mips.runs/impl_1/mips_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/kjones/Desktop/mips_fpga_nexsys4_ddr/mips.runs/impl_1/mips_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+launch_simulation
+update_compile_order -fileset sim_1
+launch_simulation
+source mips_top.tcl
+close_sim
+open_run synth_1 -name synth_1
+close_design
+launch_simulation
+source mips_top.tcl
+restart
+run 10 ns
+run 10 ns
+close_sim
+close_project
+open_project C:/Users/kjones/Desktop/mips_fpga_nexsys4_ddr/mips.xpr
+update_compile_order -fileset sources_1
+create_fileset -simset sim_2
+current_fileset -simset [ get_filesets sim_2 ]
+set_property SOURCE_SET sources_1 [get_filesets sim_2]
+import_files -fileset sim_2 -norecurse C:/Users/kjones/Desktop/mips_fpga_nexsys4_ddr/mips.srcs/sim_1/imports/mips_new/mips_testbench.vhd
+update_compile_order -fileset sim_2
+create_fileset -simset sim_3
+file mkdir C:/Users/kjones/Desktop/mips_fpga_nexsys4_ddr/mips.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_3]
+file mkdir C:/Users/kjones/Desktop/mips_fpga_nexsys4_ddr/mips.srcs/sim_3/new
+close [ open C:/Users/kjones/Desktop/mips_fpga_nexsys4_ddr/mips.srcs/sim_3/new/mips_testbench2.vhd w ]
+add_files -fileset sim_3 C:/Users/kjones/Desktop/mips_fpga_nexsys4_ddr/mips.srcs/sim_3/new/mips_testbench2.vhd
+update_compile_order -fileset sim_3
+current_fileset -simset [ get_filesets sim_3 ]
+delete_fileset sim_1
+file delete -force C:/Users/kjones/Desktop/mips_fpga_nexsys4_ddr/mips.srcs/sim_1
+delete_fileset sim_2
+file delete -force C:/Users/kjones/Desktop/mips_fpga_nexsys4_ddr/mips.srcs/sim_2
+launch_simulation -simset sim_3
+source mips_top.tcl
+close_sim
+close_project
+open_project C:/Users/kjones/Desktop/mips_fpga_nexsys4_ddr/mips.xpr
+update_compile_order -fileset sources_1

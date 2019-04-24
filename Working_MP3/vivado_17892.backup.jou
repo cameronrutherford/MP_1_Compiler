@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sun Nov 12 15:18:46 2017
+# Process ID: 17892
+# Current directory: Y:/401_Computer_Architecture/2018_spring/mips
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11668 Y:\401_Computer_Architecture\2018_spring\mips\mips.xpr
+# Log file: Y:/401_Computer_Architecture/2018_spring/mips/vivado.log
+# Journal file: Y:/401_Computer_Architecture/2018_spring/mips\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Y:/401_Computer_Architecture/2018_spring/mips/mips.xpr
+update_compile_order -fileset sources_1
+%remove_files [get_files -filter {IS_AVAILABLE == 0}]
+remove_files [get_files -filter {IS_AVAILABLE == 0}]
+synth_design -rtl -name rtl_1
+launch_simulation
+source testbench.tcl
+restart
+restart
+run 10 ns
+run 10 ns
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+close_sim
+close_design
+close_project

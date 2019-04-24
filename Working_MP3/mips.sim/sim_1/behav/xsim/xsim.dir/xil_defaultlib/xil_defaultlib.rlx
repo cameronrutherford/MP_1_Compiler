@@ -1,0 +1,22 @@
+0.6
+2018.2
+Jul 26 2018
+19:36:16
+U:/401_Computer_Architecture/mips_fpga_nexsys4_ddr/mips.srcs/sim_1/imports/Desktop/mips_testbench.vhd,1510625755,vhdl,,,,mips_testbench,,,,,,,,
+U:/401_Computer_Architecture/mips_fpga_nexsys4_ddr/mips.srcs/sources_1/imports/new/computer_top.vhd,1510625864,vhdl,,,,computer_top,,,,,,,,
+U:/401_Computer_Architecture/mips_fpga_nexsys4_ddr/mips.srcs/sources_1/imports/new/display_hex.vhd,1510624748,vhdl,,,,display_hex,,,,,,,,
+U:/401_Computer_Architecture/mips_fpga_nexsys4_ddr/mips.srcs/sources_1/imports/new/mips.vhd,1510536685,vhdl,,,,mips,,,,,,,,
+U:/401_Computer_Architecture/mips_fpga_nexsys4_ddr/mips.srcs/sources_1/imports/new/mips_adder.vhd,1510503271,vhdl,,,,adder,,,,,,,,
+U:/401_Computer_Architecture/mips_fpga_nexsys4_ddr/mips.srcs/sources_1/imports/new/mips_alu.vhd,1510511178,vhdl,,,,alu,,,,,,,,
+U:/401_Computer_Architecture/mips_fpga_nexsys4_ddr/mips.srcs/sources_1/imports/new/mips_controller.vhd,1510511838,vhdl,,,,controller,,,,,,,,
+U:/401_Computer_Architecture/mips_fpga_nexsys4_ddr/mips.srcs/sources_1/imports/new/mips_datapath.vhd,1510511129,vhdl,,,,datapath,,,,,,,,
+U:/401_Computer_Architecture/mips_fpga_nexsys4_ddr/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd,1394398630,vhdl,,,,aludec,,,,,,,,
+U:/401_Computer_Architecture/mips_fpga_nexsys4_ddr/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd,1394412252,vhdl,,,,maindec,,,,,,,,
+U:/401_Computer_Architecture/mips_fpga_nexsys4_ddr/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd,1510509685,vhdl,,,,flopr,,,,,,,,
+U:/401_Computer_Architecture/mips_fpga_nexsys4_ddr/mips.srcs/sources_1/imports/new/mips_mem_data.vhd,1510527591,vhdl,,,,dmem,,,,,,,,
+U:/401_Computer_Architecture/mips_fpga_nexsys4_ddr/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd,1510528492,vhdl,,,,imem,,,,,,,,
+U:/401_Computer_Architecture/mips_fpga_nexsys4_ddr/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd,1510502751,vhdl,,,,mux2,,,,,,,,
+U:/401_Computer_Architecture/mips_fpga_nexsys4_ddr/mips.srcs/sources_1/imports/new/mips_register_file.vhd,1510511140,vhdl,,,,regfile,,,,,,,,
+U:/401_Computer_Architecture/mips_fpga_nexsys4_ddr/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd,1510502227,vhdl,,,,sl2,,,,,,,,
+U:/401_Computer_Architecture/mips_fpga_nexsys4_ddr/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd,1510524196,vhdl,,,,signext,,,,,,,,
+U:/401_Computer_Architecture/mips_fpga_nexsys4_ddr/mips.srcs/sources_1/imports/new/mips_top.vhd,1510622234,vhdl,,,,mips_top,,,,,,,,
