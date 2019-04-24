@@ -16,13 +16,16 @@ architecture behave of maindec is
 begin
   process(op) begin
     case op is
-      when "000000" => controls <= "110000010"; -- Rtype
-      when "100011" => controls <= "101001000"; -- LW
-      when "101011" => controls <= "0X101X000"; -- SW
-      when "000100" => controls <= "0X010X001"; -- BEQ
-      when "001000" => controls <= "101000000"; -- ADDI
-      when "000010" => controls <= "0XXX0X1XX"; -- J
-      when others   => controls <= "---------"; -- illegal op
+    when "00000000" => controls <= "110000010"; -- Rtype
+    when others => controls <= "---------";
+      -- Previous opcode data below
+--      when "000000" => controls <= "110000010"; -- Rtype
+--      when "100011" => controls <= "101001000"; -- LW
+--      when "101011" => controls <= "0X101X000"; -- SW
+--      when "000100" => controls <= "0X010X001"; -- BEQ
+--      when "001000" => controls <= "101000000"; -- ADDI
+--      when "000010" => controls <= "0XXX0X1XX"; -- J
+--      when others   => controls <= "---------"; -- illegal op
     end case;
   end process;
 

@@ -69,6 +69,15 @@ architecture struct of datapath is
          y:      out STD_LOGIC_VECTOR(width-1 downto 0));
   end component;
   
+  -- The datapath needs a way to keep track of the zero flag
+  component bit_reg generic(N: integer);
+    port(   load: in std_logic;
+            clk: in std_logic;
+            clr : in std_logic;
+            data_in : in std_logic_vector(N-1 downto 0);
+            data_out : out std_logic_vector(N-1 downto 0));
+  end component;
+  
   -- The signals to wire the datapath components together
   signal writereg: STD_LOGIC_VECTOR(4 downto 0);
   signal pcjump, pcnext, pcnextbr, pcplus4, pcbranch: STD_LOGIC_VECTOR((width-1) downto 0);
@@ -76,6 +85,7 @@ architecture struct of datapath is
   signal srca, srcb, result: STD_LOGIC_VECTOR((width-1) downto 0);
   signal const_zero: STD_LOGIC_VECTOR((width-1) downto 0) := (others => '0');
   signal four: STD_LOGIC_VECTOR((width-1) downto 0);
+  signal z_prev: STD_LOGIC_VECTOR(0 downto 0);
 
   begin
     -- Wire up all the components for the datapath unit
@@ -91,6 +101,7 @@ architecture struct of datapath is
 	pcadd2: adder generic map(width) port map(a => pcplus4, b => signimmsh, y => pcbranch);
 	pcbrmux: mux2 generic map(width) port map(d0 => pcplus4, d1 => pcbranch, s => pcsrc, y => pcnextbr);
 	pcmux:   mux2 generic map(width) port map(d0 => pcnextbr, d1 => pcjump, s => jump, y => pcnext);
+	zreg: bit_reg generic map(1)     port map(clk => clk, clr => '0', data_in => z_prev, data_out(0) => zero, load => '1');
 
 	-- register file logic
 	rf: regfile generic map(width) port map(clk => clk, we3 => regwrite, 
@@ -112,7 +123,9 @@ architecture struct of datapath is
 	
 	-- wire up the main ALU
 	mainalu:  alu generic map(width) port map(a => srca, b => srcb, 
-	                                          alucontrol => alucontrol, result => aluout, zero => zero);
+	                                          alucontrol => alucontrol, result => aluout, zero => z_prev(0));
+	                                          
+	
 end;
 
 
