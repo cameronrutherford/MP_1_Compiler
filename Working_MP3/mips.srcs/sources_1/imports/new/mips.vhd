@@ -32,6 +32,7 @@ architecture struct of mips is
          funct:              in  STD_LOGIC_VECTOR(5 downto 0);
          zero:               in  STD_LOGIC;
          memtoreg, memwrite: out STD_LOGIC;
+         mov_enable:         out STD_LOGIC;
          pcsrc, alusrc:      out STD_LOGIC;
          regdst, regwrite:   out STD_LOGIC;
          jump:               out STD_LOGIC;
@@ -42,6 +43,7 @@ architecture struct of mips is
   port(clk, reset:        in  STD_LOGIC;
        memtoreg, pcsrc:   in  STD_LOGIC;
        alusrc:            in  STD_LOGIC;
+       mov_enable:        in  STD_LOGIC;
        regwrite, jump:    in  STD_LOGIC;
        alucontrol:        in  STD_LOGIC_VECTOR(2 downto 0);
        zero:              out STD_LOGIC;
@@ -52,18 +54,18 @@ architecture struct of mips is
   end component;
   
   -- Signals to wire the datapath unit to the controller unit
-  signal memtoreg, alusrc, regwrite, jump, pcsrc: STD_LOGIC;
+  signal memtoreg, alusrc, regwrite, jump, pcsrc, mov: STD_LOGIC;
   signal zero: STD_LOGIC;
   signal alucontrol: STD_LOGIC_VECTOR(2 downto 0);
   
 begin
   cont: controller port map( op => instr((width-1) downto 24), funct => instr(5 downto 0),
-                            zero => zero, memtoreg => memtoreg, memwrite => memwrite, 
+                            zero => zero, memtoreg => memtoreg, memwrite => memwrite, mov_enable => mov, 
                             pcsrc => pcsrc, alusrc => alusrc,
 				            regwrite => regwrite, 
 				            jump => jump, alucontrol => alucontrol);
 				            
-  dp: datapath generic map(width) port map(clk => clk, reset => reset, 
+  dp: datapath generic map(width) port map(clk => clk, reset => reset, mov_enable => mov,
                                            memtoreg => memtoreg, pcsrc => pcsrc, 
                                            alusrc => alusrc,
                                            regwrite => regwrite,  jump => jump, 

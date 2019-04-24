@@ -8,6 +8,7 @@ entity datapath is  -- MIPS datapath
   port(clk, reset:        in  STD_LOGIC;
        memtoreg, pcsrc:   in  STD_LOGIC;
        alusrc:            in  STD_LOGIC;
+       mov_enable:        in  STD_LOGIC;
        regwrite, jump:    in  STD_LOGIC;
        alucontrol:        in  STD_LOGIC_VECTOR(2 downto 0);
        zero:              out STD_LOGIC;
@@ -82,10 +83,11 @@ architecture struct of datapath is
   signal writereg: STD_LOGIC_VECTOR(4 downto 0);
   signal pcjump, pcnext, pcnextbr, pcplus4, pcbranch: STD_LOGIC_VECTOR((width-1) downto 0);
   signal signimm, signimmsh: STD_LOGIC_VECTOR((width-1) downto 0);
-  signal srca, srcb, result: STD_LOGIC_VECTOR((width-1) downto 0);
+  signal srca, srcb, res_mux_out, result: STD_LOGIC_VECTOR((width-1) downto 0);
   signal const_zero: STD_LOGIC_VECTOR((width-1) downto 0) := (others => '0');
   signal four: STD_LOGIC_VECTOR((width-1) downto 0);
   signal z_prev: STD_LOGIC_VECTOR(0 downto 0);
+  signal reg_2 : STD_LOGIC_VECTOR((width-1) downto 0);
 
   begin
     -- Wire up all the components for the datapath unit
@@ -108,24 +110,26 @@ architecture struct of datapath is
 	                                       ra1 => instr(23 downto 19), 
 	                                       ra2 => instr(18 downto 14),
 										   wa3 => instr(23 downto 19), wd3 => result, 
-										   rd1 => srca, rd2 => writedata);
+										   rd1 => srca, rd2 => reg_2);
     
     -- select between alu output and data read from memory	
 	resmux: mux2 generic map(width) port map( d0 => aluout, d1 => readdata, 
-	                                           s => memtoreg, y => result);
+	                                           s => memtoreg, y => res_mux_out);
 	
 	-- sign extend immediate data
 	se: signext generic map(width) port map( a => instr(18 downto 0), y => signimm);
 
 	-- ALU logic
-	srcbmux: mux2 generic map(width) port map( d0 => writedata, d1 => signimm, 
+	srcbmux: mux2 generic map(width) port map( d0 => reg_2, d1 => signimm, 
 	                                            s => alusrc, y => srcb);
+	                                       
+	mov_mux: mux2 generic map(width) port map( d0 => res_mux_out, d1 => reg_2, s => mov_enable, y => result);
 	
 	-- wire up the main ALU
 	mainalu:  alu generic map(width) port map(a => srca, b => srcb, 
 	                                          alucontrol => alucontrol, result => aluout, zero => z_prev(0));
 	                                          
-	
+	writedata <= srca;
 end;
 
 

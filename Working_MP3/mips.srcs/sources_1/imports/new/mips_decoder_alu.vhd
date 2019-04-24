@@ -11,16 +11,18 @@ architecture behave of aludec is
 begin
   process(aluop, funct) begin
     case aluop is
-      when "00" => alucontrol <= "010"; -- add (for lb/sb/addi)
-      when "01" => alucontrol <= "110"; -- sub (for beq)
-      when others => case funct is         -- R-type instructions
-                         when "100000" => alucontrol <= "010"; -- add (for add)
-                         when "100010" => alucontrol <= "110"; -- subtract (for sub)
-                         when "100100" => alucontrol <= "000"; -- logical and (for and)
-                         when "100101" => alucontrol <= "001"; -- logical or (for or)
-                         when "101010" => alucontrol <= "111"; -- set on less (for slt)
-                         when others   => alucontrol <= "---"; -- should never happen
-                     end case;
+        when "00" => alucontrol <= "010"; --add
+        when others => alucontrol <= "010"; --just in case :)
+--      when "00" => alucontrol <= "010"; -- add (for lb/sb/addi)
+--      when "01" => alucontrol <= "110"; -- sub (for beq)
+--      when others => case funct is         -- R-type instructions
+--                         when "100000" => alucontrol <= "010"; -- add (for add)
+--                         when "100010" => alucontrol <= "110"; -- subtract (for sub)
+--                         when "100100" => alucontrol <= "000"; -- logical and (for and)
+--                         when "100101" => alucontrol <= "001"; -- logical or (for or)
+--                         when "101010" => alucontrol <= "111"; -- set on less (for slt)
+--                         when others   => alucontrol <= "---"; -- should never happen
+--                     end case;
     end case;
   end process;
 end;
