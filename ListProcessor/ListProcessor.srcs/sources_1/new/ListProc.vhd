@@ -22,6 +22,18 @@ architecture ListProc of ListProc is
 
 type regArray is array (0 to 1) of std_logic_vector(127 downto 0);
 
+
+component  cntrl_unit is
+  Port (CLOCK : in std_logic;
+        reset: in std_logic;
+        opcode_collection : std_logic_vector(7 downto 0);
+        ready : out std_logic;
+        reg_name : in std_logic_vector(4 downto 0);
+        mem_bus : in std_logic_vector(23 downto 0)
+    
+  );
+  end component;
+
 component bit128_reg is
     generic(N:integer := 128);
     Port ( load: in std_logic;
@@ -37,7 +49,6 @@ component alu_block is
         opcode : in std_logic_vector(3 downto 0);
         opA : in std_logic_vector(4 downto 0);
         opB : in std_logic_vector(4 downto 0);
-        regValues : in regArray;
         chinchilla: out signed(127 downto 0)
     );
 end component;
@@ -48,6 +59,7 @@ signal datain : std_logic_vector(127 downto 0);
 signal dataout : std_logic_vector(127 downto 0);
 signal A, B : std_logic_vector(127 downto 0);
 signal regArgs : regArray;
+signal chinchilla : std_logic_vector(127 downto 0);
 
 begin
 -- may need a process to synchronize the alu outputs into chinchilla before passing it to the result register    
@@ -62,8 +74,8 @@ end process;
             load => ld,
             clk => CLOCK,
             clr => reset, 
-            data_in => std_logic_vector(chinchilla),
-            data_out => dataout
+            data_in => chinchilla,
+            data_out => result
         );
         
     regA : bit128_reg
@@ -89,6 +101,6 @@ end process;
             opcode => opcode,
             opA => A,
             opB => B,
-            std_logic_vector(chinchilla) => result
+            std_logic_vector(chinchilla) => chinchilla
         );    
 end ListProc;
