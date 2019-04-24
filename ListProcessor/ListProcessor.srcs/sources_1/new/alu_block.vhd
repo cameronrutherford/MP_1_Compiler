@@ -6,8 +6,8 @@ use IEEE.NUMERIC_STD.all;
 entity alu_block is
     port(
         opcode : in STD_LOGIC_VECTOR(3 downto 0);
-        opA : in STD_LOGIC_VECTOR(4 downto 0);      -- operand register
-        opB : in STD_LOGIC_VECTOR(4 downto 0);      -- operand register or memory location
+        opA : in STD_LOGIC_VECTOR(127 downto 0);      -- operand A
+        opB : in STD_LOGIC_VECTOR(127 downto 0);      -- operand B
         chinchilla : out signed(127 downto 0)       -- Results vector. Double check sign integrity
     );
 end alu_block;

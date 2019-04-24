@@ -2,19 +2,12 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Wed Apr 24 09:06:32 2019
-# Process ID: 10128
-# Current directory: C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11408 C:\Users\rrutherford20\Desktop\FinalProject\MP_1_Compiler\Working_MP3\mips.xpr
-# Log file: C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/vivado.log
-# Journal file: C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3\vivado.jou
+# Start of session at: Wed Apr 24 11:32:57 2019
+# Process ID: 13872
+# Current directory: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1568 Z:\CS-401-1-CompArch\FinalProject\MP_1_Compiler\Working_MP3\mips.xpr
+# Log file: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/vivado.log
+# Journal file: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.xpr
-synth_design -rtl -name rtl_1
-synth_design -rtl -name rtl_1
-synth_design -rtl -name rtl_1
-synth_design -rtl -name rtl_1
-close [ open C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd w ]
-add_files C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd
-refresh_design
+open_project Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.xpr

@@ -13,7 +13,8 @@ entity ListProc is
         opcode : in STD_LOGIC_VECTOR(3 downto 0);
         opA : in STD_LOGIC_VECTOR(4 downto 0);      -- operand register
         opB : in STD_LOGIC_VECTOR(4 downto 0);      -- operand register or memory location
-        result : out STD_LOGIC_VECTOR(127 downto 0); 
+        mem_bus_in : STD_LOGIC_VECTOR(127 downto 0);
+        mem_bus_out : out STD_LOGIC_VECTOR(127 downto 0); 
         ready : out STD_LOGIC
     );
 end ListProc;
@@ -29,7 +30,7 @@ component  cntrl_unit is
         opcode_collection : std_logic_vector(7 downto 0);
         ready : out std_logic;
         reg_name : in std_logic_vector(4 downto 0);
-        mem_bus : in std_logic_vector(23 downto 0)
+        address_to_mem : in std_logic_vector(18 downto 0)
     
   );
   end component;
@@ -47,19 +48,19 @@ end component;
 component alu_block is
     Port(
         opcode : in std_logic_vector(3 downto 0);
-        opA : in std_logic_vector(4 downto 0);
-        opB : in std_logic_vector(4 downto 0);
+        opA : in std_logic_vector(127 downto 0);
+        opB : in std_logic_vector(127 downto 0);
         chinchilla: out signed(127 downto 0)
     );
 end component;
 
 --register signals
-signal ld : std_logic;
-signal datain : std_logic_vector(127 downto 0);
+signal regWrite, memWrite : std_logic;
 signal dataout : std_logic_vector(127 downto 0);
 signal A, B : std_logic_vector(127 downto 0);
 signal regArgs : regArray;
 signal chinchilla : std_logic_vector(127 downto 0);
+signal decoded_opcode : std_logic_vector (3 downto 0);
 
 begin
 -- may need a process to synchronize the alu outputs into chinchilla before passing it to the result register    
@@ -67,32 +68,51 @@ begin
     begin
         A <= regArgs(to_integer(signed( opA )))(127 downto 0);
         B <= regArgs(to_integer(signed( opB )))(127 downto 0);           
-end process;
-    
+    end process;
+
+    process (opcode)
+        begin
+            regWrite <= '0';
+            memWrite <= '0';
+            mem_bus_out <= B;
+            case opcode is 
+                when  "00001001" => decoded_opcode <= "0000";   --list add
+                --TODO: implement the following in parser and hardware(?)
+                when "00010100" => decoded_opcode <= "0010";    --list and
+                when "00010101" => decoded_opcode <= "0011";    --list or
+                when "00010110" => decoded_opcode <=  "0100";   --list xor
+                when "00010111" => decoded_opcode <=  "0101";   --list not B
+                --TODO : implement subtract and assign it an opcode
+                when "10010011" => regWrite <= '1';             --list store
+                when "10010010" => memWrite <= '1';             --list load
+                when others => decoded_opcode <= "XXXX"; -- if we get a bad opcode, undefined output
+             end case;
+       end process;
+
     results : bit128_reg
         port map(
-            load => ld,
+            load => regWrite,
             clk => CLOCK,
             clr => reset, 
             data_in => chinchilla,
-            data_out => result
+            data_out => mem_bus_out
         );
         
     regA : bit128_reg
         port map(
-            load => ld,
+            load => regWrite,
             clk => CLOCK,
             clr => reset, 
-            data_in => datain,
+            data_in => mem_bus_in,
             data_out => regArgs(0)
         );
             
     regB : bit128_reg
         port map(
-            load => ld,
+            load => regWrite,
             clk => CLOCK,
             clr => reset, 
-            data_in => datain,
+            data_in => mem_bus_in,
             data_out => regArgs(1)
         );
         
