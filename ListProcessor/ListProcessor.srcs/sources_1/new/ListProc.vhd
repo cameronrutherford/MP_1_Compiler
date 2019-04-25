@@ -10,13 +10,13 @@ entity ListProc is
     port (
         CLOCK : in STD_LOGIC;
         reset : in STD_LOGIC;
-        opcode : in STD_LOGIC_VECTOR(3 downto 0);
+        opcode : in STD_LOGIC_VECTOR(7 downto 0);
         opA : in STD_LOGIC_VECTOR(4 downto 0);      -- operand register
         opB : in STD_LOGIC_VECTOR(4 downto 0);      -- operand register or memory location
-        mem_bus_in : STD_LOGIC_VECTOR(127 downto 0);
-        mem_bus_out : out STD_LOGIC_VECTOR(127 downto 0); 
-        memWrite : out STD_LOGIC;
-        ready : out STD_LOGIC := '0'
+        mem_bus_in : STD_LOGIC_VECTOR(127 downto 0);    -- data bus for reading from memory
+        mem_bus_out : out STD_LOGIC_VECTOR(127 downto 0);   -- data bus for writing to memory
+        mem_address : out STD_LOGIC_VECTOR(4 downto 0);
+        memWrite : out STD_LOGIC
     );
 end ListProc;
 
@@ -65,6 +65,7 @@ signal chinchilla : std_logic_vector(127 downto 0);
 signal decoded_opcode : std_logic_vector (3 downto 0);
 signal resultRegNdx : integer := 2;
 signal writeResult : std_logic;
+signal internalMemWrite : std_logic;
 
 begin
 -- may need a process to synchronize the alu outputs into chinchilla before passing it to the result register    
@@ -76,46 +77,51 @@ begin
     end process;
 
     process (opcode)
+    variable v_regWrite : std_logic_vector(2 downto 0) := "000";
     begin
-        regWrite <= (others => '0');
+        
         mem_bus_out <= B;
         case opcode is 
             when  "00001001" => 
                 decoded_opcode <= "0000";               --list add
-                regWrite(resultRegNdx) <= '1';          -- turn on write to result register
+                v_regWrite := (others => '0');
+                v_regWrite(resultRegNdx) := '1';          -- turn on write to result register
+                internalMemWrite <= '0';
             --TODO: implement the following in parser and hardware(?)
             when "00010100" => 
                 decoded_opcode <= "0010";               --list and
-                regWrite(resultRegNdx) <= '1';          -- turn on write to result register
+                v_regWrite := (others => '0');
+                v_regWrite(resultRegNdx) := '1';          -- turn on write to result register
+                internalMemWrite <= '0';
             when "00010101" => 
                 decoded_opcode <= "0011";               --list or
-                regWrite(resultRegNdx) <= '1';          -- turn on write to result register
+                v_regWrite := (others => '0');
+                v_regWrite(resultRegNdx) := '1';          -- turn on write to result register
+                internalMemWrite <= '0';
             when "00010110" => 
                 decoded_opcode <=  "0100";              --list xor
-                regWrite(resultRegNdx) <= '1';          -- turn on write to result register
+                v_regWrite := (others => '0');
+                v_regWrite(resultRegNdx) := '1';          -- turn on write to result register
+                internalMemWrite <= '0';
             when "00010111" => 
                 decoded_opcode <=  "0101";              --list not B
-                regWrite(resultRegNdx) <= '1';          -- turn on write to result register
+                v_regWrite := (others => '0');
+                v_regWrite(resultRegNdx) := '1';          -- turn on write to result register
+                internalMemWrite <= '0';
             --TODO : implement subtract and assign it an opcode
-            when "10010011" => memWrite <= '1';             --list store
-            when "10010010" => regWrite(intOpA) <= '1';     --list load
+            when "10010011" =>
+                decoded_opcode <= "XXXX"; 
+                internalMemWrite <= '1';                --list store
+                --v_regWrite := (others => '0');
+            when "10010010" => 
+                decoded_opcode <= "XXXX"; 
+                v_regWrite := (others => '0');
+                v_regWrite(intOpA) := '1';                --list load
+                internalMemWrite <= '0';
             when others => decoded_opcode <= "XXXX";    -- if we get a bad opcode, undefined output
          end case;
+         regWrite <= v_regWrite;
          writeResult <= regWrite(resultRegNdx);
-    end process;
-
-    -- This is probably a terrible idea
-    -- Don't want to set to 0 and then 1 right away
-    -- Set an intermediate signal and wire it to input/output
-    process
-    begin
-        ready <= '0';
-        wait for 1 ns;
-        if (opcode = "10010011") or (opcode = "10010010") then
-            wait for 20 ns;
-        end if;
-        ready <= '1';
-        wait on opcode;
     end process;
 
     results : bit128_reg
@@ -147,9 +153,11 @@ begin
         
     alus : alu_block
         port map(
-            opcode => opcode,
+            opcode => decoded_opcode,
             opA => A,
             opB => B,
             std_logic_vector(chinchilla) => chinchilla
-        );    
+        );   
+        memWrite <= internalMemWrite;
+        mem_address <= opB;
 end ListProc;
