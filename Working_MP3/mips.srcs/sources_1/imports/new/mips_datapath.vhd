@@ -88,6 +88,7 @@ architecture struct of datapath is
   signal four: STD_LOGIC_VECTOR((width-1) downto 0);
   signal z_prev: STD_LOGIC_VECTOR(0 downto 0);
   signal reg_2 : STD_LOGIC_VECTOR((width-1) downto 0);
+  signal alu_result : STD_LOGIC_VECTOR((width-1) downto 0);
 
   begin
     -- Wire up all the components for the datapath unit
@@ -113,7 +114,7 @@ architecture struct of datapath is
 										   rd1 => srca, rd2 => reg_2);
     
     -- select between alu output and data read from memory	
-	resmux: mux2 generic map(width) port map( d0 => aluout, d1 => readdata, 
+	resmux: mux2 generic map(width) port map( d0 => alu_result, d1 => readdata, 
 	                                           s => memtoreg, y => res_mux_out);
 	
 	-- sign extend immediate data
@@ -127,9 +128,10 @@ architecture struct of datapath is
 	
 	-- wire up the main ALU
 	mainalu:  alu generic map(width) port map(a => srca, b => srcb, 
-	                                          alucontrol => alucontrol, result => aluout, zero => z_prev(0));
+	                                          alucontrol => alucontrol, result => alu_result, zero => z_prev(0));
 	                                          
 	writedata <= srca;
+	aluout <= signimmsh;
 end;
 
 

@@ -1,0 +1,702 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Wed Apr 24 15:19:42 2019
+# Process ID: 8668
+# Current directory: C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10076 C:\Users\rrutherford20\Desktop\FinalProject\MP_1_Compiler\Working_MP3\mips.xpr
+# Log file: C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/vivado.log
+# Journal file: C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 894.445 ; gain = 166.250
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: computer_top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1002.344 ; gain = 103.578
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'computer_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+INFO: [Synth 8-3491] module 'mips_top' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:17' bound to instance 'mips1' of component 'mips_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'mips_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mips' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:14' bound to instance 'mips1' of component 'mips' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'mips' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'controller' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:5' bound to instance 'cont' of component 'controller' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'controller' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:16]
+INFO: [Synth 8-3491] module 'maindec' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:5' bound to instance 'md' of component 'maindec' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'maindec' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'maindec' (1#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:14]
+INFO: [Synth 8-3491] module 'aludec' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:4' bound to instance 'ad' of component 'aludec' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'aludec' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'aludec' (2#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:10]
+WARNING: [Synth 8-3848] Net regdst in module/entity controller does not have driver. [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'controller' (3#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'datapath' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:6' bound to instance 'dp' of component 'datapath' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'datapath' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:20]
+	Parameter width bound to: 32 - type: integer 
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'flopr' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:5' bound to instance 'pcreg' of component 'flopr' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'flopr' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr' (4#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd1' of component 'adder' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'adder' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adder' (5#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'sl2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:7' bound to instance 'immsh' of component 'sl2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'sl2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sl2' (6#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd2' of component 'adder' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:101]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcbrmux' of component 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (7#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcmux' of component 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:103]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'bit_reg' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:25' bound to instance 'zreg' of component 'bit_reg' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'bit_reg' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bit_reg' (8#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'regfile' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:11' bound to instance 'rf' of component 'regfile' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'regfile' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'regfile' (9#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'resmux' of component 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:114]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'signext' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:5' bound to instance 'se' of component 'signext' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'signext' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'signext' (10#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'srcbmux' of component 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:121]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:8' bound to instance 'mainalu' of component 'alu' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'alu' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'alu' (11#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (12#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'mips' (13#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'imem' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:10' bound to instance 'imem1' of component 'imem' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'imem' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'imem' (14#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
+INFO: [Synth 8-3491] module 'dmem' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:11' bound to instance 'dmem1' of component 'dmem' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'dmem' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:22]
+INFO: [Synth 8-3491] module 'dual_port_ram' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/.Xil/Vivado-8668-LAB-SCI-214-16/realtime/dual_port_ram_stub.vhdl:5' bound to instance 'MULTI_PORT_REG' of component 'dual_port_ram' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'dual_port_ram' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/.Xil/Vivado-8668-LAB-SCI-214-16/realtime/dual_port_ram_stub.vhdl:23]
+INFO: [Synth 8-256] done synthesizing module 'dmem' (15#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'mips_top' (16#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+INFO: [Synth 8-3491] module 'display_hex' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:5' bound to instance 'display' of component 'display_hex' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'display_hex' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:17]
+WARNING: [Synth 8-614] signal 'x' is read in the process but is not in the sensitivity list [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'display_hex' (17#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'computer_top' (18#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[31]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[31]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[29]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[28]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[27]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[26]
+WARNING: [Synth 8-3331] design maindec has unconnected port op[7]
+WARNING: [Synth 8-3331] design maindec has unconnected port op[6]
+WARNING: [Synth 8-3331] design maindec has unconnected port op[5]
+WARNING: [Synth 8-3331] design maindec has unconnected port op[4]
+WARNING: [Synth 8-3331] design maindec has unconnected port op[3]
+WARNING: [Synth 8-3331] design maindec has unconnected port op[2]
+WARNING: [Synth 8-3331] design maindec has unconnected port op[1]
+WARNING: [Synth 8-3331] design maindec has unconnected port op[0]
+WARNING: [Synth 8-3331] design controller has unconnected port regdst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1047.074 ; gain = 148.309
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1047.074 ; gain = 148.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1047.074 ; gain = 148.309
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram.dcp' for cell 'mips1/dmem1/MULTI_PORT_REG'
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2.1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 1418.102 ; gain = 519.336
+68 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 1418.102 ; gain = 519.336
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1454.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'computer_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+INFO: [Synth 8-3491] module 'mips_top' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:17' bound to instance 'mips1' of component 'mips_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'mips_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mips' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:14' bound to instance 'mips1' of component 'mips' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'mips' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'controller' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:5' bound to instance 'cont' of component 'controller' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:62]
+ERROR: [Synth 8-3493] module 'controller' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:5' does not have matching formal port for component port 'mov_enable' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:62]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'datapath' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:6' bound to instance 'dp' of component 'datapath' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:68]
+ERROR: [Synth 8-3493] module 'datapath' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:6' does not have matching formal port for component port 'mov_enable' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:68]
+ERROR: [Synth 8-285] failed synthesizing module 'mips' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+ERROR: [Synth 8-285] failed synthesizing module 'mips_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+ERROR: [Synth 8-285] failed synthesizing module 'computer_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1491.148 ; gain = 36.684
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1491.148 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'computer_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+INFO: [Synth 8-3491] module 'mips_top' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:17' bound to instance 'mips1' of component 'mips_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'mips_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mips' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:14' bound to instance 'mips1' of component 'mips' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'mips' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'controller' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:5' bound to instance 'cont' of component 'controller' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:62]
+ERROR: [Synth 8-3493] module 'controller' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:5' does not have matching formal port for component port 'mov_enable' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:62]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'datapath' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:6' bound to instance 'dp' of component 'datapath' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:68]
+ERROR: [Synth 8-3493] module 'datapath' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:6' does not have matching formal port for component port 'mov_enable' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:68]
+ERROR: [Synth 8-285] failed synthesizing module 'mips' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+ERROR: [Synth 8-285] failed synthesizing module 'mips_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+ERROR: [Synth 8-285] failed synthesizing module 'computer_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1493.180 ; gain = 2.031
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1504.992 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'computer_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+INFO: [Synth 8-3491] module 'mips_top' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:17' bound to instance 'mips1' of component 'mips_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'mips_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mips' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:14' bound to instance 'mips1' of component 'mips' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'mips' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'controller' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:5' bound to instance 'cont' of component 'controller' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:62]
+ERROR: [Synth 8-3493] module 'controller' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:5' does not have matching formal port for component port 'mov_enable' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:62]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'datapath' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:6' bound to instance 'dp' of component 'datapath' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:68]
+ERROR: [Synth 8-3493] module 'datapath' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:6' does not have matching formal port for component port 'mov_enable' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:68]
+ERROR: [Synth 8-285] failed synthesizing module 'mips' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+ERROR: [Synth 8-285] failed synthesizing module 'mips_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+ERROR: [Synth 8-285] failed synthesizing module 'computer_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1504.992 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1505.082 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'computer_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+INFO: [Synth 8-3491] module 'mips_top' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:17' bound to instance 'mips1' of component 'mips_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'mips_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mips' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:14' bound to instance 'mips1' of component 'mips' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'mips' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'controller' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:5' bound to instance 'cont' of component 'controller' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'controller' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
+INFO: [Synth 8-3491] module 'maindec' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:5' bound to instance 'md' of component 'maindec' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'maindec' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'maindec' (1#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:15]
+INFO: [Synth 8-3491] module 'aludec' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:4' bound to instance 'ad' of component 'aludec' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'aludec' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'aludec' (2#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:10]
+WARNING: [Synth 8-3848] Net regdst in module/entity controller does not have driver. [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'controller' (3#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'datapath' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:6' bound to instance 'dp' of component 'datapath' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:68]
+ERROR: [Synth 8-3493] module 'datapath' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:6' does not have matching formal port for component port 'mov_enable' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:68]
+ERROR: [Synth 8-285] failed synthesizing module 'mips' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+ERROR: [Synth 8-285] failed synthesizing module 'mips_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+ERROR: [Synth 8-285] failed synthesizing module 'computer_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1506.742 ; gain = 1.660
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1511.320 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'computer_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+INFO: [Synth 8-3491] module 'mips_top' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:17' bound to instance 'mips1' of component 'mips_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'mips_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mips' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:14' bound to instance 'mips1' of component 'mips' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'mips' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'controller' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:5' bound to instance 'cont' of component 'controller' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'controller' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
+INFO: [Synth 8-3491] module 'maindec' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:5' bound to instance 'md' of component 'maindec' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'maindec' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'maindec' (1#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:15]
+INFO: [Synth 8-3491] module 'aludec' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:4' bound to instance 'ad' of component 'aludec' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'aludec' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'aludec' (2#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:10]
+WARNING: [Synth 8-3848] Net regdst in module/entity controller does not have driver. [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'controller' (3#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'datapath' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:6' bound to instance 'dp' of component 'datapath' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'datapath' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'flopr' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:5' bound to instance 'pcreg' of component 'flopr' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'flopr' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr' (4#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd1' of component 'adder' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'adder' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adder' (5#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'sl2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:7' bound to instance 'immsh' of component 'sl2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'sl2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sl2' (6#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd2' of component 'adder' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:103]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcbrmux' of component 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (7#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcmux' of component 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:105]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'bit_reg' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:25' bound to instance 'zreg' of component 'bit_reg' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'bit_reg' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bit_reg' (8#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'regfile' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:11' bound to instance 'rf' of component 'regfile' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'regfile' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'regfile' (9#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'resmux' of component 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:116]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'signext' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:5' bound to instance 'se' of component 'signext' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'signext' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'signext' (10#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'srcbmux' of component 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:123]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'mov_mux' of component 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:126]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:8' bound to instance 'mainalu' of component 'alu' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'alu' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'alu' (11#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (12#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'mips' (13#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'imem' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:10' bound to instance 'imem1' of component 'imem' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'imem' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'imem' (14#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
+INFO: [Synth 8-3491] module 'dmem' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:11' bound to instance 'dmem1' of component 'dmem' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'dmem' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:22]
+INFO: [Synth 8-3491] module 'dual_port_ram' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/.Xil/Vivado-8668-LAB-SCI-214-16/realtime/dual_port_ram_stub.vhdl:5' bound to instance 'MULTI_PORT_REG' of component 'dual_port_ram' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'dual_port_ram' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/.Xil/Vivado-8668-LAB-SCI-214-16/realtime/dual_port_ram_stub.vhdl:23]
+INFO: [Synth 8-256] done synthesizing module 'dmem' (15#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'mips_top' (16#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+INFO: [Synth 8-3491] module 'display_hex' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:5' bound to instance 'display' of component 'display_hex' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'display_hex' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:17]
+WARNING: [Synth 8-614] signal 'x' is read in the process but is not in the sensitivity list [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'display_hex' (17#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'computer_top' (18#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[31]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[31]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[29]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[28]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[27]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[26]
+WARNING: [Synth 8-3331] design maindec has unconnected port op[7]
+WARNING: [Synth 8-3331] design maindec has unconnected port op[6]
+WARNING: [Synth 8-3331] design maindec has unconnected port op[5]
+WARNING: [Synth 8-3331] design maindec has unconnected port op[4]
+WARNING: [Synth 8-3331] design maindec has unconnected port op[3]
+WARNING: [Synth 8-3331] design maindec has unconnected port op[2]
+WARNING: [Synth 8-3331] design maindec has unconnected port op[1]
+WARNING: [Synth 8-3331] design maindec has unconnected port op[0]
+WARNING: [Synth 8-3331] design controller has unconnected port regdst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1511.320 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1511.320 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1511.320 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram.dcp' for cell 'mips1/dmem1/MULTI_PORT_REG'
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1523.770 ; gain = 14.594
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1523.770 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'computer_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+INFO: [Synth 8-3491] module 'mips_top' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:17' bound to instance 'mips1' of component 'mips_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'mips_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mips' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:14' bound to instance 'mips1' of component 'mips' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'mips' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'controller' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:5' bound to instance 'cont' of component 'controller' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'controller' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
+INFO: [Synth 8-3491] module 'maindec' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:5' bound to instance 'md' of component 'maindec' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'maindec' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'maindec' (1#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:15]
+INFO: [Synth 8-3491] module 'aludec' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:4' bound to instance 'ad' of component 'aludec' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'aludec' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'aludec' (2#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:10]
+WARNING: [Synth 8-3848] Net regdst in module/entity controller does not have driver. [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'controller' (3#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'datapath' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:6' bound to instance 'dp' of component 'datapath' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'datapath' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'flopr' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:5' bound to instance 'pcreg' of component 'flopr' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'flopr' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr' (4#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd1' of component 'adder' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'adder' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adder' (5#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'sl2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:7' bound to instance 'immsh' of component 'sl2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'sl2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sl2' (6#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd2' of component 'adder' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:103]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcbrmux' of component 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (7#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcmux' of component 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:105]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'bit_reg' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:25' bound to instance 'zreg' of component 'bit_reg' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'bit_reg' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bit_reg' (8#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'regfile' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:11' bound to instance 'rf' of component 'regfile' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'regfile' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'regfile' (9#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'resmux' of component 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:116]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'signext' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:5' bound to instance 'se' of component 'signext' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'signext' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'signext' (10#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'srcbmux' of component 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:123]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'mov_mux' of component 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:126]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:8' bound to instance 'mainalu' of component 'alu' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'alu' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'alu' (11#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (12#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'mips' (13#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'imem' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:10' bound to instance 'imem1' of component 'imem' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'imem' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'imem' (14#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
+INFO: [Synth 8-3491] module 'dmem' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:11' bound to instance 'dmem1' of component 'dmem' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'dmem' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:22]
+INFO: [Synth 8-3491] module 'dual_port_ram' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/.Xil/Vivado-8668-LAB-SCI-214-16/realtime/dual_port_ram_stub.vhdl:5' bound to instance 'MULTI_PORT_REG' of component 'dual_port_ram' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'dual_port_ram' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/.Xil/Vivado-8668-LAB-SCI-214-16/realtime/dual_port_ram_stub.vhdl:23]
+INFO: [Synth 8-256] done synthesizing module 'dmem' (15#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'mips_top' (16#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+INFO: [Synth 8-3491] module 'display_hex' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:5' bound to instance 'display' of component 'display_hex' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'display_hex' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:17]
+WARNING: [Synth 8-614] signal 'x' is read in the process but is not in the sensitivity list [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'display_hex' (17#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'computer_top' (18#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[31]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[31]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[29]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[28]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[27]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[26]
+WARNING: [Synth 8-3331] design maindec has unconnected port op[7]
+WARNING: [Synth 8-3331] design maindec has unconnected port op[6]
+WARNING: [Synth 8-3331] design maindec has unconnected port op[5]
+WARNING: [Synth 8-3331] design maindec has unconnected port op[4]
+WARNING: [Synth 8-3331] design maindec has unconnected port op[3]
+WARNING: [Synth 8-3331] design maindec has unconnected port op[2]
+WARNING: [Synth 8-3331] design maindec has unconnected port op[1]
+WARNING: [Synth 8-3331] design maindec has unconnected port op[0]
+WARNING: [Synth 8-3331] design controller has unconnected port regdst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1523.770 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1523.770 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1523.770 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram.dcp' for cell 'mips1/dmem1/MULTI_PORT_REG'
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1539.770 ; gain = 16.000
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1539.770 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'computer_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+INFO: [Synth 8-3491] module 'mips_top' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:17' bound to instance 'mips1' of component 'mips_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'mips_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mips' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:14' bound to instance 'mips1' of component 'mips' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'mips' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'controller' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:5' bound to instance 'cont' of component 'controller' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'controller' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
+INFO: [Synth 8-3491] module 'maindec' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:5' bound to instance 'md' of component 'maindec' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'maindec' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'maindec' (1#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:15]
+INFO: [Synth 8-3491] module 'aludec' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:4' bound to instance 'ad' of component 'aludec' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'aludec' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'aludec' (2#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:10]
+WARNING: [Synth 8-3848] Net regdst in module/entity controller does not have driver. [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'controller' (3#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'datapath' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:6' bound to instance 'dp' of component 'datapath' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'datapath' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'flopr' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:5' bound to instance 'pcreg' of component 'flopr' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'flopr' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr' (4#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd1' of component 'adder' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'adder' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adder' (5#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'sl2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:7' bound to instance 'immsh' of component 'sl2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'sl2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sl2' (6#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd2' of component 'adder' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:103]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcbrmux' of component 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (7#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcmux' of component 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:105]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'bit_reg' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:25' bound to instance 'zreg' of component 'bit_reg' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'bit_reg' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bit_reg' (8#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'regfile' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:11' bound to instance 'rf' of component 'regfile' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'regfile' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'regfile' (9#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'resmux' of component 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:116]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'signext' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:5' bound to instance 'se' of component 'signext' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'signext' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'signext' (10#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'srcbmux' of component 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:123]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'mov_mux' of component 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:126]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:8' bound to instance 'mainalu' of component 'alu' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'alu' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'alu' (11#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (12#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'mips' (13#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'imem' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:10' bound to instance 'imem1' of component 'imem' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'imem' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'imem' (14#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
+INFO: [Synth 8-3491] module 'dmem' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:11' bound to instance 'dmem1' of component 'dmem' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'dmem' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:22]
+INFO: [Synth 8-3491] module 'dual_port_ram' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/.Xil/Vivado-8668-LAB-SCI-214-16/realtime/dual_port_ram_stub.vhdl:5' bound to instance 'MULTI_PORT_REG' of component 'dual_port_ram' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'dual_port_ram' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/.Xil/Vivado-8668-LAB-SCI-214-16/realtime/dual_port_ram_stub.vhdl:23]
+INFO: [Synth 8-256] done synthesizing module 'dmem' (15#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'mips_top' (16#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+INFO: [Synth 8-3491] module 'display_hex' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:5' bound to instance 'display' of component 'display_hex' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'display_hex' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:17]
+WARNING: [Synth 8-614] signal 'x' is read in the process but is not in the sensitivity list [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'display_hex' (17#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'computer_top' (18#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[31]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[31]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[29]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[28]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[27]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[26]
+WARNING: [Synth 8-3331] design controller has unconnected port regdst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1545.145 ; gain = 5.375
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1545.145 ; gain = 5.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1545.145 ; gain = 5.375
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram.dcp' for cell 'mips1/dmem1/MULTI_PORT_REG'
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1561.219 ; gain = 21.449
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 24 16:28:26 2019...
