@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Fri Apr 26 09:45:18 2019
+# Process ID: 7636
+# Current directory: Z:/CS-401-1-CompArch/Final_Project/Final_take_two/MP3/MP_1_Compiler/MP_1_Compiler/ListProcessor/ListProcessor.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source Z:/CS-401-1-CompArch/Final_Project/Final_take_two/MP3/MP_1_Compiler/MP_1_Compiler/ListProcessor/ListProcessor.sim/sim_1/behav/xsim/xsim.dir/ListProc_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: Z:/CS-401-1-CompArch/Final_Project/Final_take_two/MP3/MP_1_Compiler/MP_1_Compiler/ListProcessor/ListProcessor.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: Z:/CS-401-1-CompArch/Final_Project/Final_take_two/MP3/MP_1_Compiler/MP_1_Compiler/ListProcessor/ListProcessor.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source Z:/CS-401-1-CompArch/Final_Project/Final_take_two/MP3/MP_1_Compiler/MP_1_Compiler/ListProcessor/ListProcessor.sim/sim_1/behav/xsim/xsim.dir/ListProc_behav/webtalk/xsim_webtalk.tcl -notrace
