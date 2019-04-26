@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ListProcessor.srcs/sources_1/new/128bit_reg.vhd" \
+"../../../../ListProcessor.srcs/sources_1/new/alu.vhd" \
+"../../../../ListProcessor.srcs/sources_1/new/alu_block.vhd" \
+"../../../../ListProcessor.srcs/sources_1/new/ListProc.vhd" \
+
+# Do not sort compile order
+nosort
