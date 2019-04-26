@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-// Date        : Mon Apr 22 11:28:32 2019
+// Date        : Mon Apr 22 11:28:31 2019
 // Host        : LAB-SCI-214-16 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top dual_port_ram -prefix
+//               dual_port_ram_ dual_port_ram_stub.v
 // Design      : dual_port_ram
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a100tcsg324-1

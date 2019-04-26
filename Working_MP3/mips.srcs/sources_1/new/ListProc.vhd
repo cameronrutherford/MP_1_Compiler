@@ -68,7 +68,7 @@ begin
     variable v_regWrite : std_logic_vector(2 downto 0) := "000";
     begin
         
-        mem_bus_out <= B;
+        --mem_bus_out <= B;
         case opcode is 
             when  "00001001" => 
                 decoded_opcode <= "0000";               --list add

@@ -60,8 +60,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -71,14 +69,14 @@ set rc [catch {
   set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.cache/wt [current_project]
-  set_property parent.project_path C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.xpr [current_project]
-  set_property ip_output_repo C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.cache/ip [current_project]
+  set_property webtalk.parent_dir Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.cache/wt [current_project]
+  set_property parent.project_path Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.xpr [current_project]
+  set_property ip_output_repo Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
-  add_files -quiet C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/synth_1/computer_top.dcp
-  read_ip -quiet C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram.xci
-  read_xdc C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc
+  add_files -quiet Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/synth_1/computer_top.dcp
+  read_ip -quiet Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram.xci
+  read_xdc Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc
   link_design -top computer_top -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
