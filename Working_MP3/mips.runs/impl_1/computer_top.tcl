@@ -67,19 +67,18 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param synth.incrementalSynthesisCache Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/.Xil/Vivado-8036-LAB-SCI-214-16/incrSyn
   create_project -in_memory -part xc7a100tcsg324-1
   set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.cache/wt [current_project]
-  set_property parent.project_path Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.xpr [current_project]
-  set_property ip_output_repo Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.cache/wt [current_project]
+  set_property parent.project_path C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.xpr [current_project]
+  set_property ip_output_repo C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
-  add_files -quiet Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.runs/synth_1/computer_top.dcp
-  read_ip -quiet Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram.xci
-  read_xdc Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc
+  add_files -quiet C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/synth_1/computer_top.dcp
+  read_ip -quiet C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram.xci
+  read_xdc C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc
   link_design -top computer_top -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
@@ -152,25 +151,6 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
-  unset ACTIVE_STEP 
-}
-
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-  set_property XPM_LIBRARIES XPM_MEMORY [current_project]
-  catch { write_mem_info -force computer_top.mmi }
-  write_bitstream -force computer_top.bit 
-  catch {write_debug_probes -quiet -force computer_top}
-  catch {file copy -force computer_top.ltx debug_nets.ltx}
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 

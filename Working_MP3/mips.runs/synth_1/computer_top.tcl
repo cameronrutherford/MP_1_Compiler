@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/.Xil/Vivado-8036-LAB-SCI-214-16/incrSyn
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
@@ -26,37 +25,42 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.cache/wt [current_project]
-set_property parent.project_path Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.cache/wt [current_project]
+set_property parent.project_path C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.xpr [current_project]
 set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
-set_property ip_output_repo z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.cache/ip [current_project]
+set_property ip_output_repo c:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.srcs/sources_1/dual_ram_init.coe
-read_mem Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.srcs/sources_1/imports/new/memfile.dat
+add_files C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/dual_ram_init.coe
+read_mem C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/memfile.dat
 read_vhdl -library xil_defaultlib {
-  Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.srcs/sources_1/imports/new/mips.vhd
-  Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd
-  Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd
-  Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd
-  Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd
-  Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd
-  Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd
-  Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd
-  Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd
-  Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd
-  Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd
-  Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd
-  Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd
-  Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd
-  Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd
-  Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd
-  Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd
+  C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd
+  C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd
+  C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd
+  C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd
+  C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd
+  C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd
+  C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd
+  C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd
+  C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd
+  C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd
+  C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd
+  C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd
+  C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd
+  C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd
+  C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd
+  C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd
+  C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd
+  C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd
+  C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd
+  C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd
+  C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd
+  C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd
 }
-read_ip -quiet Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram.xci
-set_property used_in_implementation false [get_files -all z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram_ooc.xdc]
+read_ip -quiet C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram.xci
+set_property used_in_implementation false [get_files -all c:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -66,8 +70,8 @@ set_property used_in_implementation false [get_files -all z:/rrutherford20/CS-40
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc
-set_property used_in_implementation false [get_files Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
+read_xdc C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc
+set_property used_in_implementation false [get_files C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]

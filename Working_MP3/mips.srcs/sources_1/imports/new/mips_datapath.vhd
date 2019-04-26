@@ -21,7 +21,7 @@ end;
 architecture struct of datapath is
 
   -- The datapath needs an ALU component
-  component alu generic(width: integer);
+  component mips_alu generic(width: integer);
   port(a, b:       in  STD_LOGIC_VECTOR((width-1) downto 0);
        alucontrol: in  STD_LOGIC_VECTOR(2 downto 0);
        result:     inout STD_LOGIC_VECTOR((width-1) downto 0);
@@ -127,7 +127,7 @@ architecture struct of datapath is
 	mov_mux: mux2 generic map(width) port map( d0 => res_mux_out, d1 => reg_2, s => mov_enable, y => result);
 	
 	-- wire up the main ALU
-	mainalu:  alu generic map(width) port map(a => srca, b => srcb, 
+	mainalu: mips_alu generic map(width) port map(a => srca, b => srcb, 
 	                                          alucontrol => alucontrol, result => alu_result, zero => z_prev(0));
 	                                          
 	writedata <= srca;

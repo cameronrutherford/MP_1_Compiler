@@ -52,6 +52,20 @@ architecture mips_top of mips_top is
        aluout, writedata: inout STD_LOGIC_VECTOR((width-1) downto 0);
        readdata:          in  STD_LOGIC_VECTOR((width-1) downto 0));
   end component;
+  
+  component listProc is
+      port (
+          CLOCK : in STD_LOGIC;
+          reset : in STD_LOGIC;
+          opcode : in STD_LOGIC_VECTOR(7 downto 0);
+          opA : in STD_LOGIC_VECTOR(4 downto 0);      -- operand register
+          opB : in STD_LOGIC_VECTOR(4 downto 0);      -- operand register or memory location
+          mem_bus_in :  in STD_LOGIC_VECTOR(127 downto 0);    -- data bus for reading from memory
+          mem_bus_out : out STD_LOGIC_VECTOR(127 downto 0);   -- data bus for writing to memory
+          mem_address : out STD_LOGIC_VECTOR(4 downto 0);
+          memWrite : out STD_LOGIC
+      );
+  end component;
 
   -- signals to wire the instruction memory, data memory and mips processor together
   signal readdata: STD_LOGIC_VECTOR(31 downto 0);
@@ -59,6 +73,9 @@ architecture mips_top of mips_top is
   signal writedata, dataadr: STD_LOGIC_VECTOR(31 downto 0);
   signal memwrite: STD_LOGIC;
   signal pc: STD_LOGIC_VECTOR(31 downto 0); 
+  signal write_enable_b : STD_LOGIC;
+  signal address_b : STD_LOGIC_VECTOR(4 downto 0);
+  signal data_into_b, data_out_of_b : STD_LOGIC_VECTOR(127 downto 0);
          
   
   begin     
@@ -70,9 +87,14 @@ architecture mips_top of mips_top is
 	                                       instr => instr, memwrite => memwrite, aluout => dataadr, 
 	                                       writedata => writedata, readdata => readdata);
 	  imem1: imem generic map(32) port map( a => pc(7 downto 2), rd => instr);
-	  dmem1: dmem port map( clk => clk, wea => memwrite, web => '0', addra => dataadr(6 downto 0),
-	                        ena => '1', enb => '1', addrb => "00000", dinb => (others => '0'),
-	                                        dina => writedata, douta => readdata);  
+	  dmem1: dmem port map( clk => clk, wea => memwrite, web => write_enable_b, addra => dataadr(6 downto 0),
+	                        ena => '1', enb => '1', addrb => address_b, dinb => data_into_b,
+	                        doutb => data_out_of_b, dina => writedata, douta => readdata);
+	                                        
+	  listProcessor : listProc port map(CLOCK => clk, reset => '0', opcode => instr(31 downto 24),
+	                                    opA => instr(23 downto 19), opB => instr(18 downto 14),
+	                                    mem_bus_in => data_out_of_b, mem_bus_out => data_into_b,
+	                                    memWrite => write_enable_b, mem_address => address_b);
   end mips_top;
 
 

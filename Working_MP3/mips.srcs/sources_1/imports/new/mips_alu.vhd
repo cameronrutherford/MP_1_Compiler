@@ -5,7 +5,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all; 
 use IEEE.STD_LOGIC_UNSIGNED.all;
 
-entity alu is 
+entity mips_alu is 
   generic(width: integer);
   port(a, b:       in  STD_LOGIC_VECTOR((width-1) downto 0);
        alucontrol: in  STD_LOGIC_VECTOR(2 downto 0);
@@ -13,7 +13,7 @@ entity alu is
        zero:       out STD_LOGIC);
 end;
 
-architecture behave of alu is
+architecture behave of mips_alu is
   signal b2, sum, slt: STD_LOGIC_VECTOR((width-1) downto 0);
   signal const_zero : STD_LOGIC_VECTOR((width-1) downto 0) := (others => '0');
 begin

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='Z:/rrutherford20/CS-401-1-CompArch/MP3/New_MP3/mips.runs/synth_1'
+HD_PWD='C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
