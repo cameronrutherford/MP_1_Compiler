@@ -1,14 +1,14 @@
 .data
 # Change the arrays to be variable length
-error bit 1
+error dword 999999999
 list dword 1 2 3 4 5 6 7
 
 .code
 # Labels are on their own line starting with a colon, and only use the first word
 :start <- This is the start
-mov $d0 $zer        # mov zero into the first data register
+mov $d0 $d1        # mov zero into the first data register
 jmp loaddata        # skip to the load data section
-movi $ipt 1234      # change the instruction pointer to 1234. This should never execute
+movi $d2 1234      # change the instruction pointer to 1234. This should never execute
 :loaddata           # load data from memory
 lw $d1 list         # copy the first element from list into $d1
 lw $d1 list[4]      # copy the fifth element from list into $d1

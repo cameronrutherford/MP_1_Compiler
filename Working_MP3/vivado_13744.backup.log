@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Fri Apr 26 15:19:53 2019
+# Process ID: 13744
+# Current directory: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12680 Z:\CS-401-1-CompArch\FinalProject\MP_1_Compiler\Working_MP3\mips.xpr
+# Log file: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/vivado.log
+# Journal file: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 773.609 ; gain = 91.199
+reset_run dual_port_ram_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dual_port_ram'...
+[Fri Apr 26 15:22:31 2019] Launched dual_port_ram_synth_1...
+Run output will be captured here: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/dual_port_ram_synth_1/runme.log
+[Fri Apr 26 15:22:31 2019] Launched synth_1...
+Run output will be captured here: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri Apr 26 15:23:33 2019] Launched impl_1...
+Run output will be captured here: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Fri Apr 26 15:29:06 2019] Launched synth_1...
+Run output will be captured here: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/synth_1/runme.log
+[Fri Apr 26 15:29:07 2019] Launched impl_1...
+Run output will be captured here: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2.1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1739.273 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1739.273 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 1810.188 ; gain = 925.273
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1815.293 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 26 15:36:25 2019...

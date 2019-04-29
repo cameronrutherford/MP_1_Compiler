@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.xpr">
+<Project Version="7" Minor="38" Path="C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="bfc6d33675f34e59a51d26a1983c03b4"/>

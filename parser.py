@@ -2,58 +2,43 @@ import re
 
 # Information holds the opcode and argument lengths for every instruction
 information = {}
-information["movi"] =   ('10000000', 5, 16)
 information["mov"]  =   ('00000000', 5,  5)
 information["add"]  =   ('00000001', 5,  5)
+information["movi"] =   ('10000000', 5, 16)
 information["addi"] =   ('10000001', 5, 16)
-information["ladd"] =   ('00001001', 5,  5)
-information["ll"] =     ('00001001', 5,  19)
-information["ls"] =     ('00001001', 5,  19)
-information["beq"]  =   ('01000000', 24, 0)
-information["jmp"]  =   ('00100000', 24, 0)
-information["loop"] =   ('00010000', 19, 5)
 information["lw"]   =   ('10000100', 5, 16)
 information["sw"]   =   ('10000101', 5, 16)
+information["beq"]  =   ('01000000', 24, 0)
+information["ladd"] =   ('00010001', 5,  5)
+information["lload"] =  ('10010010', 5,  19)
+information["lstore"] = ('10010011', 5,  19)
+information["jmp"]  =   ('00100000', 24, 0)
 
 # Registers maps the english name for the register to the binary value representing the
 # register internally
 registers = {
-    "$spt" : bin(0)[2:].zfill(5),
-    "$ipt" : bin(1)[2:].zfill(5),
-    "$zer" : bin(2)[2:].zfill(5),
-    "$fpt" : bin(3)[2:].zfill(5),
-    "$ctr" : bin(4)[2:].zfill(5),
-    "$esr" : bin(5)[2:].zfill(5),
-    "$d00" : bin(6)[2:].zfill(5),
-    "$d0" : bin(6)[2:].zfill(5),
-    "$d1" : bin(7)[2:].zfill(5),
-    "$d2" : bin(8)[2:].zfill(5),
-    "$d3" : bin(9)[2:].zfill(5),
-    "$d4" : bin(10)[2:].zfill(5),
-    "$d5" : bin(11)[2:].zfill(5),
-    "$d6" : bin(12)[2:].zfill(5),
-    "$d7" : bin(13)[2:].zfill(5),
-    "$d8" : bin(14)[2:].zfill(5),
-    "$d9" : bin(15)[2:].zfill(5),
-    "$d10" : bin(16)[2:].zfill(5),
-    "$d11" : bin(17)[2:].zfill(5),
-    "$d12" : bin(18)[2:].zfill(5),
-    "$d13" : bin(19)[2:].zfill(5),
-    "$d14" : bin(20)[2:].zfill(5),
-    "$d15" : bin(21)[2:].zfill(5),
-    "$d16" : bin(22)[2:].zfill(5),
-    "$d17" : bin(23)[2:].zfill(5),
-    "$d18" : bin(24)[2:].zfill(5),
-    "$d19" : bin(25)[2:].zfill(5),
-    "$fra" : bin(26)[2:].zfill(5),
-    "$flg" : bin(27)[2:].zfill(5),
+    "$d0" : bin(0)[2:].zfill(5),
+    "$d1" : bin(1)[2:].zfill(5),
+    "$d2" : bin(2)[2:].zfill(5),
+    "$d3" : bin(3)[2:].zfill(5),
+    "$d4" : bin(4)[2:].zfill(5),
+    "$d5" : bin(5)[2:].zfill(5),
+    "$d6" : bin(6)[2:].zfill(5),
+    "$d7" : bin(7)[2:].zfill(5),
+    "$d8" : bin(8)[2:].zfill(5),
+    "$d9" : bin(9)[2:].zfill(5),
+    "$d10" : bin(10)[2:].zfill(5),
     # List Processor 128 bit argument registers, l is for list
-    "$l0" : bin(28)[2:].zfill(5),
-    "$l1" : bin(29)[2:].zfill(5),
+    "$l0" : bin(0)[2:].zfill(5),
+    "$l1" : bin(1)[2:].zfill(5),
+    "$l2" : bin(2)[2:].zfill(5),
+    "$l3" : bin(3)[2:].zfill(5),
+    "$l4" : bin(4)[2:].zfill(5),
+    "$l5" : bin(5)[2:].zfill(5),
+    "$l6" : bin(6)[2:].zfill(5),
+    "$l7" : bin(7)[2:].zfill(5),
     # List Processor 128 bit result register 
-    "$lr" : bin(30)[2:].zfill(5),
-    # Julia's register. Just in case.
-    "chinchilla" :  bin(31)[2:].zfill(5)   
+    "$lr" : bin(8)[2:].zfill(5) 
 }
 
 # Data will hold the name and information of all our variables
@@ -89,7 +74,7 @@ if lines[0] == ".data":
 # contains the lines to be written to the machine code file 
 hex_output = []
 
-total_chars = ((len(binary_tracker) // 32) + 1) * 32
+total_chars = (((len(binary_tracker) + 31) // 32)) * 32
 binary_tracker = binary_tracker.ljust(total_chars, '0')
 
 # This works - appends all the data to hex_output as nice hex strings in order
@@ -97,8 +82,23 @@ while binary_tracker != '':
     current = binary_tracker[:32]
     binary_tracker = binary_tracker[32:]
     to_add = hex(int(current, 2))[2:]
-    hex_output.append(to_add.ljust(8, '0'))
+    hex_output.append(to_add.zfill(8))
 
+# Now that we have the data all stored in hex output, write out to the dual_ram_init.coe file to initialize data memory
+
+ram_loc = "Working_MP3\\mips.srcs\\sources_1\dual_ram_init.coe"
+default = "memory_initialization_radix=16;\n"
+s2 = "memory_initialization_vector="
+
+with open(ram_loc, "w") as f:
+    f.write(default)
+    things = []
+    things.append(s2)
+    for hex_code in hex_output:
+        things.append(hex_code)
+    things.append(";")
+
+    f.write(" ".join(things))
 
 # Add the jump instruction at the start of our code
 def jump(offset_from_current):
@@ -106,8 +106,9 @@ def jump(offset_from_current):
     arg = bin(offset_from_current)[2:].zfill(24)
     return hex(int(opcode + arg, 2))[2:]
 
-tbj = jump(len(hex_output) + 1)
-hex_output.insert(0, tbj)
+#tbj = jump(len(hex_output) + 1)
+#hex_output.insert(0, tbj)
+hex_output = []
 
 # start assembling the code
 if lines[0] == '.code':

@@ -2,39 +2,22 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Fri Apr 26 15:19:53 2019
-# Process ID: 13744
-# Current directory: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12680 Z:\CS-401-1-CompArch\FinalProject\MP_1_Compiler\Working_MP3\mips.xpr
-# Log file: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/vivado.log
-# Journal file: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3\vivado.jou
+# Start of session at: Mon Apr 29 09:02:40 2019
+# Process ID: 10680
+# Current directory: C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5416 C:\Users\rrutherford20\Desktop\FinalProject\MP_1_Compiler\Working_MP3\mips.xpr
+# Log file: C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/vivado.log
+# Journal file: C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.xpr
-INFO: [Project 1-313] Project file moved from 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3' since last save.
+open_project C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.xpr
+INFO: [Project 1-313] Project file moved from 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
-open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 773.609 ; gain = 91.199
-reset_run dual_port_ram_synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dual_port_ram'...
-[Fri Apr 26 15:22:31 2019] Launched dual_port_ram_synth_1...
-Run output will be captured here: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/dual_port_ram_synth_1/runme.log
-[Fri Apr 26 15:22:31 2019] Launched synth_1...
-Run output will be captured here: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 8
-[Fri Apr 26 15:23:33 2019] Launched impl_1...
-Run output will be captured here: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -jobs 8
-[Fri Apr 26 15:29:06 2019] Launched synth_1...
-Run output will be captured here: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/synth_1/runme.log
-[Fri Apr 26 15:29:07 2019] Launched impl_1...
-Run output will be captured here: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/impl_1/runme.log
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 770.520 ; gain = 58.711
 open_run impl_1
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -48,15 +31,226 @@ INFO: [Project 1-853] Binary constraint restore complete.
 Reading XDEF placement.
 Reading placer database...
 Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1739.273 ; gain = 0.000
-Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1739.273 ; gain = 0.000
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1601.742 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1601.742 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-open_run: Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 1810.188 ; gain = 925.273
+open_run: Time (s): cpu = 00:00:26 ; elapsed = 00:00:23 . Memory (MB): peak = 1715.273 ; gain = 920.176
 WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
-report_utilization -name utilization_1
-report_utilization: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1815.293 ; gain = 0.000
+close_design
+reset_run dual_port_ram_synth_1
+launch_runs dual_port_ram_synth_1
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dual_port_ram'...
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dual_port_ram, cache-ID = 6cfbda8ac1147737; cache size = 0.364 MB.
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram.xci' is already up-to-date
+[Mon Apr 29 09:04:37 2019] Launched dual_port_ram_synth_1...
+Run output will be captured here: C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/dual_port_ram_synth_1/runme.log
+wait_on_run dual_port_ram_synth_1
+[Mon Apr 29 09:04:38 2019] Waiting for dual_port_ram_synth_1 to finish...
+[Mon Apr 29 09:04:43 2019] Waiting for dual_port_ram_synth_1 to finish...
+[Mon Apr 29 09:04:48 2019] Waiting for dual_port_ram_synth_1 to finish...
+
+*** Running vivado
+    with args -log dual_port_ram.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dual_port_ram.tcl
+
+
+****** Vivado v2018.2.1 (64-bit)
+  **** SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+  **** IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source dual_port_ram.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP dual_port_ram, cache-ID = 6cfbda8ac1147737.
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 29 09:04:47 2019...
+[Mon Apr 29 09:04:48 2019] dual_port_ram_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1734.277 ; gain = 0.000
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: computer_top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1734.277 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'computer_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+INFO: [Synth 8-3491] module 'mips_top' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:17' bound to instance 'mips1' of component 'mips_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'mips_top' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mips' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:14' bound to instance 'mips1' of component 'mips' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'mips' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'controller' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:5' bound to instance 'cont' of component 'controller' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'controller' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
+INFO: [Synth 8-3491] module 'maindec' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:5' bound to instance 'md' of component 'maindec' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'maindec' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'maindec' (1#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:15]
+INFO: [Synth 8-3491] module 'aludec' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:4' bound to instance 'ad' of component 'aludec' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'aludec' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'aludec' (2#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:10]
+WARNING: [Synth 8-3848] Net regdst in module/entity controller does not have driver. [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'controller' (3#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'datapath' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:6' bound to instance 'dp' of component 'datapath' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'datapath' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'flopr' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:5' bound to instance 'pcreg' of component 'flopr' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'flopr' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr' (4#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd1' of component 'adder' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'adder' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adder' (5#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'sl2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:7' bound to instance 'immsh' of component 'sl2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'sl2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sl2' (6#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd2' of component 'adder' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:104]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcbrmux' of component 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (7#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcmux' of component 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:106]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'bit_reg' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:25' bound to instance 'zreg' of component 'bit_reg' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'bit_reg' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bit_reg' (8#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'regfile' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:11' bound to instance 'rf' of component 'regfile' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'regfile' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'regfile' (9#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'resmux' of component 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:117]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'signext' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:5' bound to instance 'se' of component 'signext' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'signext' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'signext' (10#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'srcbmux' of component 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:124]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'mov_mux' of component 'mux2' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:127]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mips_alu' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:8' bound to instance 'mainalu' of component 'mips_alu' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'mips_alu' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mips_alu' (11#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (12#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'mips' (13#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'imem' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:10' bound to instance 'imem1' of component 'imem' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'imem' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'imem' (14#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
+INFO: [Synth 8-3491] module 'dmem' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:11' bound to instance 'dmem1' of component 'dmem' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'dmem' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:22]
+INFO: [Synth 8-3491] module 'dual_port_ram' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/.Xil/Vivado-10680-LAB-SCI-214-16/realtime/dual_port_ram_stub.vhdl:5' bound to instance 'MULTI_PORT_REG' of component 'dual_port_ram' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'dual_port_ram' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/.Xil/Vivado-10680-LAB-SCI-214-16/realtime/dual_port_ram_stub.vhdl:23]
+INFO: [Synth 8-256] done synthesizing module 'dmem' (15#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:22]
+INFO: [Synth 8-3491] module 'ListProc' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:9' bound to instance 'listProcessor' of component 'listProc' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'ListProc' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:23]
+WARNING: [Synth 8-614] signal 'regOutArray' is read in the process but is not in the sensitivity list [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:60]
+WARNING: [Synth 8-614] signal 'resultRegNdx' is read in the process but is not in the sensitivity list [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:67]
+WARNING: [Synth 8-614] signal 'intOpA' is read in the process but is not in the sensitivity list [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:67]
+WARNING: [Synth 8-614] signal 'regWrite' is read in the process but is not in the sensitivity list [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:67]
+	Parameter N bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'bit128_reg' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'results' of component 'bit128_reg' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'bit128_reg' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:14]
+	Parameter N bound to: 128 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bit128_reg' (16#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:14]
+	Parameter N bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'bit128_reg' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regA' of component 'bit128_reg' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:124]
+	Parameter N bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'bit128_reg' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regB' of component 'bit128_reg' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:133]
+INFO: [Synth 8-3491] module 'alu_block' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:6' bound to instance 'alus' of component 'alu_block' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:142]
+INFO: [Synth 8-638] synthesizing module 'alu_block' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:15]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'list_alu' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu0' of component 'list_alu' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'list_alu' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:36]
+	Parameter N bound to: 32 - type: integer 
+WARNING: [Synth 8-614] signal 'A' is read in the process but is not in the sensitivity list [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:38]
+WARNING: [Synth 8-614] signal 'B' is read in the process but is not in the sensitivity list [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'list_alu' (17#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:36]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'list_alu' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu1' of component 'list_alu' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:56]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'list_alu' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu2' of component 'list_alu' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:64]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'list_alu' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu3' of component 'list_alu' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'alu_block' (18#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'ListProc' (19#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'mips_top' (20#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+INFO: [Synth 8-3491] module 'display_hex' declared at 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:5' bound to instance 'display' of component 'display_hex' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'display_hex' [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:17]
+WARNING: [Synth 8-614] signal 'x' is read in the process but is not in the sensitivity list [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'display_hex' (21#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'computer_top' (22#1) [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[31]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[31]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[29]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[28]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[27]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[26]
+WARNING: [Synth 8-3331] design aludec has unconnected port funct[5]
+WARNING: [Synth 8-3331] design aludec has unconnected port funct[4]
+WARNING: [Synth 8-3331] design aludec has unconnected port funct[3]
+WARNING: [Synth 8-3331] design aludec has unconnected port funct[2]
+WARNING: [Synth 8-3331] design aludec has unconnected port funct[1]
+WARNING: [Synth 8-3331] design aludec has unconnected port funct[0]
+WARNING: [Synth 8-3331] design aludec has unconnected port aluop[1]
+WARNING: [Synth 8-3331] design aludec has unconnected port aluop[0]
+WARNING: [Synth 8-3331] design controller has unconnected port regdst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1734.277 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1734.277 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1734.277 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram.dcp' for cell 'mips1/dmem1/MULTI_PORT_REG'
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1788.805 ; gain = 54.527
+85 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1789.781 ; gain = 55.504
 exit
-INFO: [Common 17-206] Exiting Vivado at Fri Apr 26 15:36:25 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 29 10:01:05 2019...
