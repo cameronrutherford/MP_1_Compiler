@@ -11,134 +11,137 @@
 source computer_top.tcl -notrace
 Command: synth_design -top computer_top -part xc7a100tcsg324-1
 Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram.xci
+
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 816 
+INFO: Helper process launched with PID 19784 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 386.199 ; gain = 98.555
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 386.352 ; gain = 99.031
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'computer_top' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
-INFO: [Synth 8-3491] module 'mips_top' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:17' bound to instance 'mips1' of component 'mips_top' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:65]
-INFO: [Synth 8-638] synthesizing module 'mips_top' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'computer_top' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+INFO: [Synth 8-3491] module 'mips_top' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:17' bound to instance 'mips1' of component 'mips_top' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'mips_top' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mips' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:14' bound to instance 'mips1' of component 'mips' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:86]
-INFO: [Synth 8-638] synthesizing module 'mips' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+INFO: [Synth 8-3491] module 'mips' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:14' bound to instance 'mips1' of component 'mips' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'mips' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'controller' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:5' bound to instance 'cont' of component 'controller' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:62]
-INFO: [Synth 8-638] synthesizing module 'controller' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
-INFO: [Synth 8-3491] module 'maindec' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:5' bound to instance 'md' of component 'maindec' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:35]
-INFO: [Synth 8-638] synthesizing module 'maindec' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:15]
-INFO: [Synth 8-256] done synthesizing module 'maindec' (1#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:15]
-INFO: [Synth 8-3491] module 'aludec' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:4' bound to instance 'ad' of component 'aludec' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:37]
-INFO: [Synth 8-638] synthesizing module 'aludec' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:10]
-INFO: [Synth 8-256] done synthesizing module 'aludec' (2#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:10]
-WARNING: [Synth 8-3848] Net regdst in module/entity controller does not have driver. [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:12]
-INFO: [Synth 8-256] done synthesizing module 'controller' (3#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
+INFO: [Synth 8-3491] module 'controller' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:5' bound to instance 'cont' of component 'controller' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'controller' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
+INFO: [Synth 8-3491] module 'maindec' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:5' bound to instance 'md' of component 'maindec' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'maindec' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'maindec' (1#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:15]
+INFO: [Synth 8-3491] module 'aludec' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:4' bound to instance 'ad' of component 'aludec' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'aludec' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'aludec' (2#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:10]
+WARNING: [Synth 8-3848] Net regdst in module/entity controller does not have driver. [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'controller' (3#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'datapath' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:6' bound to instance 'dp' of component 'datapath' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:68]
-INFO: [Synth 8-638] synthesizing module 'datapath' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
+INFO: [Synth 8-3491] module 'datapath' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:6' bound to instance 'dp' of component 'datapath' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'datapath' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
 	Parameter width bound to: 32 - type: integer 
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'flopr' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:5' bound to instance 'pcreg' of component 'flopr' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:101]
-INFO: [Synth 8-638] synthesizing module 'flopr' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
+INFO: [Synth 8-3491] module 'flopr' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:5' bound to instance 'pcreg' of component 'flopr' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'flopr' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'flopr' (4#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'flopr' (4#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'adder' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd1' of component 'adder' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-INFO: [Synth 8-638] synthesizing module 'adder' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
+INFO: [Synth 8-3491] module 'adder' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd1' of component 'adder' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'adder' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'adder' (5#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'adder' (5#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'sl2' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:7' bound to instance 'immsh' of component 'sl2' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:103]
-INFO: [Synth 8-638] synthesizing module 'sl2' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:13]
+INFO: [Synth 8-3491] module 'sl2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:7' bound to instance 'immsh' of component 'sl2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'sl2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:13]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'sl2' (6#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'sl2' (6#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:13]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'adder' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd2' of component 'adder' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:104]
+INFO: [Synth 8-3491] module 'adder' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd2' of component 'adder' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:104]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcbrmux' of component 'mux2' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:105]
-INFO: [Synth 8-638] synthesizing module 'mux2' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcbrmux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'mux2' (7#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mux2' (7#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcmux' of component 'mux2' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:106]
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcmux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:106]
 	Parameter N bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'bit_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:25' bound to instance 'zreg' of component 'bit_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:107]
-INFO: [Synth 8-638] synthesizing module 'bit_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
+INFO: [Synth 8-3491] module 'bit_reg' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:25' bound to instance 'zreg' of component 'bit_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'bit_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
 	Parameter N bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'bit_reg' (8#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'bit_reg' (8#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'regfile' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:11' bound to instance 'rf' of component 'regfile' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:110]
-INFO: [Synth 8-638] synthesizing module 'regfile' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
+INFO: [Synth 8-3491] module 'regfile' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:11' bound to instance 'rf' of component 'regfile' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'regfile' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'regfile' (9#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (9#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'resmux' of component 'mux2' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:117]
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'resmux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:117]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'signext' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:5' bound to instance 'se' of component 'signext' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:121]
-INFO: [Synth 8-638] synthesizing module 'signext' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
+INFO: [Synth 8-3491] module 'signext' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:5' bound to instance 'se' of component 'signext' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'signext' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'signext' (10#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'signext' (10#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'srcbmux' of component 'mux2' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:124]
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'srcbmux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:124]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'mov_mux' of component 'mux2' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:127]
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'mov_mux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:127]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mips_alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:8' bound to instance 'mainalu' of component 'mips_alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:130]
-INFO: [Synth 8-638] synthesizing module 'mips_alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
+INFO: [Synth 8-3491] module 'mips_alu' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:8' bound to instance 'mainalu' of component 'mips_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'mips_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'mips_alu' (11#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'datapath' (12#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'mips' (13#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'mips_alu' (11#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (12#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'mips' (13#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'imem' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:10' bound to instance 'imem1' of component 'imem' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:89]
-INFO: [Synth 8-638] synthesizing module 'imem' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
+INFO: [Synth 8-3491] module 'imem' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:10' bound to instance 'imem1' of component 'imem' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'imem' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'imem' (14#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
-INFO: [Synth 8-3491] module 'dmem' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:11' bound to instance 'dmem1' of component 'dmem' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:90]
-INFO: [Synth 8-638] synthesizing module 'dmem' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:22]
-INFO: [Synth 8-3491] module 'dual_port_ram' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/synth_1/.Xil/Vivado-5300-LAB-SCI-214-20/realtime/dual_port_ram_stub.vhdl:5' bound to instance 'MULTI_PORT_REG' of component 'dual_port_ram' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:43]
-INFO: [Synth 8-638] synthesizing module 'dual_port_ram' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/synth_1/.Xil/Vivado-5300-LAB-SCI-214-20/realtime/dual_port_ram_stub.vhdl:23]
-INFO: [Synth 8-256] done synthesizing module 'dmem' (15#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:22]
-INFO: [Synth 8-3491] module 'ListProc' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:9' bound to instance 'listProcessor' of component 'listProc' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:94]
-INFO: [Synth 8-638] synthesizing module 'ListProc' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:23]
-WARNING: [Synth 8-614] signal 'regOutArray' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:60]
-WARNING: [Synth 8-614] signal 'resultRegNdx' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:67]
-WARNING: [Synth 8-614] signal 'intOpA' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:67]
-WARNING: [Synth 8-614] signal 'regWrite' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'imem' (14#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
+INFO: [Synth 8-3491] module 'dmem' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:11' bound to instance 'dmem1' of component 'dmem' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'dmem' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:22]
+INFO: [Synth 8-3491] module 'dual_port_ram' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/synth_1/.Xil/Vivado-17120-LAB-SCI-214-20/realtime/dual_port_ram_stub.vhdl:5' bound to instance 'MULTI_PORT_REG' of component 'dual_port_ram' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'dual_port_ram' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/synth_1/.Xil/Vivado-17120-LAB-SCI-214-20/realtime/dual_port_ram_stub.vhdl:23]
+INFO: [Synth 8-256] done synthesizing module 'dmem' (15#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:22]
+INFO: [Synth 8-3491] module 'ListProc' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:9' bound to instance 'listProcessor' of component 'listProc' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'ListProc' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:23]
+WARNING: [Synth 8-614] signal 'regOutArray' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:60]
+WARNING: [Synth 8-614] signal 'resultRegNdx' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:67]
+WARNING: [Synth 8-614] signal 'intOpA' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:67]
+WARNING: [Synth 8-614] signal 'regWrite' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:67]
 	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'results' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:115]
-INFO: [Synth 8-638] synthesizing module 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:14]
+INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'results' of component 'bit128_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'bit128_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:14]
 	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'bit128_reg' (16#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'bit128_reg' (16#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:14]
 	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regA' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:124]
+INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regA' of component 'bit128_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:124]
 	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regB' of component 'bit128_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:133]
-INFO: [Synth 8-3491] module 'alu_block' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:6' bound to instance 'alus' of component 'alu_block' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:142]
-INFO: [Synth 8-638] synthesizing module 'alu_block' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:15]
+INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regB' of component 'bit128_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:133]
+INFO: [Synth 8-3491] module 'alu_block' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:6' bound to instance 'alus' of component 'alu_block' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:142]
+INFO: [Synth 8-638] synthesizing module 'alu_block' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:15]
 	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu0' of component 'list_alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:48]
-INFO: [Synth 8-638] synthesizing module 'list_alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:36]
+INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu0' of component 'list_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'list_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:36]
 	Parameter N bound to: 32 - type: integer 
-WARNING: [Synth 8-614] signal 'A' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:38]
-WARNING: [Synth 8-614] signal 'B' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:38]
-INFO: [Synth 8-256] done synthesizing module 'list_alu' (17#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:36]
+WARNING: [Synth 8-614] signal 'A' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:38]
+WARNING: [Synth 8-614] signal 'B' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'list_alu' (17#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:36]
 	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu1' of component 'list_alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:56]
+INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu1' of component 'list_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:56]
 	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu2' of component 'list_alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:64]
+INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu2' of component 'list_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:64]
 	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu3' of component 'list_alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:72]
-INFO: [Synth 8-256] done synthesizing module 'alu_block' (18#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:15]
-INFO: [Synth 8-256] done synthesizing module 'ListProc' (19#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:23]
-INFO: [Synth 8-256] done synthesizing module 'mips_top' (20#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
-INFO: [Synth 8-3491] module 'display_hex' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:5' bound to instance 'display' of component 'display_hex' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:67]
-INFO: [Synth 8-638] synthesizing module 'display_hex' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:17]
-WARNING: [Synth 8-614] signal 'x' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:35]
-INFO: [Synth 8-256] done synthesizing module 'display_hex' (21#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:17]
-INFO: [Synth 8-256] done synthesizing module 'computer_top' (22#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu3' of component 'list_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'alu_block' (18#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'ListProc' (19#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'mips_top' (20#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+INFO: [Synth 8-3491] module 'display_hex' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:5' bound to instance 'display' of component 'display_hex' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'display_hex' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:17]
+WARNING: [Synth 8-614] signal 'x' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'display_hex' (21#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'computer_top' (22#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
 WARNING: [Synth 8-3331] design sl2 has unconnected port a[31]
 WARNING: [Synth 8-3331] design sl2 has unconnected port a[30]
 WARNING: [Synth 8-3331] design datapath has unconnected port instr[31]
@@ -157,7 +160,7 @@ WARNING: [Synth 8-3331] design aludec has unconnected port aluop[1]
 WARNING: [Synth 8-3331] design aludec has unconnected port aluop[0]
 WARNING: [Synth 8-3331] design controller has unconnected port regdst
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 442.262 ; gain = 154.617
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 441.969 ; gain = 154.648
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -170,53 +173,53 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 442.262 ; gain = 154.617
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 441.969 ; gain = 154.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 442.262 ; gain = 154.617
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 441.969 ; gain = 154.648
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram/dual_port_ram_in_context.xdc] for cell 'mips1/dmem1/MULTI_PORT_REG'
-Finished Parsing XDC File [z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram/dual_port_ram_in_context.xdc] for cell 'mips1/dmem1/MULTI_PORT_REG'
-Parsing XDC File [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
-Finished Parsing XDC File [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/computer_top_propImpl.xdc].
+Parsing XDC File [z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram/dual_port_ram_in_context.xdc] for cell 'mips1/dmem1/MULTI_PORT_REG'
+Finished Parsing XDC File [z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram/dual_port_ram_in_context.xdc] for cell 'mips1/dmem1/MULTI_PORT_REG'
+Parsing XDC File [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/computer_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/computer_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 788.996 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 788.617 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 788.996 ; gain = 501.352
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 788.617 ; gain = 501.297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 788.996 ; gain = 501.352
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 788.617 ; gain = 501.297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for mips1/dmem1/MULTI_PORT_REG. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 788.996 ; gain = 501.352
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 788.617 ; gain = 501.297
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "mem" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:40]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:40]
 INFO: [Synth 8-5546] ROM "v_regWrite" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "internalMemWrite" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-327] inferring latch for variable 'internalMemWrite_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:77]
-WARNING: [Synth 8-327] inferring latch for variable 'v_regWrite_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:75]
+WARNING: [Synth 8-327] inferring latch for variable 'internalMemWrite_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'v_regWrite_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:75]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 788.996 ; gain = 501.352
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 788.617 ; gain = 501.297
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -335,8 +338,108 @@ Warning: Parallel synthesis criteria is not met
 INFO: [Synth 8-5546] ROM "internalMemWrite" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "v_regWrite" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-3917] design computer_top has port DP driven by constant 1
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips1/listProcessor/v_regWrite_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips1/listProcessor/internalMemWrite_reg )
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/v_regWrite_reg[1]' (LD) to 'mips1/listProcessor/v_regWrite_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips1/listProcessor/v_regWrite_reg[0] )
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[0]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[1]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[2]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[3]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[4]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[5]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[6]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[7]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[8]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[8]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[9]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[10]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[11]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[12]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[12]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[13]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[14]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[14]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[15]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[16]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[17]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[18]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[18]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[19]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[19]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[20]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[20]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[21]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[21]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[22]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[23]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[23]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[24]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[24]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[25]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[26]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[26]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[27]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[27]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[28]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[28]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[29]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[30]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[31]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[32]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[32]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[33]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[33]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[34]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[34]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[35]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[35]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[36]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[36]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[37]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[37]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[38]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[38]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[39]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[39]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[40]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[40]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[41]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[41]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[42]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[42]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[43]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[43]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[44]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[44]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[45]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[45]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[46]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[46]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[47]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[47]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[48]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[48]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[49]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[49]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[50]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[50]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[51]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[51]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[52]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[52]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[53]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[53]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[54]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[54]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[55]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[55]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[56]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[56]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[57]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[57]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[58]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[58]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[59]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[59]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[60]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[60]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[61]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[61]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[62]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[62]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[63]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[64]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[64]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[65]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[65]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[66]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[66]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[67]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[67]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[68]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[68]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[69]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[69]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[70]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[70]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[71]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[71]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[72]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[72]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[73]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[73]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[74]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[74]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[75]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[75]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[76]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[76]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[77]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[77]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[78]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[78]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[79]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[79]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[80]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[80]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[81]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[81]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[82]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[82]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[83]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[83]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[84]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[84]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[85]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[85]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[86]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[86]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[87]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[87]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[88]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[88]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[89]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[89]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[90]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[90]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[91]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[91]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[92]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[92]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[93]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[93]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[94]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[94]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[95]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[95]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[96]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[96]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[97]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[97]'
+INFO: [Synth 8-3886] merging instance 'mips1/listProcessor/regB/data_out_reg[98]' (FDCE) to 'mips1/listProcessor/regA/data_out_reg[98]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/zreg/data_out_reg[0]) is unused and will be removed from module computer_top.
 WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[31]) is unused and will be removed from module computer_top.
 WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[30]) is unused and will be removed from module computer_top.
@@ -363,83 +466,83 @@ WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[10]) is u
 WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[9]) is unused and will be removed from module computer_top.
 WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[8]) is unused and will be removed from module computer_top.
 WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[0]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/internalMemWrite_reg) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/v_regWrite_reg[1]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[127]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[126]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[125]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[124]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[123]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[122]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[121]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[120]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[119]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[118]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[117]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[116]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[115]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[114]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[113]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[112]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[111]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[110]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[109]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[108]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[107]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[106]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[105]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[104]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[103]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[102]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[101]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[100]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[99]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[98]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[97]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[96]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[95]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[94]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[93]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[92]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[91]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[90]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[89]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[88]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[87]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[86]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[85]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[84]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[83]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[82]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[81]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[80]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[79]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[78]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[77]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[76]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[75]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[74]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[73]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[72]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[71]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[70]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[69]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[68]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[67]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[66]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[65]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[64]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[63]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[62]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[61]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[60]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[59]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[58]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[57]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/regB/data_out_reg[56]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/v_regWrite_reg[2]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/v_regWrite_reg[0]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[127]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[126]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[125]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[124]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[123]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[122]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[121]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[120]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[119]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[118]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[117]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[116]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[115]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[114]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[113]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[112]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[111]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[110]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[109]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[108]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[107]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[106]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[105]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[104]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[103]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[102]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[101]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[100]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[99]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[98]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[97]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[96]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[95]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[94]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[93]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[92]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[91]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[90]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[89]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[88]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[87]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[86]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[85]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[84]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[83]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[82]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[81]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[80]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[79]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[78]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[77]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[76]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[75]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[74]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[73]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[72]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[71]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[70]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[69]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[68]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[67]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[66]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[65]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[64]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[63]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[62]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[61]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[60]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[59]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[58]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[57]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/listProcessor/results/data_out_reg[56]) is unused and will be removed from module computer_top.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 788.996 ; gain = 501.352
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 788.617 ; gain = 501.297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -466,13 +569,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 788.996 ; gain = 501.352
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 788.617 ; gain = 501.297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 788.996 ; gain = 501.352
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 788.617 ; gain = 501.297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -498,7 +601,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 799.746 ; gain = 512.102
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 794.090 ; gain = 506.770
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -522,7 +625,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 799.746 ; gain = 512.102
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 794.090 ; gain = 506.770
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -535,7 +638,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 799.746 ; gain = 512.102
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 794.090 ; gain = 506.770
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -547,25 +650,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 799.746 ; gain = 512.102
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 794.090 ; gain = 506.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 799.746 ; gain = 512.102
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 794.090 ; gain = 506.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 799.746 ; gain = 512.102
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 794.090 ; gain = 506.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 799.746 ; gain = 512.102
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 794.090 ; gain = 506.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -584,66 +687,56 @@ Report Cell Usage:
 +------+---------------------+------+
 |1     |dual_port_ram_bbox_0 |     1|
 |2     |BUFG                 |     2|
-|3     |CARRY4               |    51|
+|3     |CARRY4               |    19|
 |4     |LUT1                 |     2|
-|5     |LUT2                 |   162|
-|6     |LUT3                 |     7|
-|7     |LUT4                 |   146|
-|8     |LUT5                 |    10|
-|9     |LUT6                 |    92|
+|5     |LUT2                 |    53|
+|6     |LUT3                 |     6|
+|7     |LUT4                 |    11|
+|8     |LUT5                 |    24|
+|9     |LUT6                 |    72|
 |10    |RAM32X1D             |    32|
 |11    |FDCE                 |     7|
-|12    |FDRE                 |   284|
-|13    |LD                   |     2|
-|14    |IBUF                 |     2|
-|15    |OBUF                 |    20|
+|12    |FDRE                 |    28|
+|13    |IBUF                 |     2|
+|14    |OBUF                 |    20|
 +------+---------------------+------+
 
 Report Instance Areas: 
-+------+------------------+-------------+------+
-|      |Instance          |Module       |Cells |
-+------+------------------+-------------+------+
-|1     |top               |             |   979|
-|2     |  display         |display_hex  |    44|
-|3     |  mips1           |mips_top     |   911|
-|4     |    dmem1         |dmem         |   160|
-|5     |    listProcessor |ListProc     |   422|
-|6     |      alus        |alu_block    |    32|
-|7     |        alu0      |list_alu     |     8|
-|8     |        alu1      |list_alu_1   |     8|
-|9     |        alu2      |list_alu_2   |     8|
-|10    |        alu3      |list_alu_3   |     8|
-|11    |      regA        |bit128_reg   |   260|
-|12    |      results     |bit128_reg_0 |   128|
-|13    |    mips1         |mips         |   329|
-|14    |      dp          |datapath     |   329|
-|15    |        mainalu   |mips_alu     |     8|
-|16    |        pcadd1    |adder        |     5|
-|17    |        pcreg     |flopr        |   252|
-|18    |        rf        |regfile      |    64|
-+------+------------------+-------------+------+
++------+----------------+------------+------+
+|      |Instance        |Module      |Cells |
++------+----------------+------------+------+
+|1     |top             |            |   438|
+|2     |  display       |display_hex |    45|
+|3     |  mips1         |mips_top    |   369|
+|4     |    dmem1       |dmem        |   160|
+|5     |    mips1       |mips        |   209|
+|6     |      dp        |datapath    |   209|
+|7     |        mainalu |mips_alu    |     8|
+|8     |        pcadd1  |adder       |     6|
+|9     |        pcreg   |flopr       |   112|
+|10    |        rf      |regfile     |    83|
++------+----------------+------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 799.746 ; gain = 512.102
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 794.090 ; gain = 506.770
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 159 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 799.746 ; gain = 165.367
-Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 799.746 ; gain = 512.102
+Synthesis finished with 0 errors, 0 critical warnings and 287 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 794.090 ; gain = 160.121
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 794.090 ; gain = 506.770
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 87 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 53 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 34 instances were transformed.
-  LD => LDCE: 2 instances
+  A total of 32 instances were transformed.
   RAM32X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-98 Infos, 128 Warnings, 0 Critical Warnings and 0 Errors encountered.
+198 Infos, 129 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 812.668 ; gain = 536.492
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 805.945 ; gain = 530.094
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/synth_1/computer_top.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/synth_1/computer_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file computer_top_utilization_synth.rpt -pb computer_top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 812.668 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Apr 26 15:29:53 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 805.945 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 30 11:40:56 2019...

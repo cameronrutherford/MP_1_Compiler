@@ -51,7 +51,7 @@ architecture behave of imem is
           severity error;
         end if;
       end loop;
-
+    -- ok
       -- set the width bit binary value in ram
       RAM(index) := std_logic_vector(result);
       index := index + 1;
