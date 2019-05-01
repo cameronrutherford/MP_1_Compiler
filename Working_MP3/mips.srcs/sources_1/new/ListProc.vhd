@@ -60,7 +60,7 @@ begin
 -- may need a process to synchronize the alu outputs into chinchilla before passing it to the result register    
     process(opA,  opB)
     begin
-        if opcode(3) = '0' then
+        if opcode(4) = '0' then
             operandA <= (others => '0');
             operandB <= (others => '0');
         else

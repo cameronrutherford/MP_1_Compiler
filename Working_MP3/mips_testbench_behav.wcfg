@@ -11,14 +11,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="132800001fs"></ZoomEndTime>
-      <Cursor1Time time="80000000fs"></Cursor1Time>
+      <ZoomEndTime time="98800001fs"></ZoomEndTime>
+      <Cursor1Time time="47200000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="138"></ValueColumnWidth>
+      <ValueColumnWidth column_width="134"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="15" />
+   <WVObjectSize size="16" />
    <wvobject fp_name="/mips_testbench/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -42,7 +42,6 @@
    <wvobject fp_name="/mips_testbench/dut/listProcessor/opcode" type="array">
       <obj_property name="ElementShortName">opcode[7:0]</obj_property>
       <obj_property name="ObjectShortName">opcode[7:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject fp_name="/mips_testbench/dut/mips1/dp/mainalu/result" type="array">
       <obj_property name="ElementShortName">result[31:0]</obj_property>
@@ -79,5 +78,9 @@
    <wvobject fp_name="/mips_testbench/dut/listProcessor/regOutArray" type="array">
       <obj_property name="ElementShortName">regOutArray[0:1][127:0]</obj_property>
       <obj_property name="ObjectShortName">regOutArray[0:1][127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/mips1/pc" type="array">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
    </wvobject>
 </wave_config>
