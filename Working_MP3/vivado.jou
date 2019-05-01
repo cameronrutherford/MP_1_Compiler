@@ -2,57 +2,104 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Tue Apr 30 11:25:48 2019
-# Process ID: 12504
+# Start of session at: Wed May  1 09:47:12 2019
+# Process ID: 8524
 # Current directory: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9424 Z:\rrutherford20\CS-401-1-CompArch\CompArchFinal\Working_MP3\mips.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10900 Z:\rrutherford20\CS-401-1-CompArch\CompArchFinal\Working_MP3\mips.xpr
 # Log file: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/vivado.log
 # Journal file: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.xpr
-reset_run synth_1
+launch_simulation
+source mips_testbench.tcl
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run all
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+save_wave_config {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips_testbench_behav.wcfg}
+add_files -fileset sim_1 -norecurse Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips_testbench_behav.wcfg
+set_property xsim.view Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips_testbench_behav.wcfg [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips_testbench_behav.wcfg
+source mips_testbench.tcl
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
 reset_run dual_port_ram_synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
-current_hw_device [get_hw_devices xc7a100t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-close_hw
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
-current_hw_device [get_hw_devices xc7a100t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+launch_runs dual_port_ram_synth_1
+wait_on_run dual_port_ram_synth_1
+synth_design -rtl -name rtl_1
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+add_bp {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd} 71
+remove_bps -file {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd} -line 71
+add_bp {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd} 71
+restart
+run 10 ns
+step
+run 10 ns
+run 10 ns
+run 10 ns
+remove_bps -file {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd} -line 71
+run 10 ns
+run 10 ns
+run 10 ns
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+save_wave_config {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips_testbench_behav.wcfg}
+close_sim

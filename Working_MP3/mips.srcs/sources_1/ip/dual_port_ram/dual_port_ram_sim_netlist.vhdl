@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
--- Date        : Tue Apr 30 11:28:22 2019
+-- Date        : Tue Apr 30 11:28:21 2019
 -- Host        : LAB-SCI-214-20 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top dual_port_ram -prefix
+--               dual_port_ram_ dual_port_ram_sim_netlist.vhdl
 -- Design      : dual_port_ram
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -28,8 +28,6 @@ entity dual_port_ram_blk_mem_gen_prim_wrapper_init is
     wea : in STD_LOGIC_VECTOR ( 0 to 0 );
     web : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dual_port_ram_blk_mem_gen_prim_wrapper_init : entity is "blk_mem_gen_prim_wrapper_init";
 end dual_port_ram_blk_mem_gen_prim_wrapper_init;
 
 architecture STRUCTURE of dual_port_ram_blk_mem_gen_prim_wrapper_init is
@@ -1159,8 +1157,6 @@ entity dual_port_ram_blk_mem_gen_prim_width is
     wea : in STD_LOGIC_VECTOR ( 0 to 0 );
     web : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dual_port_ram_blk_mem_gen_prim_width : entity is "blk_mem_gen_prim_width";
 end dual_port_ram_blk_mem_gen_prim_width;
 
 architecture STRUCTURE of dual_port_ram_blk_mem_gen_prim_width is
@@ -1315,8 +1311,6 @@ entity dual_port_ram_blk_mem_gen_generic_cstr is
     wea : in STD_LOGIC_VECTOR ( 0 to 0 );
     web : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dual_port_ram_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_generic_cstr";
 end dual_port_ram_blk_mem_gen_generic_cstr;
 
 architecture STRUCTURE of dual_port_ram_blk_mem_gen_generic_cstr is
@@ -1420,8 +1414,6 @@ entity dual_port_ram_blk_mem_gen_top is
     wea : in STD_LOGIC_VECTOR ( 0 to 0 );
     web : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dual_port_ram_blk_mem_gen_top : entity is "blk_mem_gen_top";
 end dual_port_ram_blk_mem_gen_top;
 
 architecture STRUCTURE of dual_port_ram_blk_mem_gen_top is
@@ -1459,8 +1451,6 @@ entity dual_port_ram_blk_mem_gen_v8_4_1_synth is
     wea : in STD_LOGIC_VECTOR ( 0 to 0 );
     web : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dual_port_ram_blk_mem_gen_v8_4_1_synth : entity is "blk_mem_gen_v8_4_1_synth";
 end dual_port_ram_blk_mem_gen_v8_4_1_synth;
 
 architecture STRUCTURE of dual_port_ram_blk_mem_gen_v8_4_1_synth is
@@ -1696,8 +1686,6 @@ entity dual_port_ram_blk_mem_gen_v8_4_1 is
   attribute C_WRITE_WIDTH_B of dual_port_ram_blk_mem_gen_v8_4_1 : entity is 128;
   attribute C_XDEVICEFAMILY : string;
   attribute C_XDEVICEFAMILY of dual_port_ram_blk_mem_gen_v8_4_1 : entity is "artix7";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dual_port_ram_blk_mem_gen_v8_4_1 : entity is "blk_mem_gen_v8_4_1";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of dual_port_ram_blk_mem_gen_v8_4_1 : entity is "yes";
 end dual_port_ram_blk_mem_gen_v8_4_1;

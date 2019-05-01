@@ -1,2 +1,25 @@
 Vivado Simulator 2018.2
 Time resolution is 1 ps
+ERROR: Index 8 out of bound 0 to 1
+Time: 80 ns  Iteration: 3  Process: /mips_testbench/dut/listProcessor/line__61
+  File: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd
+
+HDL Line: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:72
+ERROR: Index 8 out of bound 0 to 1
+Time: 80 ns  Iteration: 3  Process: /mips_testbench/dut/listProcessor/line__61
+  File: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd
+
+HDL Line: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:72
+ERROR: Index 8 out of bound 0 to 1
+Time: 80 ns  Iteration: 3  Process: /mips_testbench/dut/listProcessor/line__61
+  File: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd
+
+HDL Line: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:72
+Stopped at time : 0 fs : File "Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd" Line 71
+Stopped at time : 0 fs : File "Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd" Line 72
+Stopped at time : 0 fs : File "Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd" Line 71
+ERROR: Index 8 out of bound 0 to 1
+Time: 80 ns  Iteration: 3  Process: /mips_testbench/dut/listProcessor/line__61
+  File: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd
+
+HDL Line: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:72

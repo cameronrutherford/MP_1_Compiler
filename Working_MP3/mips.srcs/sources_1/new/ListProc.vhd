@@ -54,14 +54,23 @@ signal decoded_opcode : std_logic_vector (3 downto 0);
 signal resultRegNdx : integer := 2;
 signal writeResult : std_logic;
 signal internalMemWrite : std_logic;
+signal operandA, operandB : STD_LOGIC_VECTOR(4 downto 0);
 
 begin
 -- may need a process to synchronize the alu outputs into chinchilla before passing it to the result register    
     process(opA,  opB)
     begin
+        if opcode(3) = '0' then
+            operandA <= (others => '0');
+            operandB <= (others => '0');
+        else
+            operandA <= opA;
+            operandB <= opB;
+        end if;
+        
         intOpA <= to_integer(signed( opA ));
-        A <= regOutArray(to_integer(signed( opA )))(127 downto 0);
-        B <= regOutArray(to_integer(signed( opB )))(127 downto 0);           
+        A <= regOutArray(to_integer(signed( operandA )))(127 downto 0);
+        B <= regOutArray(to_integer(signed( operandB )))(127 downto 0);           
     end process;
 
     process (opcode)
@@ -147,5 +156,5 @@ begin
             std_logic_vector(chinchilla) => chinchilla
         );   
         memWrite <= internalMemWrite;
-        mem_address <= opB;
+        mem_address <= operandB;
 end ListProc;
