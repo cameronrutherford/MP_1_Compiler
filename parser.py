@@ -191,4 +191,4 @@ memfile_loc = "Working_MP3\\mips.srcs\\sources_1\\imports\\new\\memfile.dat"
 
 with open(memfile_loc, "w") as f:
     for x in hex_output:
-        f.write(x + '\n')
+        f.write(x.lower() + '\n')
