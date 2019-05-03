@@ -11,14 +11,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="98800001fs"></ZoomEndTime>
-      <Cursor1Time time="47200000fs"></Cursor1Time>
+      <ZoomEndTime time="100292449fs"></ZoomEndTime>
+      <Cursor1Time time="74324000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="134"></ValueColumnWidth>
+      <ValueColumnWidth column_width="130"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="16" />
+   <WVObjectSize size="7" />
    <wvobject fp_name="/mips_testbench/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -31,56 +31,26 @@
       <obj_property name="ElementShortName">out_port_1[31:0]</obj_property>
       <obj_property name="ObjectShortName">out_port_1[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/listProcessor/opA" type="array">
-      <obj_property name="ElementShortName">opA[4:0]</obj_property>
-      <obj_property name="ObjectShortName">opA[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/listProcessor/opB" type="array">
-      <obj_property name="ElementShortName">opB[4:0]</obj_property>
-      <obj_property name="ObjectShortName">opB[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/listProcessor/opcode" type="array">
-      <obj_property name="ElementShortName">opcode[7:0]</obj_property>
-      <obj_property name="ObjectShortName">opcode[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/mips1/dp/mainalu/result" type="array">
-      <obj_property name="ElementShortName">result[31:0]</obj_property>
-      <obj_property name="ObjectShortName">result[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/mips1/dp/mainalu/a" type="array">
-      <obj_property name="ElementShortName">a[31:0]</obj_property>
-      <obj_property name="ObjectShortName">a[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/mips1/dp/mainalu/b" type="array">
-      <obj_property name="ElementShortName">b[31:0]</obj_property>
-      <obj_property name="ObjectShortName">b[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/listProcessor/opcode" type="array">
-      <obj_property name="ElementShortName">opcode[7:0]</obj_property>
-      <obj_property name="ObjectShortName">opcode[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/listProcessor/opA" type="array">
-      <obj_property name="ElementShortName">opA[4:0]</obj_property>
-      <obj_property name="ObjectShortName">opA[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/listProcessor/opB" type="array">
-      <obj_property name="ElementShortName">opB[4:0]</obj_property>
-      <obj_property name="ObjectShortName">opB[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/listProcessor/operandA" type="array">
-      <obj_property name="ElementShortName">operandA[4:0]</obj_property>
-      <obj_property name="ObjectShortName">operandA[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/listProcessor/operandB" type="array">
-      <obj_property name="ElementShortName">operandB[4:0]</obj_property>
-      <obj_property name="ObjectShortName">operandB[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/listProcessor/regOutArray" type="array">
-      <obj_property name="ElementShortName">regOutArray[0:1][127:0]</obj_property>
-      <obj_property name="ObjectShortName">regOutArray[0:1][127:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/mips_testbench/dut/mips1/pc" type="array">
       <obj_property name="ElementShortName">pc[31:0]</obj_property>
       <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/mips1/dp/pcadd2/b" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">b[31:0]</obj_property>
+      <obj_property name="label">n in PC++ + n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/mips1/dp/pcadd2/y" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">y[31:0]</obj_property>
+      <obj_property name="label">PC++ + n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/mips1/dp/pcadd1/y" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">y[31:0]</obj_property>
+      <obj_property name="label">PC++</obj_property>
    </wvobject>
 </wave_config>

@@ -81,29 +81,28 @@ architecture struct of datapath is
   
   -- The signals to wire the datapath components together
   signal writereg: STD_LOGIC_VECTOR(4 downto 0);
-  signal pcjump, pcnext, pcnextbr, pcplus4, pcbranch: STD_LOGIC_VECTOR((width-1) downto 0);
-  signal signimm, signimmsh: STD_LOGIC_VECTOR((width-1) downto 0);
+  signal pcnextbr, pcplus4, pcbranch: STD_LOGIC_VECTOR((width-1) downto 0);
+  signal signimm : STD_LOGIC_VECTOR((width-1) downto 0);
   signal srca, srcb, res_mux_out, result: STD_LOGIC_VECTOR((width-1) downto 0);
   signal const_zero: STD_LOGIC_VECTOR((width-1) downto 0) := (others => '0');
   signal four: STD_LOGIC_VECTOR((width-1) downto 0);
   signal z_prev: STD_LOGIC_VECTOR(0 downto 0);
   signal reg_2 : STD_LOGIC_VECTOR((width-1) downto 0);
   signal alu_result : STD_LOGIC_VECTOR((width-1) downto 0);
+  signal new_pc : STD_LOGIC;
+  
 
   begin
     -- Wire up all the components for the datapath unit
-    
+    new_pc <= (jump or pcsrc);
     -- signal to add 4 to program counter
     four <= const_zero((width-1) downto 4) & X"4";
 	
 	-- next PC logic
-	pcjump <= pcplus4((width-1) downto (width-4)) & instr((width-7) downto 0) & "00";
-	pcreg:  flopr generic map(width) port map(clk => clk, reset => reset, d => pcnext, q => pc);
+	pcreg:  flopr generic map(width) port map(clk => clk, reset => reset, d => pcnextbr, q => pc);
 	pcadd1: adder generic map(width) port map(a => pc, b => four, y => pcplus4);
-	immsh:    sl2 generic map(width) port map(a => signimm, y => signimmsh);
-	pcadd2: adder generic map(width) port map(a => pcplus4, b => signimmsh, y => pcbranch);
-	pcbrmux: mux2 generic map(width) port map(d0 => pcplus4, d1 => pcbranch, s => pcsrc, y => pcnextbr);
-	pcmux:   mux2 generic map(width) port map(d0 => pcnextbr, d1 => pcjump, s => jump, y => pcnext);
+	pcadd2: adder generic map(width) port map(a => pcplus4, b => signimm, y => pcbranch);
+	pcbrmux: mux2 generic map(width) port map(d0 => pcplus4, d1 => pcbranch, s => new_pc, y => pcnextbr);
 	zreg: bit_reg generic map(1)     port map(clk => clk, clr => '0', data_in => z_prev, data_out(0) => zero, load => '1');
 
 	-- register file logic
@@ -131,7 +130,7 @@ architecture struct of datapath is
 	                                          alucontrol => alucontrol, result => alu_result, zero => z_prev(0));
 	                                          
 	writedata <= srca;
-	aluout <= signimmsh;
+	aluout <= signimm;
 end;
 
 

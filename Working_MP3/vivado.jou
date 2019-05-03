@@ -2,51 +2,45 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Wed May  1 15:06:38 2019
-# Process ID: 9888
-# Current directory: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9000 Z:\CS-401-1-CompArch\FinalProject\MP_1_Compiler\Working_MP3\mips.xpr
-# Log file: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/vivado.log
-# Journal file: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3\vivado.jou
+# Start of session at: Thu May  2 16:59:23 2019
+# Process ID: 9492
+# Current directory: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5472 Z:\rrutherford20\CS-401-1-CompArch\CompArchFinal\Working_MP3\mips.xpr
+# Log file: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/vivado.log
+# Journal file: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.xpr
+open_project Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.xpr
 launch_simulation
-open_wave_config Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg
+open_wave_config Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips_testbench_behav.wcfg
 source mips_testbench.tcl
 reset_run dual_port_ram_synth_1
 launch_runs dual_port_ram_synth_1
 wait_on_run dual_port_ram_synth_1
 synth_design -rtl -name rtl_1
+refresh_design
+refresh_design
+close_sim
+launch_simulation
+open_wave_config Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips_testbench_behav.wcfg
+source mips_testbench.tcl
 restart
-run 10 us
-import_files -norecurse C:/Users/jbattista20/Documents/memfile1.dat
-save_wave_config {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg}
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+refresh_design
+refresh_design
+save_wave_config {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips_testbench_behav.wcfg}
 close_sim
 launch_simulation
-open_wave_config Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg
+open_wave_config Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips_testbench_behav.wcfg
 source mips_testbench.tcl
-run 10 us
-close_sim
-launch_simulation
-open_wave_config Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg
-source mips_testbench.tcl
-add_bp {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd} 42
-remove_bps -file {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd} -line 42
-add_bp {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd} 42
-remove_bps -file {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd} -line 42
-add_bp {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd} 42
-remove_bps -file {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd} -line 42
-add_bp {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd} 42
-remove_bps -file {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd} -line 42
-add_bp {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd} 42
-remove_bps -file {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd} -line 42
-add_bp {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd} 42
-remove_bps -file {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd} -line 42
-add_bp {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd} 42
-remove_bps -file {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd} -line 42
-add_bp {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd} 36
-remove_bps -file {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd} -line 36
-add_bp {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd} 36
-remove_bps -file {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd} -line 36
-close_sim
