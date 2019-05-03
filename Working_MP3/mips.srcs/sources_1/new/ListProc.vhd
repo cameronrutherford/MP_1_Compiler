@@ -94,7 +94,7 @@ begin
          
         --mem_bus_out <= B;
         case opcode is 
-            when  "00001001" => 
+            when  "00010001" => 
                 decoded_opcode <= "0000";               --list add
                 v_regWrite := (others => '0');
                 v_regWrite(resultRegNdx) := '1';          -- turn on write to result register
