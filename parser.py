@@ -4,7 +4,9 @@ import re
 information = {}
 information["mov"]  =   ('00000000', 5,  5)
 information["add"]  =   ('00000001', 5,  5)
-information["movi"] =   ('10000000', 5, 16)
+#information["movi"] =   ('10000000', 5, 16) # movi currently broken. Needs a significant hardware revamp to enable
+#                                               currently there is no signal going from sign extended immediate to the mov mux.
+#                                               This also requires a larger control signal to the mux and revamped opcodes
 information["addi"] =   ('10000001', 5, 16)
 information["lw"]   =   ('10000100', 5, 16)
 information["sw"]   =   ('10000101', 5, 16)
@@ -144,7 +146,7 @@ for line in lines:
         # giant case statement 
         if instr in ['mov', 'add', 'ladd']:
             current_bin = opcode + registers[args[0]] + registers[args[1]]
-        elif instr in ['movi','addi']:
+        elif instr in ['addi']: # movi should go here as well
             current_bin = opcode + registers[args[0]] + bin(int(args[1]))[2:].zfill(19)
             value = int(args[1])
             if value < 0:
