@@ -146,6 +146,12 @@ for line in lines:
             current_bin = opcode + registers[args[0]] + registers[args[1]]
         elif instr in ['movi','addi']:
             current_bin = opcode + registers[args[0]] + bin(int(args[1]))[2:].zfill(19)
+            value = int(args[1])
+            if value < 0:
+                # turn it into binary and take the two's complement
+                complement = bin(2**19 + value)[2:]
+                assert len(complement) == 19, 'Negative number too negative. Be more positive.'
+                current_bin = opcode + registers[args[0]] + complement
         elif instr in ['lw', 'sw', 'll', 'sl']:
             arg2 = args[1]
             arg2_bin = ''
