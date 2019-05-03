@@ -2,8 +2,8 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Thu May  2 20:55:55 2019
-# Process ID: 10444
+# Start of session at: Thu May  2 21:11:30 2019
+# Process ID: 5716
 # Current directory: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/dual_port_ram_synth_1
 # Command line: vivado.exe -log dual_port_ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dual_port_ram.tcl
 # Log file: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/dual_port_ram_synth_1/dual_port_ram.vds
@@ -11,4 +11,4 @@
 #-----------------------------------------------------------
 source dual_port_ram.tcl -notrace
 INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP dual_port_ram, cache-ID = a9e4b1602c3f63c1.
-INFO: [Common 17-206] Exiting Vivado at Thu May  2 20:56:03 2019...
+INFO: [Common 17-206] Exiting Vivado at Thu May  2 21:11:44 2019...

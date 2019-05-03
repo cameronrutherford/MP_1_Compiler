@@ -3,6 +3,10 @@ list1 dword 1 2 3 4
 list3 dword 5 6 8 7
 .code
 :start
+lload $l1 list1		#92000020
+lload $l2 list3		#920800a0
+ladd $l1 $l2		#11004000
+lstore $l1 list3	#930800a0
 jmp test1
 mov $d1 $d0
 :test1
