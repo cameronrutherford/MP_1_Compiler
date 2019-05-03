@@ -2,143 +2,974 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Tue Apr 30 11:25:48 2019
-# Process ID: 12504
+# Start of session at: Thu May  2 21:17:00 2019
+# Process ID: 9880
 # Current directory: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9424 Z:\rrutherford20\CS-401-1-CompArch\CompArchFinal\Working_MP3\mips.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6740 Z:\rrutherford20\CS-401-1-CompArch\CompArchFinal\Working_MP3\mips.xpr
 # Log file: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/vivado.log
 # Journal file: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.xpr
-INFO: [Project 1-313] Project file moved from 'C:/Users/rrutherford20/Desktop/FinalProject/MP_1_Compiler/Working_MP3' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
-open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 828.559 ; gain = 139.410
-reset_run synth_1
-reset_run dual_port_ram_synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dual_port_ram'...
-[Tue Apr 30 11:26:39 2019] Launched dual_port_ram_synth_1, synth_1...
-Run output will be captured here:
-dual_port_ram_synth_1: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/dual_port_ram_synth_1/runme.log
-synth_1: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/synth_1/runme.log
-[Tue Apr 30 11:26:39 2019] Launched impl_1...
-Run output will be captured here: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/impl_1/runme.log
-open_hw
-connect_hw_server
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 893.387 ; gain = 164.395
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: computer_top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 991.402 ; gain = 94.656
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'computer_top' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+INFO: [Synth 8-3491] module 'mips_top' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:17' bound to instance 'mips1' of component 'mips_top' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'mips_top' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mips' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:14' bound to instance 'mips1' of component 'mips' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'mips' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'controller' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:5' bound to instance 'cont' of component 'controller' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'controller' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
+INFO: [Synth 8-3491] module 'maindec' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:5' bound to instance 'md' of component 'maindec' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'maindec' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'maindec' (1#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:15]
+INFO: [Synth 8-3491] module 'aludec' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:4' bound to instance 'ad' of component 'aludec' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'aludec' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'aludec' (2#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:10]
+WARNING: [Synth 8-3848] Net regdst in module/entity controller does not have driver. [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'controller' (3#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'datapath' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:6' bound to instance 'dp' of component 'datapath' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'datapath' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'flopr' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:5' bound to instance 'pcreg' of component 'flopr' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'flopr' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr' (4#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd1' of component 'adder' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'adder' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adder' (5#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd2' of component 'adder' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:104]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcbrmux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (6#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'bit_reg' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:25' bound to instance 'zreg' of component 'bit_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'bit_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bit_reg' (7#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'regfile' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:11' bound to instance 'rf' of component 'regfile' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'regfile' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'regfile' (8#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'resmux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:116]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'signext' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:5' bound to instance 'se' of component 'signext' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'signext' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'signext' (9#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'srcbmux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:123]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'mov_mux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:126]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mips_alu' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:8' bound to instance 'mainalu' of component 'mips_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'mips_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mips_alu' (10#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (11#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'mips' (12#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'imem' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:10' bound to instance 'imem1' of component 'imem' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'imem' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+ERROR: [Synth 8-3302] unable to open file 'memfile.dat' in 'r' mode [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:27]
+ERROR: [Synth 8-421] mismatched array sizes in rhs and lhs of assignment [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:64]
+ERROR: [Synth 8-285] failed synthesizing module 'imem' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
+ERROR: [Synth 8-285] failed synthesizing module 'mips_top' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+ERROR: [Synth 8-285] failed synthesizing module 'computer_top' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1017.699 ; gain = 120.953
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+45 Infos, 1 Warnings, 0 Critical Warnings and 6 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+add_files -norecurse Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/memfile.dat
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'mips_testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/dual_port_ram.mif'
+INFO: [SIM-utils-43] Exported 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/dual_ram_init.coe'
+INFO: [SIM-utils-43] Exported 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj mips_testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ListProc
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto bfc6d33675f34e59a51d26a1983c03b4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot mips_testbench_behav xil_defaultlib.mips_testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.std_logic_textio
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture behave of entity xil_defaultlib.maindec [maindec_default]
+Compiling architecture behave of entity xil_defaultlib.aludec [aludec_default]
+Compiling architecture struct of entity xil_defaultlib.controller [controller_default]
+Compiling architecture asynchronous of entity xil_defaultlib.flopr [\flopr(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.adder [\adder(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.mux2 [\mux2(width=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.bit_reg [\bit_reg(n=1)\]
+Compiling architecture behave of entity xil_defaultlib.regfile [\regfile(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.signext [\signext(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.mips_alu [\mips_alu(width=32)\]
+Compiling architecture struct of entity xil_defaultlib.datapath [\datapath(width=32)\]
+Compiling architecture struct of entity xil_defaultlib.mips [\mips(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.imem [\imem(width=32)\]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,do...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,dob_reg=1,in...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_prim_wrapper_init [dual_port_ram_blk_mem_gen_prim_w...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_prim_width [dual_port_ram_blk_mem_gen_prim_w...]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,do...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,dob_reg=1,re...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized0\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_width__parameterized0\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized1\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_width__parameterized1\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized2\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_width__parameterized2\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_generic_cstr [dual_port_ram_blk_mem_gen_generi...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_top [dual_port_ram_blk_mem_gen_top_de...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_v8_4_1_synth [dual_port_ram_blk_mem_gen_v8_4_1...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_v8_4_1 [dual_port_ram_blk_mem_gen_v8_4_1...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram [dual_port_ram_default]
+Compiling architecture behave of entity xil_defaultlib.dmem [dmem_default]
+Compiling architecture behavioral of entity xil_defaultlib.bit128_reg [bit128_reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.list_alu [list_alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_block [alu_block_default]
+Compiling architecture listproc of entity xil_defaultlib.ListProc [listproc_default]
+Compiling architecture mips_top of entity xil_defaultlib.mips_top [mips_top_default]
+Compiling architecture mips_testbench of entity xil_defaultlib.mips_testbench
+Built simulation snapshot mips_testbench_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1054.086 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mips_testbench_behav -key {Behavioral:sim_1:Functional:mips_testbench} -tclbatch {mips_testbench.tcl} -view {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips_testbench_behav.wcfg
+source mips_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ERROR: Index 2 out of bound 0 to 1
+Time: 80 ns  Iteration: 3  Process: /mips_testbench/dut/listProcessor/line__76
+  File: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd
 
-****** Xilinx hw_server v2018.2.1
-  **** Build date : Jul 26 2018-19:38:10
-    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+HDL Line: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:90
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mips_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 1059.273 ; gain = 5.188
+add_bp {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd} 80
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 ns
+Stopped at time : 0 fs : File "Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd" Line 80
+run 10 ns
+Stopped at time : 0 fs : File "Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd" Line 80
+remove_bps -file {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd} -line 80
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'mips_testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/dual_port_ram.mif'
+INFO: [SIM-utils-43] Exported 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/dual_ram_init.coe'
+INFO: [SIM-utils-43] Exported 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj mips_testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ListProc
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto bfc6d33675f34e59a51d26a1983c03b4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot mips_testbench_behav xil_defaultlib.mips_testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.std_logic_textio
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture behave of entity xil_defaultlib.maindec [maindec_default]
+Compiling architecture behave of entity xil_defaultlib.aludec [aludec_default]
+Compiling architecture struct of entity xil_defaultlib.controller [controller_default]
+Compiling architecture asynchronous of entity xil_defaultlib.flopr [\flopr(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.adder [\adder(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.mux2 [\mux2(width=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.bit_reg [\bit_reg(n=1)\]
+Compiling architecture behave of entity xil_defaultlib.regfile [\regfile(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.signext [\signext(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.mips_alu [\mips_alu(width=32)\]
+Compiling architecture struct of entity xil_defaultlib.datapath [\datapath(width=32)\]
+Compiling architecture struct of entity xil_defaultlib.mips [\mips(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.imem [\imem(width=32)\]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,do...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,dob_reg=1,in...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_prim_wrapper_init [dual_port_ram_blk_mem_gen_prim_w...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_prim_width [dual_port_ram_blk_mem_gen_prim_w...]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,do...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,dob_reg=1,re...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized0\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_width__parameterized0\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized1\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_width__parameterized1\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized2\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_width__parameterized2\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_generic_cstr [dual_port_ram_blk_mem_gen_generi...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_top [dual_port_ram_blk_mem_gen_top_de...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_v8_4_1_synth [dual_port_ram_blk_mem_gen_v8_4_1...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_v8_4_1 [dual_port_ram_blk_mem_gen_v8_4_1...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram [dual_port_ram_default]
+Compiling architecture behave of entity xil_defaultlib.dmem [dmem_default]
+Compiling architecture behavioral of entity xil_defaultlib.bit128_reg [bit128_reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.list_alu [list_alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_block [alu_block_default]
+Compiling architecture listproc of entity xil_defaultlib.ListProc [listproc_default]
+Compiling architecture mips_top of entity xil_defaultlib.mips_top [mips_top_default]
+Compiling architecture mips_testbench of entity xil_defaultlib.mips_testbench
+Built simulation snapshot mips_testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1065.305 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mips_testbench_behav -key {Behavioral:sim_1:Functional:mips_testbench} -tclbatch {mips_testbench.tcl} -view {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips_testbench_behav.wcfg
+source mips_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 180 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 180 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 180 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 180 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 180 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 180 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 180 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 180 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 200 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 200 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 200 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 200 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 200 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 200 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 200 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 200 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 220 ns.
+ A read was performed on address 800f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 220 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 220 ns.
+ A read was performed on address 800f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 220 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 220 ns.
+ A read was performed on address 800f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 220 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 220 ns.
+ A read was performed on address 800f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 220 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 260 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 260 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 260 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 260 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 260 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 260 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 260 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 260 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 320 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 320 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 320 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 320 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 320 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 320 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 320 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 320 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 340 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 340 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 340 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 340 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 340 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 340 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 340 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 340 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+ERROR: Index 31 out of bound 0 to 1
+Time: 380 ns  Iteration: 3  Process: /mips_testbench/dut/listProcessor/line__76
+  File: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd
 
+HDL Line: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:89
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mips_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 1065.305 ; gain = 0.000
+run 10 ns
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+run 10 ns
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+run 10 ns
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+run 10 ns
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+run 10 ns
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+run 10 ns
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'mips_testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/dual_port_ram.mif'
+INFO: [SIM-utils-43] Exported 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/dual_ram_init.coe'
+INFO: [SIM-utils-43] Exported 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj mips_testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ListProc
+ERROR: [VRFC 10-91] operandb is not declared [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:173]
+ERROR: [VRFC 10-1504] unit listproc ignored due to previous errors [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:23]
+INFO: [VRFC 10-240] VHDL file Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'mips_testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/dual_port_ram.mif'
+INFO: [SIM-utils-43] Exported 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/dual_ram_init.coe'
+INFO: [SIM-utils-43] Exported 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj mips_testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ListProc
+ERROR: [VRFC 10-91] operandb is not declared [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:173]
+ERROR: [VRFC 10-1504] unit listproc ignored due to previous errors [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:23]
+INFO: [VRFC 10-240] VHDL file Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'mips_testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/dual_port_ram.mif'
+INFO: [SIM-utils-43] Exported 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/dual_ram_init.coe'
+INFO: [SIM-utils-43] Exported 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj mips_testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ListProc
+ERROR: [VRFC 10-91] operandb is not declared [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:173]
+ERROR: [VRFC 10-1504] unit listproc ignored due to previous errors [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:23]
+INFO: [VRFC 10-240] VHDL file Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'mips_testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/dual_port_ram.mif'
+INFO: [SIM-utils-43] Exported 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/dual_ram_init.coe'
+INFO: [SIM-utils-43] Exported 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj mips_testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ListProc
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto bfc6d33675f34e59a51d26a1983c03b4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot mips_testbench_behav xil_defaultlib.mips_testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.std_logic_textio
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture behave of entity xil_defaultlib.maindec [maindec_default]
+Compiling architecture behave of entity xil_defaultlib.aludec [aludec_default]
+Compiling architecture struct of entity xil_defaultlib.controller [controller_default]
+Compiling architecture asynchronous of entity xil_defaultlib.flopr [\flopr(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.adder [\adder(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.mux2 [\mux2(width=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.bit_reg [\bit_reg(n=1)\]
+Compiling architecture behave of entity xil_defaultlib.regfile [\regfile(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.signext [\signext(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.mips_alu [\mips_alu(width=32)\]
+Compiling architecture struct of entity xil_defaultlib.datapath [\datapath(width=32)\]
+Compiling architecture struct of entity xil_defaultlib.mips [\mips(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.imem [\imem(width=32)\]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,do...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,dob_reg=1,in...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_prim_wrapper_init [dual_port_ram_blk_mem_gen_prim_w...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_prim_width [dual_port_ram_blk_mem_gen_prim_w...]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,do...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,dob_reg=1,re...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized0\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_width__parameterized0\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized1\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_width__parameterized1\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized2\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_width__parameterized2\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_generic_cstr [dual_port_ram_blk_mem_gen_generi...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_top [dual_port_ram_blk_mem_gen_top_de...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_v8_4_1_synth [dual_port_ram_blk_mem_gen_v8_4_1...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_v8_4_1 [dual_port_ram_blk_mem_gen_v8_4_1...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram [dual_port_ram_default]
+Compiling architecture behave of entity xil_defaultlib.dmem [dmem_default]
+Compiling architecture behavioral of entity xil_defaultlib.bit128_reg [bit128_reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.list_alu [list_alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_block [alu_block_default]
+Compiling architecture listproc of entity xil_defaultlib.ListProc [listproc_default]
+Compiling architecture mips_top of entity xil_defaultlib.mips_top [mips_top_default]
+Compiling architecture mips_testbench of entity xil_defaultlib.mips_testbench
+Built simulation snapshot mips_testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1074.813 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mips_testbench_behav -key {Behavioral:sim_1:Functional:mips_testbench} -tclbatch {mips_testbench.tcl} -view {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips_testbench_behav.wcfg
+source mips_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 180 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 180 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 180 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 180 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 180 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 180 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 180 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 180 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 200 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 200 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 200 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 200 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 200 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 200 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 200 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 200 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 220 ns.
+ A read was performed on address 800f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 220 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 220 ns.
+ A read was performed on address 800f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 220 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 220 ns.
+ A read was performed on address 800f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 220 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 220 ns.
+ A read was performed on address 800f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 220 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 260 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 260 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 260 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 260 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 260 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 260 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 260 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 260 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 320 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 320 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 320 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 320 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 320 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 320 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 320 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 320 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 340 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 340 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 340 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 340 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 340 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 340 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 340 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 340 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+ERROR: Index 31 out of bound 0 to 1
+Time: 360 ns  Iteration: 3  Process: /mips_testbench/dut/listProcessor/line__76
+  File: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd
 
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4BEA4A
-set_property PROGRAM.FILE {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
-current_hw_device [get_hw_devices xc7a100t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtools 27-3361] The debug hub core was not detected.
-Resolution: 
-1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
-2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
-For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtools 27-3361] The debug hub core was not detected.
-Resolution: 
-1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
-2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
-For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A4BEA4A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4BEA4A
-INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtools 27-3361] The debug hub core was not detected.
-Resolution: 
-1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
-2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
-For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A4BEA4A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4BEA4A
-INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Tue Apr 30 11:37:13 2019] Launched impl_1...
-Run output will be captured here: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtools 27-3361] The debug hub core was not detected.
-Resolution: 
-1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
-2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
-For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
-close_hw
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-[Tue Apr 30 11:40:14 2019] Launched synth_1...
-Run output will be captured here: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/synth_1/runme.log
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Tue Apr 30 11:41:14 2019] Launched impl_1...
-Run output will be captured here: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/impl_1/runme.log
-open_hw
-connect_hw_server
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
+HDL Line: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:87
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mips_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 1075.480 ; gain = 0.668
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 180 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 180 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 180 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 180 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 180 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 180 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 180 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 180 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+run 10 ns
+run 10 ns
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 200 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 200 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 200 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 200 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 200 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 200 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 200 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 200 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+run 10 ns
+run 10 ns
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 220 ns.
+ A read was performed on address 800f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 220 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 220 ns.
+ A read was performed on address 800f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 220 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 220 ns.
+ A read was performed on address 800f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 220 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 220 ns.
+ A read was performed on address 800f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 220 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 260 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 260 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 260 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 260 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 260 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 260 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 260 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 260 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 320 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 320 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 320 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 320 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 320 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 320 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 320 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 320 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+run 10 ns
+run 10 ns
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 340 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 340 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 340 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 340 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 340 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 340 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 340 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 340 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+run 10 ns
+run 10 ns
+ERROR: Index 31 out of bound 0 to 1
+Time: 360 ns  Iteration: 3  Process: /mips_testbench/dut/listProcessor/line__76
+  File: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd
 
-****** Xilinx hw_server v2018.2.1
-  **** Build date : Jul 26 2018-19:38:10
-    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+HDL Line: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:87
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 2000 ns
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 180 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 180 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 180 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 180 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 180 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 180 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 180 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 180 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 200 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 200 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 200 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 200 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 200 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 200 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 200 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 200 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 220 ns.
+ A read was performed on address 800f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 220 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 220 ns.
+ A read was performed on address 800f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 220 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 220 ns.
+ A read was performed on address 800f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 220 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 220 ns.
+ A read was performed on address 800f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 220 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 260 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 260 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 260 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 260 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 260 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 260 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 260 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 260 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 320 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 320 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 320 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 320 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 320 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 320 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 320 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 320 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 340 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 340 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 340 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 340 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 340 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 340 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 340 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 340 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+ERROR: Index 31 out of bound 0 to 1
+Time: 360 ns  Iteration: 3  Process: /mips_testbench/dut/listProcessor/line__76
+  File: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd
 
+HDL Line: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:87
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 2000 ns
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 180 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 180 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 180 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 180 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 180 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 180 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 180 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 180 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 200 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 200 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 200 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 200 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 200 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 200 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 200 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 200 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 220 ns.
+ A read was performed on address 800f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 220 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 220 ns.
+ A read was performed on address 800f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 220 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 220 ns.
+ A read was performed on address 800f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 220 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 220 ns.
+ A read was performed on address 800f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 220 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 260 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 260 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 260 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 260 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 260 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 260 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 260 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 260 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 320 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 320 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 320 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 320 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 320 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 320 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 320 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 320 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[0].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 340 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 340 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[0].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[1].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 340 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 340 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[1].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[2].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 340 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 340 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[2].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+Error:  Memory Collision Error on RAMB36E1 ::mips_testbench:dut:dmem1:MULTI_PORT_REG:U0:inst_blk_mem_gen:\gnbram.gnativebmg.native_blk_mem_gen\:\valid.cstr\:\ramloop[3].ram.r\:\prim_init.ram\:\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\:tdp:RAMB36E1_TDP_inst: at simulation time 340 ns.
+ A read was performed on address 8007 (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle. 
+Time: 340 ns  Iteration: 3  Process: /mips_testbench/dut/dmem1/MULTI_PORT_REG/U0/inst_blk_mem_gen/\gnbram.gnativebmg.native_blk_mem_gen\/\valid.cstr\/\ramloop[3].ram.r\/\prim_init.ram\/\DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram\/tdp/RAMB36E1_TDP_inst/prcs_clk  File: /wrk/2018.sub/2018.2.1/continuous/2018_07_26_2288692/data/vhdl/src/unisims/primitive/RAMB36E1.vhd
+ERROR: Index 31 out of bound 0 to 1
+Time: 360 ns  Iteration: 3  Process: /mips_testbench/dut/listProcessor/line__76
+  File: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd
 
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4BEA4A
-set_property PROGRAM.FILE {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
-current_hw_device [get_hw_devices xc7a100t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtools 27-3361] The debug hub core was not detected.
-Resolution: 
-1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
-2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
-For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtools 27-3361] The debug hub core was not detected.
-Resolution: 
-1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
-2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
-For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+HDL Line: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:87
+save_wave_config {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips_testbench_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue Apr 30 11:58:21 2019...
+INFO: [Common 17-206] Exiting Vivado at Thu May  2 21:48:40 2019...

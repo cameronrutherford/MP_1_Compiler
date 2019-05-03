@@ -54,20 +54,44 @@ signal decoded_opcode : std_logic_vector (3 downto 0);
 signal resultRegNdx : integer := 2;
 signal writeResult : std_logic;
 signal internalMemWrite : std_logic;
+signal operandA, operandB : STD_LOGIC_VECTOR(4 downto 0);
 
 begin
 -- may need a process to synchronize the alu outputs into chinchilla before passing it to the result register    
-    process(opA,  opB)
-    begin
-        intOpA <= to_integer(signed( opA ));
-        A <= regOutArray(to_integer(signed( opA )))(127 downto 0);
-        B <= regOutArray(to_integer(signed( opB )))(127 downto 0);           
-    end process;
+--    process(opA,  opB)
+--    begin
+----        if opcode(4) = '0' then
+----            operandA <= (others => '0');
+----            operandB <= (others => '0');
+----        else
+----            operandA <= opA;
+----            operandB <= opB;
+----        end if;
+        
+----        intOpA <= to_integer(unsigned( opA ));
+----        A <= regOutArray(to_integer(unsigned( operandA )))(127 downto 0);
+----        B <= regOutArray(to_integer(unsigned( operandB )))(127 downto 0);           
+--    end process;
 
     process (opcode)
     variable v_regWrite : std_logic_vector(2 downto 0) := "000";
     begin
-        
+        -- This code was in a different process, but now its here because of potential race conditions
+         if opcode(5) = '0' then
+            operandB <= (others => '0');
+             A <= regOutArray(0)(127 downto 0);
+             B <= regOutArray(0)(127 downto 0);
+        else
+            --operandA <= opA;
+            operandB <= opB;
+            A <= regOutArray(to_integer(unsigned( opA )))(127 downto 0);
+            B <= regOutArray(to_integer(unsigned( opB )))(127 downto 0);
+        end if;
+            
+        --intOpA <= to_integer(unsigned( opA ));
+--        A <= regOutArray(to_integer(unsigned( operandA )))(127 downto 0);
+--        B <= regOutArray(to_integer(unsigned( operandB )))(127 downto 0);
+         
         --mem_bus_out <= B;
         case opcode is 
             when  "00001001" => 
@@ -104,7 +128,7 @@ begin
             when "10010010" => 
                 decoded_opcode <= "XXXX"; 
                 v_regWrite := (others => '0');
-                v_regWrite(intOpA) := '1';                --list load
+                v_regWrite(to_integer(unsigned( opA ))) := '1';                --list load
                 internalMemWrite <= '0';
             when others => decoded_opcode <= "XXXX";    -- if we get a bad opcode, undefined output
          end case;
@@ -147,5 +171,5 @@ begin
             std_logic_vector(chinchilla) => chinchilla
         );   
         memWrite <= internalMemWrite;
-        mem_address <= opB;
+        mem_address <= operandB;
 end ListProc;

@@ -4,7 +4,9 @@ import re
 information = {}
 information["mov"]  =   ('00000000', 5,  5)
 information["add"]  =   ('00000001', 5,  5)
-information["movi"] =   ('10000000', 5, 16)
+#information["movi"] =   ('10000000', 5, 16) # movi currently broken. Needs a significant hardware revamp to enable
+#                                               currently there is no signal going from sign extended immediate to the mov mux.
+#                                               This also requires a larger control signal to the mux and revamped opcodes
 information["addi"] =   ('10000001', 5, 16)
 information["lw"]   =   ('10000100', 5, 16)
 information["sw"]   =   ('10000101', 5, 16)
@@ -120,14 +122,18 @@ else:
 # Labels are addressed by their name, and we return the offset from the start of the code section
 labels = {}
 count = len(hex_output)
+label_indx = []
 for i, line in enumerate(lines):
     # Labels are on their own line starting with a colon, and only use the first word
     if line[0] == ':':   
         label = line.split(' ')[0][1:]
         labels[label] = count
-        del lines[i]
-        continue
-    count += 1
+        label_indx.append(i)
+    else:
+        count += 1
+
+for i in label_indx[::-1]:
+    del lines[i]
 
 for line in lines:
     next_hex = ''
@@ -144,9 +150,15 @@ for line in lines:
         # giant case statement 
         if instr in ['mov', 'add', 'ladd']:
             current_bin = opcode + registers[args[0]] + registers[args[1]]
-        elif instr in ['movi','addi']:
+        elif instr in ['addi']: # movi should go here as well
             current_bin = opcode + registers[args[0]] + bin(int(args[1]))[2:].zfill(19)
-        elif instr in ['lw', 'sw', 'll', 'sl']:
+            value = int(args[1])
+            if value < 0:
+                # turn it into binary and take the two's complement
+                complement = bin(2**19 + value)[2:]
+                assert len(complement) == 19, 'Negative number too negative. Be more positive.'
+                current_bin = opcode + registers[args[0]] + complement
+        elif instr in ['lw', 'sw', 'lload', 'lstore']:
             arg2 = args[1]
             arg2_bin = ''
             # If we are dealing with an exact memory location
@@ -171,7 +183,7 @@ for line in lines:
             # if we're jumping to a label
             if jLoc in labels.keys():
                 print(jLoc)
-                jLoc = (labels[jLoc] - len(hex_output)) * 4
+                jLoc = (labels[jLoc] - len(hex_output) - 1) * 4
                 print(jLoc)
             else: # otherwise we're jumping a set number of instructions
                 jLoc = int(jLoc) * 4
@@ -191,4 +203,4 @@ memfile_loc = "Working_MP3\\mips.srcs\\sources_1\\imports\\new\\memfile.dat"
 
 with open(memfile_loc, "w") as f:
     for x in hex_output:
-        f.write(x + '\n')
+        f.write(x.lower() + '\n')
