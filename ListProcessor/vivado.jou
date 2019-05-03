@@ -10,3 +10,5 @@
 # Journal file: Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/ListProcessor\vivado.jou
 #-----------------------------------------------------------
 start_gui
+open_project Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/ListProcessor/ListProcessor.xpr
+update_compile_order -fileset sources_1

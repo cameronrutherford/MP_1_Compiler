@@ -10,3 +10,11 @@
 # Journal file: Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/ListProcessor\vivado.jou
 #-----------------------------------------------------------
 start_gui
+open_project Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/ListProcessor/ListProcessor.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 784.094 ; gain = 72.508
+update_compile_order -fileset sources_1
