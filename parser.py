@@ -152,7 +152,7 @@ for line in lines:
                 complement = bin(2**19 + value)[2:]
                 assert len(complement) == 19, 'Negative number too negative. Be more positive.'
                 current_bin = opcode + registers[args[0]] + complement
-        elif instr in ['lw', 'sw', 'll', 'sl']:
+        elif instr in ['lw', 'sw', 'lload', 'lstore']:
             arg2 = args[1]
             arg2_bin = ''
             # If we are dealing with an exact memory location
