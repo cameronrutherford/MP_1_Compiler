@@ -22,7 +22,7 @@ ARCHITECTURE behavior OF TestALU IS
 
             B  : in  signed(31 downto 0);   -- operand B
 
-            OP : in  unsigned(2 downto 0);   -- opcode
+            OP : in  unsigned(3 downto 0);   -- opcode
 
             Y  : out signed(31 downto 0)  -- operation result
 
@@ -34,7 +34,7 @@ ARCHITECTURE behavior OF TestALU IS
 
     signal a, b : signed(31 downto 0) := (others => '0');
 
-    signal op : unsigned(2 downto 0);
+    signal op : unsigned(3 downto 0);
 
     --Outputs
 
@@ -66,43 +66,43 @@ BEGIN
 
                 --testing the and function
 
-                when "010" =>
+                when "0010" =>
 
                     assert y = signed(a and b) report "Failed the "&integer'image(i)&" operation.";
 
                 --testing the  or function
 
-                when "011" =>
+                when "0011" =>
 
                     assert y = signed(a or b) report "Failed the "&integer'image(i)&" operation.";
 
                 --testing the add function
 
-                when "000" =>
+                when "0000" =>
 
                     assert y = signed(a + b) report "Failed the "&integer'image(i)&" operation.";
 
                 --testing the subtraction function
 
-                when "001" =>
+                when "0001" =>
 
                     assert y = signed(a - b) report "Failed the "&integer'image(i)&" operation.";
 
                --testing the 111 do nothing function
 
-                when "111" =>
+                when "0111" =>
 
                     assert y = "00000000000000000000000000000000" report "Failed the "&integer'image(i)&" operation.";
 
                 --testing the xor function
 
-                when "100" =>
+                when "0100" =>
 
                     assert y = signed(a xor b) report "Failed the "&integer'image(i)&" operation.";
 
                 --tesintg the not b function
 
-                when "101" => 
+                when "0101" => 
 
                     assert y = signed(not b) report "Failed the "&integer'image(i)&" operation.";
 

@@ -35,7 +35,7 @@ end alu;
 
 architecture Behavioral of alu is
 begin
-process(OP)
+process(OP, A, B)
 begin
     case OP is
         when "0000" => Y <= A + B; --list add
@@ -46,6 +46,6 @@ begin
         when "0100" => Y <= A xor B; --list xor
         when "0101" => Y <= not B; --list not B
         when others => Y <= (others => 'X');
-        end case;
+    end case;
 end process;
 end Behavioral;

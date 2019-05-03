@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Wed May  1 09:50:51 2019
+# Process ID: 5676
+# Current directory: Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/ListProcessor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4280 Z:\CS-401-1-CompArch\Final_Project\MP_1_Compiler\ListProcessor\ListProcessor.xpr
+# Log file: Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/ListProcessor/vivado.log
+# Journal file: Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/ListProcessor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/ListProcessor/ListProcessor.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+set_property is_enabled false [get_files  Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sim_1/new/alu_sim.vhd]
+update_compile_order -fileset sim_1
+launch_simulation
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sim_1/new/alu_sim.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/ListProcessor/ListProcessor.srcs/sim_1/new/alu_sim.vhd
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source list_alu_sim.tcl
+close_sim
+launch_simulation
+source list_alu_sim.tcl
+run all
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+close_sim
