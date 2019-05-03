@@ -10,7 +10,7 @@ mov $d1 $d0				# zero the $d1 register
 mov $d2 $d0				# zero the $d2 register
 addi $d1 1				# add 1 to $d1 = 1
 addi $d2 -1				# add -1 to $d2 = -1
-add $d1 $d2				$ sum $d1 and $d2, store result in $d2 = 0
+add $d1 $d2				# sum $d1 and $d2, store result in $d2 = 0
 beq lists_here			# branch to list instructions
 mov $d1 $d0				# zero $d1, should be skipped
 :lists_here			
