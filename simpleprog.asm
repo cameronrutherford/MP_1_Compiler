@@ -29,5 +29,4 @@ lw $d3 list1[2]
 mov $d2 $d3			
 add  $d3 $d2		
 sw $d3 list3[2]			
-:end				
-jmp start			
+:end							

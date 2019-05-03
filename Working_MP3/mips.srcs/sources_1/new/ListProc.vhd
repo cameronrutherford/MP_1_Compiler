@@ -22,7 +22,7 @@ end ListProc;
 
 architecture ListProc of ListProc is
 
-type regArray is array (0 to 1) of std_logic_vector(127 downto 0);
+type regArray is array (0 to 2) of std_logic_vector(127 downto 0);
 
 component bit128_reg is
     generic(N:integer := 128);
@@ -48,7 +48,7 @@ signal dataout : std_logic_vector(127 downto 0);
 signal intOpA : integer;
 signal A, B : std_logic_vector(127 downto 0);
 signal regOutArray : regArray;
-signal regWrite : std_logic_vector(2 downto 0);
+signal regWrite : std_logic_vector(3 downto 0);
 signal chinchilla : std_logic_vector(127 downto 0);
 signal decoded_opcode : std_logic_vector (3 downto 0);
 signal resultRegNdx : integer := 2;
@@ -74,10 +74,10 @@ begin
 --    end process;
 
     process (opcode)
-    variable v_regWrite : std_logic_vector(2 downto 0) := "000";
+    variable v_regWrite : std_logic_vector(3 downto 0) := "0000";
     begin
         -- This code was in a different process, but now its here because of potential race conditions
-         if opcode(5) = '0' then
+         if opcode(4) = '0' then
             operandB <= (others => '0');
              A <= regOutArray(0)(127 downto 0);
              B <= regOutArray(0)(127 downto 0);
@@ -162,7 +162,15 @@ begin
             data_in => mem_bus_in,
             data_out => regOutArray(1)
         );
-        
+    regC : bit128_reg
+        port map(
+            load => regWrite(2),
+            clk => CLOCK,
+            clr => reset, 
+            data_in => mem_bus_in,
+            data_out => regOutArray(2)
+        );
+
     alus : alu_block
         port map(
             opcode => decoded_opcode,
