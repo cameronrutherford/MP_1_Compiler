@@ -2,10 +2,10 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Thu May  2 16:59:23 2019
-# Process ID: 9492
+# Start of session at: Thu May  2 20:55:09 2019
+# Process ID: 5932
 # Current directory: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5472 Z:\rrutherford20\CS-401-1-CompArch\CompArchFinal\Working_MP3\mips.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8492 Z:\rrutherford20\CS-401-1-CompArch\CompArchFinal\Working_MP3\mips.xpr
 # Log file: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/vivado.log
 # Journal file: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3\vivado.jou
 #-----------------------------------------------------------
@@ -16,135 +16,22 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
-open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 897.781 ; gain = 156.578
-launch_simulation
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-7] Finding pre-compiled libraries...
-INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-54] Inspecting design source files for 'mips_testbench' in fileset 'sim_1'...
-INFO: [SIM-utils-43] Exported 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/dual_port_ram.mif'
-INFO: [SIM-utils-43] Exported 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/dual_ram_init.coe'
-INFO: [SIM-utils-43] Exported 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/memfile.dat'
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
-INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj mips_testbench_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity imem
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.2
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto bfc6d33675f34e59a51d26a1983c03b4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot mips_testbench_behav xil_defaultlib.mips_testbench -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling package ieee.numeric_std
-Compiling package ieee.math_real
-Compiling package unisim.vcomponents
-Compiling package ieee.std_logic_signed
-Compiling package ieee.std_logic_textio
-Compiling package ieee.vital_timing
-Compiling package ieee.vital_primitives
-Compiling package unisim.vpkg
-Compiling architecture behave of entity xil_defaultlib.maindec [maindec_default]
-Compiling architecture behave of entity xil_defaultlib.aludec [aludec_default]
-Compiling architecture struct of entity xil_defaultlib.controller [controller_default]
-Compiling architecture asynchronous of entity xil_defaultlib.flopr [\flopr(width=32)\]
-Compiling architecture behave of entity xil_defaultlib.adder [\adder(width=32)\]
-Compiling architecture behave of entity xil_defaultlib.sl2 [\sl2(width=32)\]
-Compiling architecture behave of entity xil_defaultlib.mux2 [\mux2(width=32)\]
-Compiling architecture behavioral of entity xil_defaultlib.bit_reg [\bit_reg(n=1)\]
-Compiling architecture behave of entity xil_defaultlib.regfile [\regfile(width=32)\]
-Compiling architecture behave of entity xil_defaultlib.signext [\signext(width=32)\]
-Compiling architecture behave of entity xil_defaultlib.mips_alu [\mips_alu(width=32)\]
-Compiling architecture struct of entity xil_defaultlib.datapath [\datapath(width=32)\]
-Compiling architecture struct of entity xil_defaultlib.mips [\mips(width=32)\]
-Compiling architecture behave of entity xil_defaultlib.imem [\imem(width=32)\]
-Compiling architecture gnd_v of entity unisim.GND [gnd_default]
-Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,do...]
-Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,dob_reg=1,in...]
-Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_prim_wrapper_init [dual_port_ram_blk_mem_gen_prim_w...]
-Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_prim_width [dual_port_ram_blk_mem_gen_prim_w...]
-Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,do...]
-Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,dob_reg=1,in...]
-Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized0\ [\dual_port_ram_blk_mem_gen_prim_...]
-Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_width__parameterized0\ [\dual_port_ram_blk_mem_gen_prim_...]
-Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,do...]
-Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,dob_reg=1,in...]
-Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized1\ [\dual_port_ram_blk_mem_gen_prim_...]
-Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_width__parameterized1\ [\dual_port_ram_blk_mem_gen_prim_...]
-Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,do...]
-Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,dob_reg=1,in...]
-Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized2\ [\dual_port_ram_blk_mem_gen_prim_...]
-Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_width__parameterized2\ [\dual_port_ram_blk_mem_gen_prim_...]
-Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_generic_cstr [dual_port_ram_blk_mem_gen_generi...]
-Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_top [dual_port_ram_blk_mem_gen_top_de...]
-Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_v8_4_1_synth [dual_port_ram_blk_mem_gen_v8_4_1...]
-Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_v8_4_1 [dual_port_ram_blk_mem_gen_v8_4_1...]
-Compiling architecture structure of entity xil_defaultlib.dual_port_ram [dual_port_ram_default]
-Compiling architecture behave of entity xil_defaultlib.dmem [dmem_default]
-Compiling architecture behavioral of entity xil_defaultlib.bit128_reg [bit128_reg_default]
-Compiling architecture behavioral of entity xil_defaultlib.list_alu [list_alu_default]
-Compiling architecture behavioral of entity xil_defaultlib.alu_block [alu_block_default]
-Compiling architecture listproc of entity xil_defaultlib.ListProc [listproc_default]
-Compiling architecture mips_top of entity xil_defaultlib.mips_top [mips_top_default]
-Compiling architecture mips_testbench of entity xil_defaultlib.mips_testbench
-Built simulation snapshot mips_testbench_behav
-run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:21 . Memory (MB): peak = 929.641 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '21' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "mips_testbench_behav -key {Behavioral:sim_1:Functional:mips_testbench} -tclbatch {mips_testbench.tcl} -view {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips_testbench_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2018.2
-Time resolution is 1 ps
-open_wave_config Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips_testbench_behav.wcfg
-source mips_testbench.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'mips_testbench_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:30 . Memory (MB): peak = 943.078 ; gain = 25.516
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 898.121 ; gain = 169.758
 reset_run dual_port_ram_synth_1
 WARNING: [Vivado 12-1017] Problems encountered:
 1. Failed to delete one or more files in run directory Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/dual_port_ram_synth_1
 
 launch_runs dual_port_ram_synth_1
 INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dual_port_ram'...
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dual_port_ram, cache-ID = 8f1fb76104da5edf; cache size = 0.732 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dual_port_ram, cache-ID = a9e4b1602c3f63c1; cache size = 1.096 MB.
 INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram.xci' is already up-to-date
-[Thu May  2 17:03:36 2019] Launched dual_port_ram_synth_1...
+[Thu May  2 20:55:47 2019] Launched dual_port_ram_synth_1...
 Run output will be captured here: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/dual_port_ram_synth_1/runme.log
-launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 966.652 ; gain = 13.852
 wait_on_run dual_port_ram_synth_1
-[Thu May  2 17:03:36 2019] Waiting for dual_port_ram_synth_1 to finish...
-[Thu May  2 17:03:42 2019] Waiting for dual_port_ram_synth_1 to finish...
-[Thu May  2 17:03:47 2019] Waiting for dual_port_ram_synth_1 to finish...
-[Thu May  2 17:03:53 2019] Waiting for dual_port_ram_synth_1 to finish...
+[Thu May  2 20:55:48 2019] Waiting for dual_port_ram_synth_1 to finish...
+[Thu May  2 20:55:53 2019] Waiting for dual_port_ram_synth_1 to finish...
+[Thu May  2 20:55:58 2019] Waiting for dual_port_ram_synth_1 to finish...
+[Thu May  2 20:56:03 2019] Waiting for dual_port_ram_synth_1 to finish...
 
 *** Running vivado
     with args -log dual_port_ram.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dual_port_ram.tcl
@@ -156,17 +43,505 @@ wait_on_run dual_port_ram_synth_1
     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 
 source dual_port_ram.tcl -notrace
-INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP dual_port_ram, cache-ID = 8f1fb76104da5edf.
-INFO: [Common 17-206] Exiting Vivado at Thu May  2 17:03:48 2019...
-[Thu May  2 17:03:53 2019] dual_port_ram_synth_1 finished
-wait_on_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 966.652 ; gain = 0.000
+Command: synth_design -top dual_port_ram -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7560 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 387.004 ; gain = 99.988
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'dual_port_ram' [z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/synth/dual_port_ram.vhd:76]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 2 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: dual_port_ram.mif - type: string 
+	Parameter C_INIT_FILE bound to: dual_port_ram.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 128 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 128 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 7 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 128 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 128 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 32 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 32 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 5 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 1 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 4 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     21.951398 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at 'z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/synth/dual_port_ram.vhd:247]
+INFO: [Synth 8-256] done synthesizing module 'dual_port_ram' (9#1) [z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/synth/dual_port_ram.vhd:76]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized2 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized2 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized2 has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized2 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized2 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized2 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized1 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized1 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized1 has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized1 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized1 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized1 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port RSTA[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEA[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEA[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEA[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port RSTB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[14]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[13]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port CLKB
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port SBITERR_I
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DBITERR_I
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[4]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[3]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[2]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[1]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[0]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port RSTA
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port REGCEA
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port RSTB
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port REGCEB
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port CLKB
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AClk
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWID[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWID[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWID[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWID[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[31]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[30]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[29]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[28]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[27]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[26]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[25]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[24]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[23]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[22]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[21]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[20]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[19]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[18]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[17]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[16]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[15]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[14]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[13]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWLEN[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWLEN[6]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 654.879 ; gain = 367.863
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 654.879 ; gain = 367.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 654.879 ; gain = 367.863
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram_ooc.xdc] for cell 'U0'
+Parsing XDC File [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/dual_port_ram_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/dual_port_ram_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 733.973 ; gain = 1.188
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:07 ; elapsed = 00:01:14 . Memory (MB): peak = 733.973 ; gain = 446.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:07 ; elapsed = 00:01:14 . Memory (MB): peak = 733.973 ; gain = 446.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/dual_port_ram_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:07 ; elapsed = 00:01:14 . Memory (MB): peak = 733.973 ; gain = 446.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:07 ; elapsed = 00:01:15 . Memory (MB): peak = 733.973 ; gain = 446.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:16 . Memory (MB): peak = 733.973 ; gain = 446.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:15 ; elapsed = 00:01:25 . Memory (MB): peak = 765.168 ; gain = 478.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:01:25 . Memory (MB): peak = 765.465 ; gain = 478.449
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:15 ; elapsed = 00:01:25 . Memory (MB): peak = 765.930 ; gain = 478.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:16 ; elapsed = 00:01:26 . Memory (MB): peak = 766.867 ; gain = 479.852
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:16 ; elapsed = 00:01:26 . Memory (MB): peak = 766.867 ; gain = 479.852
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:17 ; elapsed = 00:01:26 . Memory (MB): peak = 766.867 ; gain = 479.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:17 ; elapsed = 00:01:26 . Memory (MB): peak = 766.867 ; gain = 479.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:17 ; elapsed = 00:01:26 . Memory (MB): peak = 766.867 ; gain = 479.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:17 ; elapsed = 00:01:26 . Memory (MB): peak = 766.867 ; gain = 479.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |RAMB36E1   |     1|
+|2     |RAMB36E1_1 |     3|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------------------------------------------+----------------------------------------------+------+
+|      |Instance                                     |Module                                        |Cells |
++------+---------------------------------------------+----------------------------------------------+------+
+|1     |top                                          |                                              |     4|
+|2     |  U0                                         |blk_mem_gen_v8_4_1                            |     4|
+|3     |    inst_blk_mem_gen                         |blk_mem_gen_v8_4_1_synth                      |     4|
+|4     |      \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                               |     4|
+|5     |        \valid.cstr                          |blk_mem_gen_generic_cstr                      |     4|
+|6     |          \ramloop[0].ram.r                  |blk_mem_gen_prim_width                        |     1|
+|7     |            \prim_init.ram                   |blk_mem_gen_prim_wrapper_init                 |     1|
+|8     |          \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized0        |     1|
+|9     |            \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized0 |     1|
+|10    |          \ramloop[2].ram.r                  |blk_mem_gen_prim_width__parameterized1        |     1|
+|11    |            \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized1 |     1|
+|12    |          \ramloop[3].ram.r                  |blk_mem_gen_prim_width__parameterized2        |     1|
+|13    |            \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized2 |     1|
++------+---------------------------------------------+----------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:17 ; elapsed = 00:01:26 . Memory (MB): peak = 766.867 ; gain = 479.852
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 152 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:01:17 . Memory (MB): peak = 766.867 ; gain = 400.758
+Synthesis Optimization Complete : Time (s): cpu = 00:01:17 ; elapsed = 00:01:26 . Memory (MB): peak = 766.875 ; gain = 479.852
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:29 . Memory (MB): peak = 788.734 ; gain = 513.188
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/dual_port_ram_synth_1/dual_port_ram.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram.xci
+INFO: [Coretcl 2-1174] Renamed 12 cell refs.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/dual_port_ram_synth_1/dual_port_ram.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file dual_port_ram_utilization_synth.rpt -pb dual_port_ram_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 791.535 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu May  2 19:02:19 2019...
+
+*** Running vivado
+    with args -log dual_port_ram.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dual_port_ram.tcl
+
+
+****** Vivado v2018.2.1 (64-bit)
+  **** SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+  **** IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source dual_port_ram.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP dual_port_ram, cache-ID = a9e4b1602c3f63c1.
+INFO: [Common 17-206] Exiting Vivado at Thu May  2 20:03:50 2019...
+
+*** Running vivado
+    with args -log dual_port_ram.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dual_port_ram.tcl
+
+
+****** Vivado v2018.2.1 (64-bit)
+  **** SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+  **** IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source dual_port_ram.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP dual_port_ram, cache-ID = a9e4b1602c3f63c1.
+INFO: [Common 17-206] Exiting Vivado at Thu May  2 20:17:31 2019...
+
+*** Running vivado
+    with args -log dual_port_ram.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dual_port_ram.tcl
+
+
+****** Vivado v2018.2.1 (64-bit)
+  **** SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+  **** IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source dual_port_ram.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP dual_port_ram, cache-ID = a9e4b1602c3f63c1.
+INFO: [Common 17-206] Exiting Vivado at Thu May  2 20:35:08 2019...
+
+*** Running vivado
+    with args -log dual_port_ram.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dual_port_ram.tcl
+
+
+****** Vivado v2018.2.1 (64-bit)
+  **** SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+  **** IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source dual_port_ram.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP dual_port_ram, cache-ID = a9e4b1602c3f63c1.
+INFO: [Common 17-206] Exiting Vivado at Thu May  2 20:56:03 2019...
+[Thu May  2 20:56:04 2019] dual_port_ram_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 919.082 ; gain = 0.000
 synth_design -rtl -name rtl_1
 Command: synth_design -rtl -name rtl_1
 Starting synth_design
 Using part: xc7a100tcsg324-1
 Top: computer_top
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1072.676 ; gain = 106.023
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 995.266 ; gain = 76.184
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'computer_top' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
 INFO: [Synth 8-3491] module 'mips_top' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:17' bound to instance 'mips1' of component 'mips_top' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:65]
@@ -190,713 +565,74 @@ INFO: [Synth 8-3491] module 'datapath' declared at 'Z:/rrutherford20/CS-401-1-Co
 INFO: [Synth 8-638] synthesizing module 'datapath' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
 	Parameter width bound to: 32 - type: integer 
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'flopr' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:5' bound to instance 'pcreg' of component 'flopr' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:101]
+INFO: [Synth 8-3491] module 'flopr' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:5' bound to instance 'pcreg' of component 'flopr' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
 INFO: [Synth 8-638] synthesizing module 'flopr' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
 	Parameter width bound to: 32 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'flopr' (4#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'adder' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd1' of component 'adder' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
+INFO: [Synth 8-3491] module 'adder' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd1' of component 'adder' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:103]
 INFO: [Synth 8-638] synthesizing module 'adder' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
 	Parameter width bound to: 32 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'adder' (5#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'sl2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:7' bound to instance 'immsh' of component 'sl2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:103]
-INFO: [Synth 8-638] synthesizing module 'sl2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:13]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'sl2' (6#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:13]
 	Parameter width bound to: 32 - type: integer 
 INFO: [Synth 8-3491] module 'adder' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd2' of component 'adder' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:104]
 	Parameter width bound to: 32 - type: integer 
 INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcbrmux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:105]
 INFO: [Synth 8-638] synthesizing module 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'mux2' (7#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcmux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'mux2' (6#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
 	Parameter N bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'bit_reg' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:25' bound to instance 'zreg' of component 'bit_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:107]
+INFO: [Synth 8-3491] module 'bit_reg' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:25' bound to instance 'zreg' of component 'bit_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:106]
 INFO: [Synth 8-638] synthesizing module 'bit_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
 	Parameter N bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'bit_reg' (8#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'bit_reg' (7#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'regfile' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:11' bound to instance 'rf' of component 'regfile' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:110]
+INFO: [Synth 8-3491] module 'regfile' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:11' bound to instance 'rf' of component 'regfile' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:109]
 INFO: [Synth 8-638] synthesizing module 'regfile' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'regfile' (9#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (8#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'resmux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:117]
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'resmux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:116]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'signext' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:5' bound to instance 'se' of component 'signext' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:121]
+INFO: [Synth 8-3491] module 'signext' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:5' bound to instance 'se' of component 'signext' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:120]
 INFO: [Synth 8-638] synthesizing module 'signext' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'signext' (10#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'signext' (9#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'srcbmux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:124]
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'srcbmux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:123]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'mov_mux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:127]
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'mov_mux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:126]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mips_alu' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:8' bound to instance 'mainalu' of component 'mips_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:130]
+INFO: [Synth 8-3491] module 'mips_alu' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:8' bound to instance 'mainalu' of component 'mips_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:129]
 INFO: [Synth 8-638] synthesizing module 'mips_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'mips_alu' (11#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'datapath' (12#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'mips' (13#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'mips_alu' (10#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (11#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'mips' (12#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
 	Parameter width bound to: 32 - type: integer 
 INFO: [Synth 8-3491] module 'imem' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:10' bound to instance 'imem1' of component 'imem' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:89]
 INFO: [Synth 8-638] synthesizing module 'imem' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'imem' (14#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
-INFO: [Synth 8-3491] module 'dmem' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:11' bound to instance 'dmem1' of component 'dmem' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:90]
-INFO: [Synth 8-638] synthesizing module 'dmem' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:22]
-INFO: [Synth 8-3491] module 'dual_port_ram' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/.Xil/Vivado-9492-LAB-SCI-214-20/realtime/dual_port_ram_stub.vhdl:5' bound to instance 'MULTI_PORT_REG' of component 'dual_port_ram' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:43]
-INFO: [Synth 8-638] synthesizing module 'dual_port_ram' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/.Xil/Vivado-9492-LAB-SCI-214-20/realtime/dual_port_ram_stub.vhdl:23]
-INFO: [Synth 8-256] done synthesizing module 'dmem' (15#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:22]
-INFO: [Synth 8-3491] module 'ListProc' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:9' bound to instance 'listProcessor' of component 'listProc' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:94]
-INFO: [Synth 8-638] synthesizing module 'ListProc' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:23]
-WARNING: [Synth 8-614] signal 'opcode' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:61]
-WARNING: [Synth 8-614] signal 'regOutArray' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:61]
-WARNING: [Synth 8-614] signal 'operandA' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:61]
-WARNING: [Synth 8-614] signal 'operandB' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:61]
-WARNING: [Synth 8-614] signal 'resultRegNdx' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:76]
-WARNING: [Synth 8-614] signal 'intOpA' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:76]
-WARNING: [Synth 8-614] signal 'regWrite' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:76]
-	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'results' of component 'bit128_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:124]
-INFO: [Synth 8-638] synthesizing module 'bit128_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:14]
-	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'bit128_reg' (16#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:14]
-	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regA' of component 'bit128_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:133]
-	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regB' of component 'bit128_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:142]
-INFO: [Synth 8-3491] module 'alu_block' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:6' bound to instance 'alus' of component 'alu_block' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:151]
-INFO: [Synth 8-638] synthesizing module 'alu_block' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:15]
-	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu0' of component 'list_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:48]
-INFO: [Synth 8-638] synthesizing module 'list_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:36]
-	Parameter N bound to: 32 - type: integer 
-WARNING: [Synth 8-614] signal 'A' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:38]
-WARNING: [Synth 8-614] signal 'B' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:38]
-INFO: [Synth 8-256] done synthesizing module 'list_alu' (17#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:36]
-	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu1' of component 'list_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:56]
-	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu2' of component 'list_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:64]
-	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu3' of component 'list_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:72]
-INFO: [Synth 8-256] done synthesizing module 'alu_block' (18#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:15]
-INFO: [Synth 8-256] done synthesizing module 'ListProc' (19#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:23]
-INFO: [Synth 8-256] done synthesizing module 'mips_top' (20#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
-INFO: [Synth 8-3491] module 'display_hex' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:5' bound to instance 'display' of component 'display_hex' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:67]
-INFO: [Synth 8-638] synthesizing module 'display_hex' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:17]
-WARNING: [Synth 8-614] signal 'x' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:35]
-INFO: [Synth 8-256] done synthesizing module 'display_hex' (21#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:17]
-INFO: [Synth 8-256] done synthesizing module 'computer_top' (22#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
-WARNING: [Synth 8-3331] design sl2 has unconnected port a[31]
-WARNING: [Synth 8-3331] design sl2 has unconnected port a[30]
-WARNING: [Synth 8-3331] design datapath has unconnected port instr[31]
-WARNING: [Synth 8-3331] design datapath has unconnected port instr[30]
-WARNING: [Synth 8-3331] design datapath has unconnected port instr[29]
-WARNING: [Synth 8-3331] design datapath has unconnected port instr[28]
-WARNING: [Synth 8-3331] design datapath has unconnected port instr[27]
-WARNING: [Synth 8-3331] design datapath has unconnected port instr[26]
-WARNING: [Synth 8-3331] design aludec has unconnected port funct[5]
-WARNING: [Synth 8-3331] design aludec has unconnected port funct[4]
-WARNING: [Synth 8-3331] design aludec has unconnected port funct[3]
-WARNING: [Synth 8-3331] design aludec has unconnected port funct[2]
-WARNING: [Synth 8-3331] design aludec has unconnected port funct[1]
-WARNING: [Synth 8-3331] design aludec has unconnected port funct[0]
-WARNING: [Synth 8-3331] design aludec has unconnected port aluop[1]
-WARNING: [Synth 8-3331] design aludec has unconnected port aluop[0]
-WARNING: [Synth 8-3331] design controller has unconnected port regdst
+ERROR: [Synth 8-3302] unable to open file 'memfil5e.dat' in 'r' mode [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:27]
+ERROR: [Synth 8-421] mismatched array sizes in rhs and lhs of assignment [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:64]
+ERROR: [Synth 8-285] failed synthesizing module 'imem' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
+ERROR: [Synth 8-285] failed synthesizing module 'mips_top' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+ERROR: [Synth 8-285] failed synthesizing module 'computer_top' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1116.949 ; gain = 150.297
----------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1116.949 ; gain = 150.297
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1116.949 ; gain = 150.297
----------------------------------------------------------------------------------
-INFO: [Project 1-454] Reading design checkpoint 'z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram.dcp' for cell 'mips1/dmem1/MULTI_PORT_REG'
-INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2018.2.1
-INFO: [Device 21-403] Loading part xc7a100tcsg324-1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
-
-Processing XDC Constraints
-Initializing timing engine
-Parsing XDC File [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
-Finished Parsing XDC File [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
-Completed Processing XDC Constraints
-
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-RTL Elaboration Complete:  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1504.262 ; gain = 537.609
-86 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 1504.262 ; gain = 537.609
-refresh_design
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1512.152 ; gain = 1.980
----------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'computer_top' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
-INFO: [Synth 8-3491] module 'mips_top' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:17' bound to instance 'mips1' of component 'mips_top' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:65]
-INFO: [Synth 8-638] synthesizing module 'mips_top' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mips' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:14' bound to instance 'mips1' of component 'mips' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:86]
-INFO: [Synth 8-638] synthesizing module 'mips' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'controller' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:5' bound to instance 'cont' of component 'controller' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:62]
-INFO: [Synth 8-638] synthesizing module 'controller' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
-INFO: [Synth 8-3491] module 'maindec' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:5' bound to instance 'md' of component 'maindec' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:35]
-INFO: [Synth 8-638] synthesizing module 'maindec' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:15]
-INFO: [Synth 8-256] done synthesizing module 'maindec' (1#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:15]
-INFO: [Synth 8-3491] module 'aludec' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:4' bound to instance 'ad' of component 'aludec' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:37]
-INFO: [Synth 8-638] synthesizing module 'aludec' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:10]
-INFO: [Synth 8-256] done synthesizing module 'aludec' (2#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:10]
-WARNING: [Synth 8-3848] Net regdst in module/entity controller does not have driver. [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:12]
-INFO: [Synth 8-256] done synthesizing module 'controller' (3#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'datapath' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:6' bound to instance 'dp' of component 'datapath' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:68]
-INFO: [Synth 8-638] synthesizing module 'datapath' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
-	Parameter width bound to: 32 - type: integer 
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'flopr' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:5' bound to instance 'pcreg' of component 'flopr' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-INFO: [Synth 8-638] synthesizing module 'flopr' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'flopr' (4#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'adder' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd1' of component 'adder' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:103]
-INFO: [Synth 8-638] synthesizing module 'adder' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'adder' (5#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'sl2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:7' bound to instance 'immsh' of component 'sl2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:104]
-INFO: [Synth 8-638] synthesizing module 'sl2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:13]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'sl2' (6#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:13]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'adder' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd2' of component 'adder' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:105]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcbrmux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:106]
-INFO: [Synth 8-638] synthesizing module 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'mux2' (7#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
-	Parameter N bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'bit_reg' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:25' bound to instance 'zreg' of component 'bit_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:107]
-INFO: [Synth 8-638] synthesizing module 'bit_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
-	Parameter N bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'bit_reg' (8#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'regfile' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:11' bound to instance 'rf' of component 'regfile' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:110]
-INFO: [Synth 8-638] synthesizing module 'regfile' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'regfile' (9#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'resmux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:117]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'signext' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:5' bound to instance 'se' of component 'signext' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:121]
-INFO: [Synth 8-638] synthesizing module 'signext' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'signext' (10#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'srcbmux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:124]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'mov_mux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:127]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mips_alu' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:8' bound to instance 'mainalu' of component 'mips_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:130]
-INFO: [Synth 8-638] synthesizing module 'mips_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'mips_alu' (11#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
-WARNING: [Synth 8-3848] Net pcnext in module/entity datapath does not have driver. [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:84]
-INFO: [Synth 8-256] done synthesizing module 'datapath' (12#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'mips' (13#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'imem' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:10' bound to instance 'imem1' of component 'imem' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:89]
-INFO: [Synth 8-638] synthesizing module 'imem' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'imem' (14#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
-INFO: [Synth 8-3491] module 'dmem' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:11' bound to instance 'dmem1' of component 'dmem' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:90]
-INFO: [Synth 8-638] synthesizing module 'dmem' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:22]
-INFO: [Synth 8-3491] module 'dual_port_ram' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/.Xil/Vivado-9492-LAB-SCI-214-20/realtime/dual_port_ram_stub.vhdl:5' bound to instance 'MULTI_PORT_REG' of component 'dual_port_ram' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:43]
-INFO: [Synth 8-638] synthesizing module 'dual_port_ram' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/.Xil/Vivado-9492-LAB-SCI-214-20/realtime/dual_port_ram_stub.vhdl:23]
-INFO: [Synth 8-256] done synthesizing module 'dmem' (15#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:22]
-INFO: [Synth 8-3491] module 'ListProc' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:9' bound to instance 'listProcessor' of component 'listProc' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:94]
-INFO: [Synth 8-638] synthesizing module 'ListProc' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:23]
-WARNING: [Synth 8-614] signal 'opcode' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:61]
-WARNING: [Synth 8-614] signal 'regOutArray' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:61]
-WARNING: [Synth 8-614] signal 'operandA' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:61]
-WARNING: [Synth 8-614] signal 'operandB' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:61]
-WARNING: [Synth 8-614] signal 'resultRegNdx' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:76]
-WARNING: [Synth 8-614] signal 'intOpA' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:76]
-WARNING: [Synth 8-614] signal 'regWrite' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:76]
-	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'results' of component 'bit128_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:124]
-INFO: [Synth 8-638] synthesizing module 'bit128_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:14]
-	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'bit128_reg' (16#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:14]
-	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regA' of component 'bit128_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:133]
-	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regB' of component 'bit128_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:142]
-INFO: [Synth 8-3491] module 'alu_block' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:6' bound to instance 'alus' of component 'alu_block' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:151]
-INFO: [Synth 8-638] synthesizing module 'alu_block' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:15]
-	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu0' of component 'list_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:48]
-INFO: [Synth 8-638] synthesizing module 'list_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:36]
-	Parameter N bound to: 32 - type: integer 
-WARNING: [Synth 8-614] signal 'A' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:38]
-WARNING: [Synth 8-614] signal 'B' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:38]
-INFO: [Synth 8-256] done synthesizing module 'list_alu' (17#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:36]
-	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu1' of component 'list_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:56]
-	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu2' of component 'list_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:64]
-	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu3' of component 'list_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:72]
-INFO: [Synth 8-256] done synthesizing module 'alu_block' (18#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:15]
-INFO: [Synth 8-256] done synthesizing module 'ListProc' (19#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:23]
-INFO: [Synth 8-256] done synthesizing module 'mips_top' (20#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
-INFO: [Synth 8-3491] module 'display_hex' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:5' bound to instance 'display' of component 'display_hex' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:67]
-INFO: [Synth 8-638] synthesizing module 'display_hex' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:17]
-WARNING: [Synth 8-614] signal 'x' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:35]
-INFO: [Synth 8-256] done synthesizing module 'display_hex' (21#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:17]
-INFO: [Synth 8-256] done synthesizing module 'computer_top' (22#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
-WARNING: [Synth 8-3331] design sl2 has unconnected port a[31]
-WARNING: [Synth 8-3331] design sl2 has unconnected port a[30]
-WARNING: [Synth 8-3331] design datapath has unconnected port instr[31]
-WARNING: [Synth 8-3331] design datapath has unconnected port instr[30]
-WARNING: [Synth 8-3331] design datapath has unconnected port instr[29]
-WARNING: [Synth 8-3331] design datapath has unconnected port instr[28]
-WARNING: [Synth 8-3331] design datapath has unconnected port instr[27]
-WARNING: [Synth 8-3331] design datapath has unconnected port instr[26]
-WARNING: [Synth 8-3331] design datapath has unconnected port instr[25]
-WARNING: [Synth 8-3331] design datapath has unconnected port instr[24]
-WARNING: [Synth 8-3331] design aludec has unconnected port funct[5]
-WARNING: [Synth 8-3331] design aludec has unconnected port funct[4]
-WARNING: [Synth 8-3331] design aludec has unconnected port funct[3]
-WARNING: [Synth 8-3331] design aludec has unconnected port funct[2]
-WARNING: [Synth 8-3331] design aludec has unconnected port funct[1]
-WARNING: [Synth 8-3331] design aludec has unconnected port funct[0]
-WARNING: [Synth 8-3331] design aludec has unconnected port aluop[1]
-WARNING: [Synth 8-3331] design aludec has unconnected port aluop[0]
-WARNING: [Synth 8-3331] design controller has unconnected port regdst
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1546.617 ; gain = 36.445
----------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[31] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[30] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[29] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[28] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[27] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[26] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[25] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[24] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[23] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[22] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[21] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[20] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[19] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[18] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[17] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[16] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[15] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[14] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[13] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[12] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[11] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[10] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[9] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[8] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[7] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[6] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[5] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[4] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[3] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[2] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[1] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-WARNING: [Synth 8-3295] tying undriven pin pcreg:d[0] to constant 0 [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1546.617 ; gain = 36.445
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1546.617 ; gain = 36.445
----------------------------------------------------------------------------------
-INFO: [Project 1-454] Reading design checkpoint 'z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram.dcp' for cell 'mips1/dmem1/MULTI_PORT_REG'
-INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2018.2.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
-
-Processing XDC Constraints
-Initializing timing engine
-Parsing XDC File [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
-Finished Parsing XDC File [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
-Completed Processing XDC Constraints
-
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-refresh_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1546.617 ; gain = 36.445
-refresh_design
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1546.617 ; gain = 0.000
----------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'computer_top' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
-INFO: [Synth 8-3491] module 'mips_top' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:17' bound to instance 'mips1' of component 'mips_top' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:65]
-INFO: [Synth 8-638] synthesizing module 'mips_top' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mips' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:14' bound to instance 'mips1' of component 'mips' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:86]
-INFO: [Synth 8-638] synthesizing module 'mips' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'controller' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:5' bound to instance 'cont' of component 'controller' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:62]
-INFO: [Synth 8-638] synthesizing module 'controller' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
-INFO: [Synth 8-3491] module 'maindec' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:5' bound to instance 'md' of component 'maindec' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:35]
-INFO: [Synth 8-638] synthesizing module 'maindec' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:15]
-INFO: [Synth 8-256] done synthesizing module 'maindec' (1#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:15]
-INFO: [Synth 8-3491] module 'aludec' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:4' bound to instance 'ad' of component 'aludec' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:37]
-INFO: [Synth 8-638] synthesizing module 'aludec' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:10]
-INFO: [Synth 8-256] done synthesizing module 'aludec' (2#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:10]
-WARNING: [Synth 8-3848] Net regdst in module/entity controller does not have driver. [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:12]
-INFO: [Synth 8-256] done synthesizing module 'controller' (3#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'datapath' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:6' bound to instance 'dp' of component 'datapath' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:68]
-INFO: [Synth 8-638] synthesizing module 'datapath' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
-	Parameter width bound to: 32 - type: integer 
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'flopr' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:5' bound to instance 'pcreg' of component 'flopr' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
-INFO: [Synth 8-638] synthesizing module 'flopr' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'flopr' (4#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'adder' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd1' of component 'adder' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:103]
-INFO: [Synth 8-638] synthesizing module 'adder' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'adder' (5#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'sl2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:7' bound to instance 'immsh' of component 'sl2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:104]
-INFO: [Synth 8-638] synthesizing module 'sl2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:13]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'sl2' (6#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:13]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'adder' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd2' of component 'adder' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:105]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcbrmux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:106]
-INFO: [Synth 8-638] synthesizing module 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'mux2' (7#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
-	Parameter N bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'bit_reg' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:25' bound to instance 'zreg' of component 'bit_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:107]
-INFO: [Synth 8-638] synthesizing module 'bit_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
-	Parameter N bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'bit_reg' (8#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'regfile' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:11' bound to instance 'rf' of component 'regfile' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:110]
-INFO: [Synth 8-638] synthesizing module 'regfile' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'regfile' (9#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'resmux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:117]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'signext' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:5' bound to instance 'se' of component 'signext' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:121]
-INFO: [Synth 8-638] synthesizing module 'signext' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'signext' (10#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'srcbmux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:124]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'mov_mux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:127]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mips_alu' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:8' bound to instance 'mainalu' of component 'mips_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:130]
-INFO: [Synth 8-638] synthesizing module 'mips_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'mips_alu' (11#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'datapath' (12#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'mips' (13#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'imem' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:10' bound to instance 'imem1' of component 'imem' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:89]
-INFO: [Synth 8-638] synthesizing module 'imem' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
-	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'imem' (14#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
-INFO: [Synth 8-3491] module 'dmem' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:11' bound to instance 'dmem1' of component 'dmem' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:90]
-INFO: [Synth 8-638] synthesizing module 'dmem' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:22]
-INFO: [Synth 8-3491] module 'dual_port_ram' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/.Xil/Vivado-9492-LAB-SCI-214-20/realtime/dual_port_ram_stub.vhdl:5' bound to instance 'MULTI_PORT_REG' of component 'dual_port_ram' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:43]
-INFO: [Synth 8-638] synthesizing module 'dual_port_ram' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/.Xil/Vivado-9492-LAB-SCI-214-20/realtime/dual_port_ram_stub.vhdl:23]
-INFO: [Synth 8-256] done synthesizing module 'dmem' (15#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:22]
-INFO: [Synth 8-3491] module 'ListProc' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:9' bound to instance 'listProcessor' of component 'listProc' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:94]
-INFO: [Synth 8-638] synthesizing module 'ListProc' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:23]
-WARNING: [Synth 8-614] signal 'opcode' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:61]
-WARNING: [Synth 8-614] signal 'regOutArray' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:61]
-WARNING: [Synth 8-614] signal 'operandA' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:61]
-WARNING: [Synth 8-614] signal 'operandB' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:61]
-WARNING: [Synth 8-614] signal 'resultRegNdx' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:76]
-WARNING: [Synth 8-614] signal 'intOpA' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:76]
-WARNING: [Synth 8-614] signal 'regWrite' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:76]
-	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'results' of component 'bit128_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:124]
-INFO: [Synth 8-638] synthesizing module 'bit128_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:14]
-	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'bit128_reg' (16#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:14]
-	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regA' of component 'bit128_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:133]
-	Parameter N bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'bit128_reg' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/128bit_reg.vhd:4' bound to instance 'regB' of component 'bit128_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:142]
-INFO: [Synth 8-3491] module 'alu_block' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:6' bound to instance 'alus' of component 'alu_block' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:151]
-INFO: [Synth 8-638] synthesizing module 'alu_block' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:15]
-	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu0' of component 'list_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:48]
-INFO: [Synth 8-638] synthesizing module 'list_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:36]
-	Parameter N bound to: 32 - type: integer 
-WARNING: [Synth 8-614] signal 'A' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:38]
-WARNING: [Synth 8-614] signal 'B' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:38]
-INFO: [Synth 8-256] done synthesizing module 'list_alu' (17#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:36]
-	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu1' of component 'list_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:56]
-	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu2' of component 'list_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:64]
-	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu3' of component 'list_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:72]
-INFO: [Synth 8-256] done synthesizing module 'alu_block' (18#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:15]
-INFO: [Synth 8-256] done synthesizing module 'ListProc' (19#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:23]
-INFO: [Synth 8-256] done synthesizing module 'mips_top' (20#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
-INFO: [Synth 8-3491] module 'display_hex' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:5' bound to instance 'display' of component 'display_hex' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:67]
-INFO: [Synth 8-638] synthesizing module 'display_hex' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:17]
-WARNING: [Synth 8-614] signal 'x' is read in the process but is not in the sensitivity list [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:35]
-INFO: [Synth 8-256] done synthesizing module 'display_hex' (21#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:17]
-INFO: [Synth 8-256] done synthesizing module 'computer_top' (22#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
-WARNING: [Synth 8-3331] design sl2 has unconnected port a[31]
-WARNING: [Synth 8-3331] design sl2 has unconnected port a[30]
-WARNING: [Synth 8-3331] design datapath has unconnected port instr[31]
-WARNING: [Synth 8-3331] design datapath has unconnected port instr[30]
-WARNING: [Synth 8-3331] design datapath has unconnected port instr[29]
-WARNING: [Synth 8-3331] design datapath has unconnected port instr[28]
-WARNING: [Synth 8-3331] design datapath has unconnected port instr[27]
-WARNING: [Synth 8-3331] design datapath has unconnected port instr[26]
-WARNING: [Synth 8-3331] design datapath has unconnected port instr[25]
-WARNING: [Synth 8-3331] design datapath has unconnected port instr[24]
-WARNING: [Synth 8-3331] design aludec has unconnected port funct[5]
-WARNING: [Synth 8-3331] design aludec has unconnected port funct[4]
-WARNING: [Synth 8-3331] design aludec has unconnected port funct[3]
-WARNING: [Synth 8-3331] design aludec has unconnected port funct[2]
-WARNING: [Synth 8-3331] design aludec has unconnected port funct[1]
-WARNING: [Synth 8-3331] design aludec has unconnected port funct[0]
-WARNING: [Synth 8-3331] design aludec has unconnected port aluop[1]
-WARNING: [Synth 8-3331] design aludec has unconnected port aluop[0]
-WARNING: [Synth 8-3331] design controller has unconnected port regdst
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1554.582 ; gain = 7.965
----------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1554.582 ; gain = 7.965
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1554.582 ; gain = 7.965
----------------------------------------------------------------------------------
-INFO: [Project 1-454] Reading design checkpoint 'z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram.dcp' for cell 'mips1/dmem1/MULTI_PORT_REG'
-INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2018.2.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
-
-Processing XDC Constraints
-Initializing timing engine
-Parsing XDC File [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
-Finished Parsing XDC File [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
-Completed Processing XDC Constraints
-
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1564.242 ; gain = 17.625
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-7] Finding pre-compiled libraries...
-INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-54] Inspecting design source files for 'mips_testbench' in fileset 'sim_1'...
-INFO: [SIM-utils-43] Exported 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/dual_port_ram.mif'
-INFO: [SIM-utils-43] Exported 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/dual_ram_init.coe'
-INFO: [SIM-utils-43] Exported 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/memfile.dat'
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
-INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj mips_testbench_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram_sim_netlist.vhdl" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity dual_port_ram_blk_mem_gen_prim_wrapper_init
-INFO: [VRFC 10-307] analyzing entity \dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized0\
-INFO: [VRFC 10-307] analyzing entity \dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized1\
-INFO: [VRFC 10-307] analyzing entity \dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized2\
-INFO: [VRFC 10-307] analyzing entity dual_port_ram_blk_mem_gen_prim_width
-INFO: [VRFC 10-307] analyzing entity \dual_port_ram_blk_mem_gen_prim_width__parameterized0\
-INFO: [VRFC 10-307] analyzing entity \dual_port_ram_blk_mem_gen_prim_width__parameterized1\
-INFO: [VRFC 10-307] analyzing entity \dual_port_ram_blk_mem_gen_prim_width__parameterized2\
-INFO: [VRFC 10-307] analyzing entity dual_port_ram_blk_mem_gen_generic_cstr
-INFO: [VRFC 10-307] analyzing entity dual_port_ram_blk_mem_gen_top
-INFO: [VRFC 10-307] analyzing entity dual_port_ram_blk_mem_gen_v8_4_1_synth
-INFO: [VRFC 10-307] analyzing entity dual_port_ram_blk_mem_gen_v8_4_1
-INFO: [VRFC 10-307] analyzing entity dual_port_ram
-INFO: [VRFC 10-163] Analyzing VHDL file "Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity datapath
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.2
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto bfc6d33675f34e59a51d26a1983c03b4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot mips_testbench_behav xil_defaultlib.mips_testbench -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling package ieee.numeric_std
-Compiling package ieee.math_real
-Compiling package unisim.vcomponents
-Compiling package ieee.std_logic_signed
-Compiling package ieee.std_logic_textio
-Compiling package ieee.vital_timing
-Compiling package ieee.vital_primitives
-Compiling package unisim.vpkg
-Compiling architecture behave of entity xil_defaultlib.maindec [maindec_default]
-Compiling architecture behave of entity xil_defaultlib.aludec [aludec_default]
-Compiling architecture struct of entity xil_defaultlib.controller [controller_default]
-Compiling architecture asynchronous of entity xil_defaultlib.flopr [\flopr(width=32)\]
-Compiling architecture behave of entity xil_defaultlib.adder [\adder(width=32)\]
-Compiling architecture behave of entity xil_defaultlib.sl2 [\sl2(width=32)\]
-Compiling architecture behave of entity xil_defaultlib.mux2 [\mux2(width=32)\]
-Compiling architecture behavioral of entity xil_defaultlib.bit_reg [\bit_reg(n=1)\]
-Compiling architecture behave of entity xil_defaultlib.regfile [\regfile(width=32)\]
-Compiling architecture behave of entity xil_defaultlib.signext [\signext(width=32)\]
-Compiling architecture behave of entity xil_defaultlib.mips_alu [\mips_alu(width=32)\]
-Compiling architecture struct of entity xil_defaultlib.datapath [\datapath(width=32)\]
-Compiling architecture struct of entity xil_defaultlib.mips [\mips(width=32)\]
-Compiling architecture behave of entity xil_defaultlib.imem [\imem(width=32)\]
-Compiling architecture gnd_v of entity unisim.GND [gnd_default]
-Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,do...]
-Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,dob_reg=1,in...]
-Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_prim_wrapper_init [dual_port_ram_blk_mem_gen_prim_w...]
-Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_prim_width [dual_port_ram_blk_mem_gen_prim_w...]
-Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,do...]
-Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,dob_reg=1,in...]
-Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized0\ [\dual_port_ram_blk_mem_gen_prim_...]
-Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_width__parameterized0\ [\dual_port_ram_blk_mem_gen_prim_...]
-Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,do...]
-Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,dob_reg=1,in...]
-Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized1\ [\dual_port_ram_blk_mem_gen_prim_...]
-Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_width__parameterized1\ [\dual_port_ram_blk_mem_gen_prim_...]
-Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,do...]
-Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,dob_reg=1,in...]
-Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized2\ [\dual_port_ram_blk_mem_gen_prim_...]
-Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_width__parameterized2\ [\dual_port_ram_blk_mem_gen_prim_...]
-Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_generic_cstr [dual_port_ram_blk_mem_gen_generi...]
-Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_top [dual_port_ram_blk_mem_gen_top_de...]
-Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_v8_4_1_synth [dual_port_ram_blk_mem_gen_v8_4_1...]
-Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_v8_4_1 [dual_port_ram_blk_mem_gen_v8_4_1...]
-Compiling architecture structure of entity xil_defaultlib.dual_port_ram [dual_port_ram_default]
-Compiling architecture behave of entity xil_defaultlib.dmem [dmem_default]
-Compiling architecture behavioral of entity xil_defaultlib.bit128_reg [bit128_reg_default]
-Compiling architecture behavioral of entity xil_defaultlib.list_alu [list_alu_default]
-Compiling architecture behavioral of entity xil_defaultlib.alu_block [alu_block_default]
-Compiling architecture listproc of entity xil_defaultlib.ListProc [listproc_default]
-Compiling architecture mips_top of entity xil_defaultlib.mips_top [mips_top_default]
-Compiling architecture mips_testbench of entity xil_defaultlib.mips_testbench
-Built simulation snapshot mips_testbench_behav
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1564.242 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "mips_testbench_behav -key {Behavioral:sim_1:Functional:mips_testbench} -tclbatch {mips_testbench.tcl} -view {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips_testbench_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2018.2
-Time resolution is 1 ps
-open_wave_config Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips_testbench_behav.wcfg
-source mips_testbench.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'mips_testbench_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 1564.242 ; gain = 0.000
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-refresh_design
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1564.242 ; gain = 0.000
----------------------------------------------------------------------------------
-ERROR: [Synth 8-1031] signimmsh is not declared [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:133]
-INFO: [Synth 8-2810] unit struct ignored due to previous errors [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1584.328 ; gain = 20.086
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1039.910 ; gain = 120.828
 ---------------------------------------------------------------------------------
 RTL Elaboration failed
-ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
-refresh_design
+45 Infos, 1 Warnings, 0 Critical Warnings and 6 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+add_files -norecurse Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/memfile.dat
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: computer_top
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1589.160 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1061.594 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'computer_top' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
 INFO: [Synth 8-3491] module 'mips_top' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:17' bound to instance 'mips1' of component 'mips_top' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:65]
@@ -971,8 +707,8 @@ INFO: [Synth 8-638] synthesizing module 'imem' [Z:/rrutherford20/CS-401-1-CompAr
 INFO: [Synth 8-256] done synthesizing module 'imem' (13#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
 INFO: [Synth 8-3491] module 'dmem' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:11' bound to instance 'dmem1' of component 'dmem' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:90]
 INFO: [Synth 8-638] synthesizing module 'dmem' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:22]
-INFO: [Synth 8-3491] module 'dual_port_ram' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/.Xil/Vivado-9492-LAB-SCI-214-20/realtime/dual_port_ram_stub.vhdl:5' bound to instance 'MULTI_PORT_REG' of component 'dual_port_ram' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:43]
-INFO: [Synth 8-638] synthesizing module 'dual_port_ram' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/.Xil/Vivado-9492-LAB-SCI-214-20/realtime/dual_port_ram_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'dual_port_ram' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/.Xil/Vivado-5932-LAB-SCI-214-20/realtime/dual_port_ram_stub.vhdl:5' bound to instance 'MULTI_PORT_REG' of component 'dual_port_ram' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'dual_port_ram' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/.Xil/Vivado-5932-LAB-SCI-214-20/realtime/dual_port_ram_stub.vhdl:23]
 INFO: [Synth 8-256] done synthesizing module 'dmem' (14#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:22]
 INFO: [Synth 8-3491] module 'ListProc' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:9' bound to instance 'listProcessor' of component 'listProc' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:94]
 INFO: [Synth 8-638] synthesizing module 'ListProc' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:23]
@@ -1033,7 +769,7 @@ WARNING: [Synth 8-3331] design aludec has unconnected port aluop[1]
 WARNING: [Synth 8-3331] design aludec has unconnected port aluop[0]
 WARNING: [Synth 8-3331] design controller has unconnected port regdst
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1589.160 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1096.926 ; gain = 35.332
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1046,15 +782,16 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1589.160 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1096.926 ; gain = 35.332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1589.160 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1096.926 ; gain = 35.332
 ---------------------------------------------------------------------------------
 INFO: [Project 1-454] Reading design checkpoint 'z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram.dcp' for cell 'mips1/dmem1/MULTI_PORT_REG'
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2018.2.1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
 
@@ -1065,10 +802,13 @@ Finished Parsing XDC File [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Work
 Completed Processing XDC Constraints
 
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1605.023 ; gain = 19.867
-save_wave_config {Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips_testbench_behav.wcfg}
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1429.055 ; gain = 367.461
+82 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1429.055 ; gain = 367.461
 launch_simulation
 INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
@@ -1086,8 +826,22 @@ INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
 "xvhdl --incr --relax -prj mips_testbench_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity datapath
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dual_port_ram_blk_mem_gen_prim_wrapper_init
+INFO: [VRFC 10-307] analyzing entity \dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized0\
+INFO: [VRFC 10-307] analyzing entity \dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized1\
+INFO: [VRFC 10-307] analyzing entity \dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized2\
+INFO: [VRFC 10-307] analyzing entity dual_port_ram_blk_mem_gen_prim_width
+INFO: [VRFC 10-307] analyzing entity \dual_port_ram_blk_mem_gen_prim_width__parameterized0\
+INFO: [VRFC 10-307] analyzing entity \dual_port_ram_blk_mem_gen_prim_width__parameterized1\
+INFO: [VRFC 10-307] analyzing entity \dual_port_ram_blk_mem_gen_prim_width__parameterized2\
+INFO: [VRFC 10-307] analyzing entity dual_port_ram_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-307] analyzing entity dual_port_ram_blk_mem_gen_top
+INFO: [VRFC 10-307] analyzing entity dual_port_ram_blk_mem_gen_v8_4_1_synth
+INFO: [VRFC 10-307] analyzing entity dual_port_ram_blk_mem_gen_v8_4_1
+INFO: [VRFC 10-307] analyzing entity dual_port_ram
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity imem
 INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
@@ -1132,15 +886,11 @@ Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1
 Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_prim_wrapper_init [dual_port_ram_blk_mem_gen_prim_w...]
 Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_prim_width [dual_port_ram_blk_mem_gen_prim_w...]
 Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,do...]
-Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,dob_reg=1,in...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,dob_reg=1,re...]
 Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized0\ [\dual_port_ram_blk_mem_gen_prim_...]
 Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_width__parameterized0\ [\dual_port_ram_blk_mem_gen_prim_...]
-Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,do...]
-Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,dob_reg=1,in...]
 Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized1\ [\dual_port_ram_blk_mem_gen_prim_...]
 Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_width__parameterized1\ [\dual_port_ram_blk_mem_gen_prim_...]
-Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,do...]
-Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,dob_reg=1,in...]
 Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized2\ [\dual_port_ram_blk_mem_gen_prim_...]
 Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_width__parameterized2\ [\dual_port_ram_blk_mem_gen_prim_...]
 Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_generic_cstr [dual_port_ram_blk_mem_gen_generi...]
@@ -1156,8 +906,8 @@ Compiling architecture listproc of entity xil_defaultlib.ListProc [listproc_defa
 Compiling architecture mips_top of entity xil_defaultlib.mips_top [mips_top_default]
 Compiling architecture mips_testbench of entity xil_defaultlib.mips_testbench
 Built simulation snapshot mips_testbench_behav
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1605.023 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1453.266 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
@@ -1177,6 +927,15 @@ source mips_testbench.tcl
 #   }
 # }
 # run 1000ns
+ERROR: Index -1 out of bound 2 downto 0
+Time: 300 ns  Iteration: 3  Process: /mips_testbench/dut/listProcessor/line__76
+  File: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd
+
+HDL Line: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:116
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'mips_testbench_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1605.023 ; gain = 0.000
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:21 . Memory (MB): peak = 1464.609 ; gain = 11.344
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May  2 21:00:26 2019...

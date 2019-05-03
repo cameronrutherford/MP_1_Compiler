@@ -122,14 +122,18 @@ else:
 # Labels are addressed by their name, and we return the offset from the start of the code section
 labels = {}
 count = len(hex_output)
+label_indx = []
 for i, line in enumerate(lines):
     # Labels are on their own line starting with a colon, and only use the first word
     if line[0] == ':':   
         label = line.split(' ')[0][1:]
         labels[label] = count
-        del lines[i]
-        continue
-    count += 1
+        label_indx.append(i)
+    else:
+        count += 1
+
+for i in label_indx[::-1]:
+    del lines[i]
 
 for line in lines:
     next_hex = ''
@@ -179,7 +183,7 @@ for line in lines:
             # if we're jumping to a label
             if jLoc in labels.keys():
                 print(jLoc)
-                jLoc = (labels[jLoc] - len(hex_output)) * 4
+                jLoc = (labels[jLoc] - len(hex_output) - 1) * 4
                 print(jLoc)
             else: # otherwise we're jumping a set number of instructions
                 jLoc = int(jLoc) * 4
