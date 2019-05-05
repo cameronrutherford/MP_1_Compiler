@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity ListProc
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sim_1/imports/Desktop/mips_testbench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mips_testbench

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date             : Tue Apr 30 11:42:34 2019
+| Date             : Sun May  5 15:25:08 2019
 | Host             : LAB-SCI-214-20 running 64-bit major release  (build 9200)
 | Command          : report_power -file computer_top_power_routed.rpt -pb computer_top_power_summary_routed.pb -rpx computer_top_power_routed.rpx
 | Design           : computer_top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 5.434        |
+| Total On-Chip Power (W)  | 5.621        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 5.308        |
-| Device Static (W)        | 0.127        |
+| Dynamic (W)              | 5.493        |
+| Device Static (W)        | 0.128        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 60.2         |
-| Junction Temperature (C) | 49.8         |
+| Max Ambient (C)          | 59.4         |
+| Junction Temperature (C) | 50.6         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.308 |      101 |       --- |             --- |
-|   LUT as Logic |     0.245 |       39 |     63400 |            0.06 |
-|   CARRY4       |     0.034 |       11 |     15850 |            0.07 |
-|   Register     |     0.018 |       35 |    126800 |            0.03 |
+| Slice Logic    |     0.147 |       81 |       --- |             --- |
+|   LUT as Logic |     0.097 |       20 |     63400 |            0.03 |
+|   CARRY4       |     0.023 |        9 |     15850 |            0.06 |
+|   Register     |     0.016 |       35 |    126800 |            0.03 |
 |   BUFG         |     0.012 |        2 |        32 |            6.25 |
-|   Others       |     0.000 |        5 |       --- |             --- |
-| Signals        |     0.379 |      101 |       --- |             --- |
-| I/O            |     4.620 |       22 |       210 |           10.48 |
-| Static Power   |     0.127 |          |           |                 |
-| Total          |     5.434 |          |           |                 |
+|   Others       |     0.000 |        6 |       --- |             --- |
+| Signals        |     0.217 |       73 |       --- |             --- |
+| I/O            |     5.129 |       22 |       210 |           10.48 |
+| Static Power   |     0.128 |          |           |                 |
+| Total          |     5.621 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.731 |       0.691 |      0.039 |
-| Vccaux    |       1.800 |     0.190 |       0.169 |      0.021 |
-| Vcco33    |       3.300 |     1.311 |       1.307 |      0.004 |
+| Vccint    |       1.000 |     0.409 |       0.368 |      0.041 |
+| Vccaux    |       1.800 |     0.209 |       0.188 |      0.021 |
+| Vcco33    |       3.300 |     1.455 |       1.451 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -135,16 +135,15 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+----------------+-----------+
-| Name           | Power (W) |
-+----------------+-----------+
-| computer_top   |     5.308 |
-|   display      |     0.159 |
-|   mips1        |     0.509 |
-|     mips1      |     0.509 |
-|       dp       |     0.509 |
-|         pcadd1 |     0.089 |
-|         pcreg  |     0.420 |
-+----------------+-----------+
++---------------+-----------+
+| Name          | Power (W) |
++---------------+-----------+
+| computer_top  |     5.493 |
+|   display     |     0.223 |
+|   mips1       |     0.120 |
+|     mips1     |     0.120 |
+|       dp      |     0.120 |
+|         pcreg |     0.120 |
++---------------+-----------+
 
 

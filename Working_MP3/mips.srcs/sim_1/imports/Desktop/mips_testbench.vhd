@@ -25,9 +25,9 @@ begin
   -- Generate simulated mips clock with 10 ns period
   clkproc: process begin
     clk <= '1';
-    wait for 10 ns; 
+    wait for 20 ns; 
     clk <= '0';
-    wait for 10 ns;
+    wait for 20 ns;
   end process;
   
   -- Generate reset for first few clock cycles

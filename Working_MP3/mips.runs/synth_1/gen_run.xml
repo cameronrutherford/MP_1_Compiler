@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1556649614">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1557094978">
   <File Type="PA-TCL" Name="computer_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="computer_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="computer_top_reports.tcl"/>
   <File Type="RDS-RDS" Name="computer_top.vds"/>
   <File Type="RDS-UTIL" Name="computer_top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="computer_top_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="computer_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="computer_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="computer_top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/new/mips.vhd">
@@ -20,14 +23,6 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/mips_mem_instructions.vhd"/>
         <Attr Name="ImportTime" Val="1510528492"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/new/mips_shift_left_by_2.vhd">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/mips_shift_left_by_2.vhd"/>
-        <Attr Name="ImportTime" Val="1510502227"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -104,14 +99,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/new/mips_register_file.vhd">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/mips_register_file.vhd"/>
-        <Attr Name="ImportTime" Val="1510511140"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/imports/new/mips_sign_extender.vhd">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/mips_sign_extender.vhd"/>
@@ -144,14 +131,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/new/memfile.dat">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/memfile.dat"/>
-        <Attr Name="ImportTime" Val="1394412951"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/dual_ram_init.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -176,13 +155,25 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/128bit_reg.vhd">
+    <File Path="$PSRCDIR/sources_1/new/listAlu.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/listAlu.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/new/memfile.dat">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/list_register_file.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mips_register_file.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>

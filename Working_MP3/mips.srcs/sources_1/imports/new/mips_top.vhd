@@ -88,7 +88,7 @@ architecture mips_top of mips_top is
 	                                       writedata => writedata, readdata => readdata);
 	  imem1: imem generic map(32) port map( a => pc(7 downto 2), rd => instr);
 	  dmem1: dmem port map( clk => clk, wea => memwrite, web => write_enable_b, addra => dataadr(6 downto 0),
-	                        ena => '1', enb => '1', addrb => address_b, dinb => data_into_b,
+	                        ena => '0', enb => '1', addrb => address_b, dinb => data_into_b,
 	                        doutb => data_out_of_b, dina => writedata, douta => readdata);
 	                                        
 	  listProcessor : listProc port map(CLOCK => clk, reset => '0', opcode => instr(31 downto 24),

@@ -60,62 +60,56 @@ signal regWrite : STD_LOGIC;
 signal internalmemWrite : STD_LOGIC;
 
 begin
-    process (opcode, regDataOutA, regDataOutB)
-    begin
-        -- If this is a list operation
-         if opcode(4) = '0' then
-             A <= (others => 'X');
-             B <= (others => 'X');
-        else
-            operandA <= opA;
-            operandB <= opB;
+
+-- This process sets redDataIn
+process (opcode)
+begin
+    case opcode(7) is
+        --when "10010010" => regDataIn <= mem_bus_in;
+        --when others => regDataIn <= chinchilla;
+        when '1' => regDataIn <= (others => '0');
+        when '0' => regDataIn <= (others => '1');
+        when others => regDataIn <= (others => 'X');
+    end case;
+end process;
+
+-- This process sets decoded opcode
+process (opcode)
+begin
+    case opcode is
+        when "00010001" => decoded_opcode <= "0000";
+        when others => decoded_opcode <= "XXXX";
+    end case;
+end process;
+
+
+-- This process sets A, B, operandA and operandB
+process (opcode)
+begin
+    case opcode(4) is
+        when '0' =>
+            A <= (others => 'X');
+            B <= (others => 'X');
+            operandA <= (others => 'X');
+            operandB <= (others => 'X');
+        when others =>
             A <= regDataOutA;
             B <= regDataOutB;
-        end if;
-         
-        --mem_bus_out <= B;
-        case opcode is 
-            when  "00010001" => 
-                decoded_opcode <= "0000";               --list add
-                regWrite <= '1';
-                internalMemWrite <= '0';
-                regDataIn <= chinchilla;
-            --TODO: implement the following in parser and hardware(?)
-            when "00010100" => 
-                decoded_opcode <= "0010";               --list and
-                regWrite <= '1';
-                internalMemWrite <= '0';
-                regDataIn <= chinchilla;
-            when "00010101" => 
-                decoded_opcode <= "0011";               --list or
-                regWrite <= '1';
-                internalMemWrite <= '0';
-                regDataIn <= chinchilla;
-            when "00010110" => 
-                decoded_opcode <=  "0100";              --list xor
-                regWrite <= '1';
-                internalMemWrite <= '0';
-                regDataIn <= chinchilla;
-            when "00010111" => 
-                decoded_opcode <=  "0101";              --list not B
-                regWrite <= '1';
-                internalMemWrite <= '0';
-                regDataIn <= chinchilla;
-            --TODO : implement subtract and assign it an opcode
-            when "10010011" =>
-                decoded_opcode <= "XXXX"; 
-                internalMemWrite <= '1';                --list store
-                regWrite <= '0';
-                regDataIn <= chinchilla;
-            when "10010010" =>                          --list load
-                decoded_opcode <= "XXXX"; 
-                regWrite <= '1';
-                internalMemWrite <= '0';
-                regDataIn <= mem_bus_in;
-            when others => decoded_opcode <= "XXXX";    -- if we get a bad opcode, undefined output
-         end case;
-         --regWrite <= v_regWrite;
-    end process;
+            operandA <= opA;
+            operandB <= opB;
+    end case;
+end process;
+
+-- This process sets regWrite and internalMemWrite
+process (opcode)
+begin
+    case opcode is
+        when "10010011" => regWrite <= '0';
+                           internalMemWrite <= '1'; 
+        when others => regWrite <= '1';
+                       internalMemWrite <= '0';
+    end case;
+end process;
     
 
     listRegs : listRegFile
