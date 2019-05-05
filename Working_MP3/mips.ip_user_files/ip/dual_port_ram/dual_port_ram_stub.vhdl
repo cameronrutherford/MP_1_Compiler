@@ -1,7 +1,7 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
--- Date        : Thu May  2 22:19:29 2019
+-- Date        : Thu May  2 19:02:17 2019
 -- Host        : LAB-SCI-214-20 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top dual_port_ram -prefix
 --               dual_port_ram_ dual_port_ram_stub.vhdl

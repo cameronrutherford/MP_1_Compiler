@@ -2,6 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.STD_LOGIC_UNSIGNED.all;
 use IEEE.NUMERIC_STD.all;
+use IEEE.math_real.all;
 
 -- List Control Unit
 -- Wait 20s for ready on LL SL
@@ -22,17 +23,21 @@ end ListProc;
 
 architecture ListProc of ListProc is
 
-type regArray is array (0 to 2) of std_logic_vector(127 downto 0);
-
-component bit128_reg is
-    generic(N:integer := 128);
-    Port ( load: in std_logic;
-        clk: in std_logic;
-        clr : in std_logic;
-        data_in : in std_logic_vector(N-1 downto 0);
-        data_out : out std_logic_vector(N-1 downto 0)
-    );
+-- The datapath needs a register file component
+component listRegFile generic (width : integer; numRegs : integer);
+port(clk:           in  STD_LOGIC;
+    -- write enable
+    we3:           in  STD_LOGIC;
+    -- determine number of address bits based on generic width component
+    -- read address 1, read address 2, write address 3
+    --ra1, ra2, wa3: in  STD_LOGIC_VECTOR( (integer(ceil(log2(real(width))))-1) downto 0);
+    ra1, ra2, wa3: in  STD_LOGIC_VECTOR( (integer(ceil(log2(real(numRegs))))-1) downto 0);
+    -- date to write to the register file
+    wd3:           in  STD_LOGIC_VECTOR((width-1) downto 0);
+    -- outputs from the register file
+    rd1, rd2:      out STD_LOGIC_VECTOR((width-1) downto 0));
 end component;
+
 
 component alu_block is
     Port(
@@ -45,130 +50,88 @@ end component;
 
 --register signals
 signal dataout : std_logic_vector(127 downto 0);
-signal intOpA : integer;
 signal A, B : std_logic_vector(127 downto 0);
-signal regOutArray : regArray;
-signal regWrite : std_logic_vector(3 downto 0);
 signal chinchilla : std_logic_vector(127 downto 0);
 signal decoded_opcode : std_logic_vector (3 downto 0);
-signal resultRegNdx : integer := 2;
-signal writeResult : std_logic;
-signal internalMemWrite : std_logic;
 signal operandA, operandB : STD_LOGIC_VECTOR(4 downto 0);
+signal regDataOutA, regDataOutB : STD_LOGIC_VECTOR(127 downto 0);
+signal regDataIn : STD_LOGIC_VECTOR(127 downto 0);
+signal regWrite : STD_LOGIC;
+signal internalmemWrite : STD_LOGIC;
 
 begin
--- may need a process to synchronize the alu outputs into chinchilla before passing it to the result register    
---    process(opA,  opB)
---    begin
-----        if opcode(4) = '0' then
-----            operandA <= (others => '0');
-----            operandB <= (others => '0');
-----        else
-----            operandA <= opA;
-----            operandB <= opB;
-----        end if;
-        
-----        intOpA <= to_integer(unsigned( opA ));
-----        A <= regOutArray(to_integer(unsigned( operandA )))(127 downto 0);
-----        B <= regOutArray(to_integer(unsigned( operandB )))(127 downto 0);           
---    end process;
-
-    process (opcode)
-    variable v_regWrite : std_logic_vector(3 downto 0) := "0000";
+    process (opcode, regDataOutA, regDataOutB)
     begin
-        -- This code was in a different process, but now its here because of potential race conditions
+        -- If this is a list operation
          if opcode(4) = '0' then
-            operandB <= (others => '0');
-             A <= regOutArray(0)(127 downto 0);
-             B <= regOutArray(0)(127 downto 0);
+             A <= (others => 'X');
+             B <= (others => 'X');
         else
-            --operandA <= opA;
+            operandA <= opA;
             operandB <= opB;
-            A <= regOutArray(to_integer(unsigned( opA )))(127 downto 0);
-            B <= regOutArray(to_integer(unsigned( opB )))(127 downto 0);
+            A <= regDataOutA;
+            B <= regDataOutB;
         end if;
-            
-        --intOpA <= to_integer(unsigned( opA ));
---        A <= regOutArray(to_integer(unsigned( operandA )))(127 downto 0);
---        B <= regOutArray(to_integer(unsigned( operandB )))(127 downto 0);
          
         --mem_bus_out <= B;
         case opcode is 
             when  "00010001" => 
                 decoded_opcode <= "0000";               --list add
-                v_regWrite := (others => '0');
-                v_regWrite(resultRegNdx) := '1';          -- turn on write to result register
+                regWrite <= '1';
                 internalMemWrite <= '0';
+                regDataIn <= chinchilla;
             --TODO: implement the following in parser and hardware(?)
             when "00010100" => 
                 decoded_opcode <= "0010";               --list and
-                v_regWrite := (others => '0');
-                v_regWrite(resultRegNdx) := '1';          -- turn on write to result register
+                regWrite <= '1';
                 internalMemWrite <= '0';
+                regDataIn <= chinchilla;
             when "00010101" => 
                 decoded_opcode <= "0011";               --list or
-                v_regWrite := (others => '0');
-                v_regWrite(resultRegNdx) := '1';          -- turn on write to result register
+                regWrite <= '1';
                 internalMemWrite <= '0';
+                regDataIn <= chinchilla;
             when "00010110" => 
                 decoded_opcode <=  "0100";              --list xor
-                v_regWrite := (others => '0');
-                v_regWrite(resultRegNdx) := '1';          -- turn on write to result register
+                regWrite <= '1';
                 internalMemWrite <= '0';
+                regDataIn <= chinchilla;
             when "00010111" => 
                 decoded_opcode <=  "0101";              --list not B
-                v_regWrite := (others => '0');
-                v_regWrite(resultRegNdx) := '1';          -- turn on write to result register
+                regWrite <= '1';
                 internalMemWrite <= '0';
+                regDataIn <= chinchilla;
             --TODO : implement subtract and assign it an opcode
             when "10010011" =>
                 decoded_opcode <= "XXXX"; 
                 internalMemWrite <= '1';                --list store
-                --v_regWrite := (others => '0');
-            when "10010010" => 
+                regWrite <= '0';
+                regDataIn <= chinchilla;
+            when "10010010" =>                          --list load
                 decoded_opcode <= "XXXX"; 
-                v_regWrite := (others => '0');
-                v_regWrite(to_integer(unsigned( opA ))) := '1';                --list load
+                regWrite <= '1';
                 internalMemWrite <= '0';
+                regDataIn <= mem_bus_in;
             when others => decoded_opcode <= "XXXX";    -- if we get a bad opcode, undefined output
          end case;
-         regWrite <= v_regWrite;
-         writeResult <= regWrite(resultRegNdx);
+         --regWrite <= v_regWrite;
     end process;
+    
 
-    results : bit128_reg
+    listRegs : listRegFile
+        generic map (
+            width => 128,
+            numRegs => 32
+        )
         port map(
-            load => writeResult,
             clk => CLOCK,
-            clr => reset, 
-            data_in => chinchilla,
-            data_out => mem_bus_out
-        );
-        
-    regA : bit128_reg
-        port map(
-            load => regWrite(0),
-            clk => CLOCK,
-            clr => reset, 
-            data_in => mem_bus_in,
-            data_out => regOutArray(0)
-        );
-            
-    regB : bit128_reg
-        port map(
-            load => regWrite(1),
-            clk => CLOCK,
-            clr => reset, 
-            data_in => mem_bus_in,
-            data_out => regOutArray(1)
-        );
-    regC : bit128_reg
-        port map(
-            load => regWrite(2),
-            clk => CLOCK,
-            clr => reset, 
-            data_in => mem_bus_in,
-            data_out => regOutArray(2)
+            ra1 => operandA,
+            ra2 => operandB,
+            wa3 => operandA,
+            wd3 => regDataIn,
+            we3 => regWrite,
+            rd1 => regDataOutA,
+            rd2 => regDataOutB
         );
 
     alus : alu_block
@@ -179,5 +142,6 @@ begin
             std_logic_vector(chinchilla) => chinchilla
         );   
         memWrite <= internalMemWrite;
+        mem_bus_out <= regDataOutA;
         mem_address <= operandB;
 end ListProc;

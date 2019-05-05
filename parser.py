@@ -38,9 +38,7 @@ registers = {
     "$l4" : bin(4)[2:].zfill(5),
     "$l5" : bin(5)[2:].zfill(5),
     "$l6" : bin(6)[2:].zfill(5),
-    "$l7" : bin(7)[2:].zfill(5),
-    # List Processor 128 bit result register 
-    "$lr" : bin(8)[2:].zfill(5) 
+    "$l7" : bin(7)[2:].zfill(5)
 }
 
 # Data will hold the name and information of all our variables

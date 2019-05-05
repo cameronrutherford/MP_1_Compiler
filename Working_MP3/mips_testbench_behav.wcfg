@@ -10,24 +10,20 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="126844194fs"></ZoomStartTime>
-      <ZoomEndTime time="214631162fs"></ZoomEndTime>
-      <Cursor1Time time="200000000fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="222210538fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="194"></NameColumnWidth>
-      <ValueColumnWidth column_width="183"></ValueColumnWidth>
+      <ValueColumnWidth column_width="175"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="6" />
+   <WVObjectSize size="9" />
    <wvobject fp_name="/mips_testbench/out_port_1" type="array">
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">out_port_1[31:0]</obj_property>
       <obj_property name="ObjectShortName">out_port_1[31:0]</obj_property>
       <obj_property name="label">Instruction</obj_property>
-   </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/listProcessor/opcode" type="array">
-      <obj_property name="ElementShortName">opcode[7:0]</obj_property>
-      <obj_property name="ObjectShortName">opcode[7:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/mips_testbench/dut/listProcessor/opcode[4]" type="logic">
       <obj_property name="DisplayName">label</obj_property>
@@ -35,16 +31,46 @@
       <obj_property name="ObjectShortName">[4]</obj_property>
       <obj_property name="label">List Command Sig</obj_property>
    </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/listProcessor/opA" type="array">
-      <obj_property name="ElementShortName">opA[4:0]</obj_property>
-      <obj_property name="ObjectShortName">opA[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/listProcessor/opB" type="array">
-      <obj_property name="ElementShortName">opB[4:0]</obj_property>
-      <obj_property name="ObjectShortName">opB[4:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/mips_testbench/dut/listProcessor/opcode" type="array">
+      <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">opcode[7:0]</obj_property>
       <obj_property name="ObjectShortName">opcode[7:0]</obj_property>
+      <obj_property name="label">listOpcode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/dmem1/addra" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">addra[6:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[6:0]</obj_property>
+      <obj_property name="label">memAddressA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/dmem1/dina" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dina[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[31:0]</obj_property>
+      <obj_property name="label">memDataInA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/dmem1/douta" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">douta[31:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[31:0]</obj_property>
+      <obj_property name="label">memDataOutA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/dmem1/addrb" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">addrb[4:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb[4:0]</obj_property>
+      <obj_property name="label">memAddressB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/dmem1/dinb" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dinb[127:0]</obj_property>
+      <obj_property name="ObjectShortName">dinb[127:0]</obj_property>
+      <obj_property name="label">memDataInB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/dmem1/doutb" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">doutb[127:0]</obj_property>
+      <obj_property name="ObjectShortName">doutb[127:0]</obj_property>
+      <obj_property name="label">memDataOutB</obj_property>
    </wvobject>
 </wave_config>
