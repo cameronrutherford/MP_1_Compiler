@@ -52,7 +52,7 @@ Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_
 Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_v8_4_1 [dual_port_ram_blk_mem_gen_v8_4_1...]
 Compiling architecture structure of entity xil_defaultlib.dual_port_ram [dual_port_ram_default]
 Compiling architecture behave of entity xil_defaultlib.dmem [dmem_default]
-Compiling architecture behavioral of entity xil_defaultlib.bit128_reg [bit128_reg_default]
+Compiling architecture behave of entity xil_defaultlib.listRegFile [\listRegFile(regcount=32)\]
 Compiling architecture behavioral of entity xil_defaultlib.list_alu [list_alu_default]
 Compiling architecture behavioral of entity xil_defaultlib.alu_block [alu_block_default]
 Compiling architecture listproc of entity xil_defaultlib.ListProc [listproc_default]

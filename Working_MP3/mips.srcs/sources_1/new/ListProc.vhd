@@ -24,14 +24,14 @@ end ListProc;
 architecture ListProc of ListProc is
 
 -- The datapath needs a register file component
-component listRegFile generic (width : integer; numRegs : integer);
+component listRegFile generic (width : integer; regCount : integer);
 port(clk:           in  STD_LOGIC;
     -- write enable
     we3:           in  STD_LOGIC;
     -- determine number of address bits based on generic width component
     -- read address 1, read address 2, write address 3
     --ra1, ra2, wa3: in  STD_LOGIC_VECTOR( (integer(ceil(log2(real(width))))-1) downto 0);
-    ra1, ra2, wa3: in  STD_LOGIC_VECTOR( (integer(ceil(log2(real(numRegs))))-1) downto 0);
+    ra1, ra2, wa3: in  STD_LOGIC_VECTOR( (integer(ceil(log2(real(regCount))))-1) downto 0);
     -- date to write to the register file
     wd3:           in  STD_LOGIC_VECTOR((width-1) downto 0);
     -- outputs from the register file
@@ -121,7 +121,7 @@ begin
     listRegs : listRegFile
         generic map (
             width => 128,
-            numRegs => 32
+            regCount => 32
         )
         port map(
             clk => CLOCK,
