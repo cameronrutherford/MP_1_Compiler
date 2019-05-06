@@ -11,14 +11,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="85607253fs"></ZoomEndTime>
-      <Cursor1Time time="77884000fs"></Cursor1Time>
+      <ZoomEndTime time="628545320fs"></ZoomEndTime>
+      <Cursor1Time time="400000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="194"></NameColumnWidth>
-      <ValueColumnWidth column_width="163"></ValueColumnWidth>
+      <ValueColumnWidth column_width="147"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="15" />
+   <WVObjectSize size="20" />
    <wvobject fp_name="/mips_testbench/out_port_1" type="array">
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">out_port_1[31:0]</obj_property>
@@ -61,10 +61,6 @@
       <obj_property name="ElementShortName">mem_bus_in[127:0]</obj_property>
       <obj_property name="ObjectShortName">mem_bus_in[127:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/listProcessor/chinchilla" type="array">
-      <obj_property name="ElementShortName">chinchilla[127:0]</obj_property>
-      <obj_property name="ObjectShortName">chinchilla[127:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/mips_testbench/dut/dmem1/addrb" type="array">
       <obj_property name="ElementShortName">addrb[4:0]</obj_property>
       <obj_property name="ObjectShortName">addrb[4:0]</obj_property>
@@ -84,5 +80,29 @@
    <wvobject fp_name="/mips_testbench/dut/dmem1/doutb" type="array">
       <obj_property name="ElementShortName">doutb[127:0]</obj_property>
       <obj_property name="ObjectShortName">doutb[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/listProcessor/alus/chinchilla" type="array">
+      <obj_property name="ElementShortName">chinchilla[127:0]</obj_property>
+      <obj_property name="ObjectShortName">chinchilla[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/listProcessor/chinchilla" type="array">
+      <obj_property name="ElementShortName">chinchilla[127:0]</obj_property>
+      <obj_property name="ObjectShortName">chinchilla[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/listProcessor/alus/alu0/OP" type="array">
+      <obj_property name="ElementShortName">OP[3:0]</obj_property>
+      <obj_property name="ObjectShortName">OP[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/listProcessor/alus/alu0/A" type="array">
+      <obj_property name="ElementShortName">A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/listProcessor/alus/alu0/B" type="array">
+      <obj_property name="ElementShortName">B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/listProcessor/alus/alu0/Y" type="array">
+      <obj_property name="ElementShortName">Y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Y[31:0]</obj_property>
    </wvobject>
 </wave_config>

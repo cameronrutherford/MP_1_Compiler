@@ -38,6 +38,7 @@ architecture computer_top of computer_top is
   component mips_top  -- top-level design for testing
     port( 
          clk : in STD_LOGIC;
+         fast_clk : in STD_LOGIC;
          reset: in STD_LOGIC;
          out_port_1 : out STD_LOGIC_VECTOR(31 downto 0)
          );
@@ -46,6 +47,7 @@ architecture computer_top of computer_top is
   -- this is a slowed signal clock provided to the mips_top
   -- set it from a lower bit on clk_div for a faster clock
   signal clk : STD_LOGIC := '0';
+  signal speedy_clock : STD_LOGIC := '0';
   
   -- clk_div is a 29 bit counter provided by the display hex 
   -- use bits from this to provide a slowed clock
@@ -60,9 +62,10 @@ architecture computer_top of computer_top is
       -- wire up slow clock 
       clk <= clk_div(27); -- use a lower bit for a faster clock
       -- clk <= clk_div(0);  -- use this in simulation (fast clk)
+      speedy_clock <= clk_div(25); 
            
 	  -- wire up the processor and memories
-	  mips1: mips_top port map( clk => clk, reset => reset, out_port_1 => display_bus );
+	  mips1: mips_top port map( clk => clk, reset => reset, out_port_1 => display_bus, fast_clk => speedy_clock );
 	                                       
 	  display: display_hex port map( CLKM  => CLKM,  x => display_bus, 
 	           A_TO_G => A_TO_G,  AN => AN,  DP => DP,  LED => LED, clk_div => clk_div );                                      

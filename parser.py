@@ -49,7 +49,7 @@ lines = []
 data_size_identifiers = { "dword" : 32, "word" : 16, "byte" : 8, "nibble" : 4, "bit" : 1}
 
 # Get all the code without the comments
-with open("input.asm") as f:
+with open("simpleprog.asm") as f:
     for line in f:
         line = line.partition('#')[0].strip()
         if line != '':
@@ -197,7 +197,7 @@ for line in lines:
         print("The function " + instr + "does not exist!")
 
 
-memfile_loc = "Working_MP3\\mips.srcs\\sources_1\\imports\\new\\memfile.dat"
+memfile_loc = "Working_MP3\\mips.srcs\\sources_1\\imports\\new\\memfileSimple.dat"
 
 with open(memfile_loc, "w") as f:
     for x in hex_output:

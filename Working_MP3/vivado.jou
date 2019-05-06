@@ -207,3 +207,24 @@ close_sim
 launch_simulation
 open_wave_config Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg
 source mips_testbench.tcl
+save_wave_config {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg}
+save_wave_config {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg}
+save_wave_config {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg}
+save_wave_config {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg}
+close_sim
+launch_simulation
+refresh_design
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg
+source mips_testbench.tcl
+save_wave_config {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg
+source mips_testbench.tcl
+save_wave_config {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg}
+close_sim

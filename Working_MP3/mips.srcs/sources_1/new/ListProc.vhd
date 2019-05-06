@@ -67,8 +67,8 @@ begin
     case opcode(7) is
         --when "10010010" => regDataIn <= mem_bus_in;
         --when others => regDataIn <= chinchilla;
-        when '1' => regDataIn <= (others => '0');
-        when '0' => regDataIn <= (others => '1');
+        when '1' => regDataIn <= mem_bus_in;
+        when '0' => regDataIn <= chinchilla;
         when others => regDataIn <= (others => 'X');
     end case;
 end process;
