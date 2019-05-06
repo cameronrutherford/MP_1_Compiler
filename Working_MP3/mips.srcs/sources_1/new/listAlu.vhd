@@ -35,7 +35,7 @@ end list_alu;
 
 architecture Behavioral of list_alu is
 begin
-process(OP)
+process(OP, A, B)
 begin
     case OP is
         when "0000" => Y <= A + B; --list add
