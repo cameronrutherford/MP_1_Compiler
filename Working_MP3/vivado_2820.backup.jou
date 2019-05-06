@@ -19,3 +19,212 @@ refresh_design
 launch_simulation
 open_wave_config Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg
 source mips_testbench.tcl
+save_wave_config {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg}
+restart
+run 10 us
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+restart
+save_wave_config {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg}
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+close_sim
+launch_simulation
+open_wave_config Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg
+source mips_testbench.tcl
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+restart
+restart
+add_force {/mips_testbench/dut/dmem1/addrb} -radix hex {01 0ns}
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+save_wave_config {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg
+source mips_testbench.tcl
+close_sim
+launch_simulation
+open_wave_config Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg
+source mips_testbench.tcl
+save_wave_config {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg
+source mips_testbench.tcl
+close_sim
+launch_simulation
+open_wave_config Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg
+source mips_testbench.tcl
+add_force {/mips_testbench/dut/dmem1/addrb} -radix hex {01 0ns}
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+add_force {/mips_testbench/dut/dmem1/addrb} -radix hex {01 0ns}
+restart
+run 10 ns
+restart
+add_force {/mips_testbench/dut/dmem1/addrb} -radix hex {01 0ns}
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+add_force {/mips_testbench/dut/dmem1/addrb} -radix hex {00 0ns}
+run 10 ns
+run 10 ns
+add_force {/mips_testbench/dut/dmem1/addrb} -radix hex {01 0ns}
+run 10 ns
+run 10 ns
+add_force {/mips_testbench/dut/dmem1/addrb} -radix hex {00 0ns}
+run 10 ns
+run 10 ns
+add_force {/mips_testbench/dut/dmem1/addrb} -radix hex {01 0ns}
+run 10 ns
+run 10 ns
+add_force {/mips_testbench/dut/dmem1/addrb} -radix hex {00 0ns}
+run 10 ns
+run 10 ns
+close_sim
+launch_simulation
+open_wave_config Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg
+source mips_testbench.tcl
+close_sim
+launch_simulation
+open_wave_config Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg
+source mips_testbench.tcl
+save_wave_config {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg}
+save_wave_config {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg}
+save_wave_config {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg}
+save_wave_config {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg}
+close_sim
+launch_simulation
+refresh_design
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg
+source mips_testbench.tcl
+save_wave_config {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg
+source mips_testbench.tcl
+save_wave_config {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg}
+close_sim
