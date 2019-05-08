@@ -12,6 +12,7 @@ information["lw"]   =   ('10000100', 5, 16)
 information["sw"]   =   ('10000101', 5, 16)
 information["beq"]  =   ('01000000', 24, 0)
 information["ladd"] =   ('00010001', 5,  5)
+information['land'] =   ('00010100', 5,  5)
 information["lload"] =  ('10010010', 5,  19)
 information["lstore"] = ('10010011', 5,  19)
 information["jmp"]  =   ('00100000', 24, 0)
@@ -49,7 +50,7 @@ lines = []
 data_size_identifiers = { "dword" : 32, "word" : 16, "byte" : 8, "nibble" : 4, "bit" : 1}
 
 # Get all the code without the comments
-with open("simpleprog.asm") as f:
+with open("list_input.asm") as f:
     for line in f:
         line = line.partition('#')[0].strip()
         if line != '':
