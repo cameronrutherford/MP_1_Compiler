@@ -48,7 +48,7 @@ begin
     end if;
 	
     if ( to_integer(unsigned(ra2)) = 0) then 
-		rd2 <= (others => '0'); -- register 0 holds 0
+ 		rd2 <= (others => '0'); -- register 0 holds 0
     else 
 		rd2 <= mem(to_integer( unsigned(ra2)));
     end if;

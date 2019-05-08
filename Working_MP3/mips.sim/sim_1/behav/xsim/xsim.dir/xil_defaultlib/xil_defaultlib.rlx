@@ -23,5 +23,5 @@ Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/Working_MP3/mips.srcs/sources_1
 Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd,1557159025,vhdl,,,,alu_block,,,,,,,,
 Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd,1556729433,vhdl,,,,bit_reg,,,,,,,,
 Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd,1556729433,vhdl,,,,list_alu,,,,,,,,
-Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/list_register_file.vhd,1557093687,vhdl,,,,listregfile,,,,,,,,
+Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/list_register_file.vhd,1557160867,vhdl,,,,listregfile,,,,,,,,
 Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/mips_register_file.vhd,1556729433,vhdl,,,,regfile,,,,,,,,
