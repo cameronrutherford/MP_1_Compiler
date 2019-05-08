@@ -46,10 +46,11 @@ data = {}
 # lines holds the contents of the assembler code file
 lines = []
 # Translate variable types into number of bits
-data_size_identifiers = { "dword" : 32, "word" : 16, "byte" : 8, "nibble" : 4, "bit" : 1}
+# Everything is a dword from now on
+data_size_identifiers = { "dword" : 32}
 
 # Get all the code without the comments
-with open("simpleprog.asm") as f:
+with open("input.asm") as f:
     for line in f:
         line = line.partition('#')[0].strip()
         if line != '':
@@ -66,7 +67,8 @@ if lines[0] == ".data":
         var_name = things.pop(0)
         var_size = things.pop(0)
         var_elements = things
-        offset_from_start = len(binary_tracker) + 32 # maybe don't calculate this every time?
+        print("Binary tracker : {}".format(binary_tracker))
+        offset_from_start = len(binary_tracker) # maybe don't calculate this every time?
         for x in var_elements:
             binary_tracker += format(int(x), '0%db' % data_size_identifiers[var_size])
         data[var_name] = (data_size_identifiers[var_size], offset_from_start)
@@ -174,6 +176,7 @@ for line in lines:
                     offset = int(matches[1]) * data[variable][0] + data[variable][1]
                     arg2_bin = str(bin(offset)[2:].zfill(19))
                 else: # plain old variable
+                    print("{} {} {}".format(data, data[arg2], data[arg2][1]))
                     arg2_bin = str(bin(data[arg2][1])[2:].zfill(19))
             current_bin = opcode + registers[args[0]] + arg2_bin
         elif instr in ['jmp', 'beq']:
@@ -197,7 +200,7 @@ for line in lines:
         print("The function " + instr + "does not exist!")
 
 
-memfile_loc = "Working_MP3\\mips.srcs\\sources_1\\imports\\new\\memfileSimple.dat"
+memfile_loc = "Working_MP3\\mips.srcs\\sources_1\\imports\\new\\NEWtestinglists.dat"
 
 with open(memfile_loc, "w") as f:
     for x in hex_output:

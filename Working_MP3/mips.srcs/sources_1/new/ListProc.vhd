@@ -16,7 +16,6 @@ entity ListProc is
         opB : in STD_LOGIC_VECTOR(4 downto 0);      -- operand register or memory location
         mem_bus_in : in STD_LOGIC_VECTOR(127 downto 0);    -- data bus for reading from memory
         mem_bus_out : out STD_LOGIC_VECTOR(127 downto 0);   -- data bus for writing to memory
-        mem_address : out STD_LOGIC_VECTOR(4 downto 0);
         memWrite : out STD_LOGIC
     );
 end ListProc;
@@ -62,8 +61,7 @@ signal internalmemWrite : STD_LOGIC;
 begin
 
 -- This process sets redDataIn
-process (opcode)
-begin
+process (opcode, chinchilla, mem_bus_in) begin
     case opcode(7) is
         --when "10010010" => regDataIn <= mem_bus_in;
         --when others => regDataIn <= chinchilla;
@@ -84,7 +82,7 @@ end process;
 
 
 -- This process sets A, B, operandA and operandB
-process (opcode)
+process (opcode, opA, opB, regDataOutA, regDataOutB)
 begin
     case opcode(4) is
         when '0' =>
@@ -137,5 +135,4 @@ end process;
         );   
         memWrite <= internalMemWrite;
         mem_bus_out <= regDataOutA;
-        mem_address <= operandB;
 end ListProc;

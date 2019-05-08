@@ -63,7 +63,6 @@ architecture mips_top of mips_top is
           opB : in STD_LOGIC_VECTOR(4 downto 0);      -- operand register or memory location
           mem_bus_in :  in STD_LOGIC_VECTOR(127 downto 0);    -- data bus for reading from memory
           mem_bus_out : out STD_LOGIC_VECTOR(127 downto 0);   -- data bus for writing to memory
-          mem_address : out STD_LOGIC_VECTOR(4 downto 0);
           memWrite : out STD_LOGIC
       );
   end component;
@@ -83,6 +82,9 @@ architecture mips_top of mips_top is
       -- wire output port signal
       out_port_1 <= instr;
       
+      -- This is not the most elegant solution to this problem...
+      address_b <= instr(11 downto 7);
+      
 	  -- wire up the processor and memories
 	  mips1: mips generic map(32) port map(clk => clk, reset => reset, pc => pc, 
 	                                       instr => instr, memwrite => memwrite, aluout => dataadr, 
@@ -95,7 +97,7 @@ architecture mips_top of mips_top is
 	  listProcessor : listProc port map(CLOCK => clk, reset => '0', opcode => instr(31 downto 24),
 	                                    opA => instr(23 downto 19), opB => instr(18 downto 14),
 	                                    mem_bus_in => data_out_of_b, mem_bus_out => data_into_b,
-	                                    memWrite => write_enable_b, mem_address => address_b);
+	                                    memWrite => write_enable_b);
   end mips_top;
 
 
