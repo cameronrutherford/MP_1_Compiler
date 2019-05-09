@@ -2,18 +2,1214 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Wed May  8 10:25:15 2019
-# Process ID: 12480
-# Current directory: Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/Working_MP3
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6288 Z:\CS-401-1-CompArch\Final_Project\MP_1_Compiler\Working_MP3\mips.xpr
-# Log file: Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/Working_MP3/vivado.log
-# Journal file: Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/Working_MP3\vivado.jou
+# Start of session at: Thu May  9 12:27:00 2019
+# Process ID: 6656
+# Current directory: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8956 Z:\CS-401-1-CompArch\FinalProject\MP_1_Compiler\Working_MP3\mips.xpr
+# Log file: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/vivado.log
+# Journal file: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/Working_MP3/mips.xpr
+open_project Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.xpr
+INFO: [Project 1-313] Project file moved from 'Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/Working_MP3' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
-open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 884.234 ; gain = 149.125
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 865.242 ; gain = 142.719
+reset_run dual_port_ram_synth_1
+launch_runs dual_port_ram_synth_1
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dual_port_ram'...
+[Thu May  9 12:27:59 2019] Launched dual_port_ram_synth_1...
+Run output will be captured here: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/dual_port_ram_synth_1/runme.log
+wait_on_run dual_port_ram_synth_1
+[Thu May  9 12:27:59 2019] Waiting for dual_port_ram_synth_1 to finish...
+[Thu May  9 12:28:04 2019] Waiting for dual_port_ram_synth_1 to finish...
+[Thu May  9 12:28:10 2019] Waiting for dual_port_ram_synth_1 to finish...
+[Thu May  9 12:28:15 2019] Waiting for dual_port_ram_synth_1 to finish...
+[Thu May  9 12:28:25 2019] Waiting for dual_port_ram_synth_1 to finish...
+[Thu May  9 12:28:35 2019] Waiting for dual_port_ram_synth_1 to finish...
+[Thu May  9 12:28:45 2019] Waiting for dual_port_ram_synth_1 to finish...
+[Thu May  9 12:28:56 2019] Waiting for dual_port_ram_synth_1 to finish...
+[Thu May  9 12:29:16 2019] Waiting for dual_port_ram_synth_1 to finish...
+[Thu May  9 12:29:37 2019] Waiting for dual_port_ram_synth_1 to finish...
+
+*** Running vivado
+    with args -log dual_port_ram.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dual_port_ram.tcl
+
+
+****** Vivado v2018.2.1 (64-bit)
+  **** SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+  **** IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source dual_port_ram.tcl -notrace
+Command: synth_design -top dual_port_ram -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16740 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 387.328 ; gain = 100.223
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'dual_port_ram' [z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/synth/dual_port_ram.vhd:76]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 2 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: dual_port_ram.mif - type: string 
+	Parameter C_INIT_FILE bound to: dual_port_ram.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 128 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 128 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 7 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 128 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 128 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 32 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 32 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 5 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 1 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 4 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     21.951398 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at 'z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/synth/dual_port_ram.vhd:247]
+INFO: [Synth 8-256] done synthesizing module 'dual_port_ram' (9#1) [z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/synth/dual_port_ram.vhd:76]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized2 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized2 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized2 has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized2 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized2 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized2 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized1 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized1 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized1 has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized1 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized1 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized1 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port RSTA[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEA[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEA[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEA[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port RSTB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[14]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[13]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port CLKB
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port SBITERR_I
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DBITERR_I
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[4]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[3]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[2]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[1]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[0]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port RSTA
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port REGCEA
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port RSTB
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port REGCEB
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port CLKB
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AClk
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWID[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWID[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWID[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWID[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[31]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[30]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[29]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[28]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[27]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[26]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[25]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[24]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[23]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[22]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[21]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[20]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[19]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[18]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[17]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[16]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[15]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[14]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[13]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWADDR[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWLEN[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth has unconnected port S_AXI_AWLEN[6]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 655.820 ; gain = 368.715
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 655.820 ; gain = 368.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 655.820 ; gain = 368.715
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram_ooc.xdc] for cell 'U0'
+Parsing XDC File [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/dual_port_ram_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/dual_port_ram_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 736.859 ; gain = 1.629
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:06 ; elapsed = 00:01:15 . Memory (MB): peak = 736.859 ; gain = 449.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:06 ; elapsed = 00:01:15 . Memory (MB): peak = 736.859 ; gain = 449.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/dual_port_ram_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:01:15 . Memory (MB): peak = 736.859 ; gain = 449.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:07 ; elapsed = 00:01:16 . Memory (MB): peak = 736.859 ; gain = 449.754
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:16 . Memory (MB): peak = 736.859 ; gain = 449.754
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:15 ; elapsed = 00:01:26 . Memory (MB): peak = 768.043 ; gain = 480.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:01:26 . Memory (MB): peak = 768.266 ; gain = 481.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:15 ; elapsed = 00:01:26 . Memory (MB): peak = 768.590 ; gain = 481.484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:17 ; elapsed = 00:01:28 . Memory (MB): peak = 769.906 ; gain = 482.801
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:17 ; elapsed = 00:01:28 . Memory (MB): peak = 769.906 ; gain = 482.801
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:17 ; elapsed = 00:01:28 . Memory (MB): peak = 769.906 ; gain = 482.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:17 ; elapsed = 00:01:28 . Memory (MB): peak = 769.906 ; gain = 482.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:17 ; elapsed = 00:01:28 . Memory (MB): peak = 769.906 ; gain = 482.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:17 ; elapsed = 00:01:28 . Memory (MB): peak = 769.906 ; gain = 482.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |RAMB36E1   |     1|
+|2     |RAMB36E1_1 |     3|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------------------------------------------+----------------------------------------------+------+
+|      |Instance                                     |Module                                        |Cells |
++------+---------------------------------------------+----------------------------------------------+------+
+|1     |top                                          |                                              |     4|
+|2     |  U0                                         |blk_mem_gen_v8_4_1                            |     4|
+|3     |    inst_blk_mem_gen                         |blk_mem_gen_v8_4_1_synth                      |     4|
+|4     |      \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                               |     4|
+|5     |        \valid.cstr                          |blk_mem_gen_generic_cstr                      |     4|
+|6     |          \ramloop[0].ram.r                  |blk_mem_gen_prim_width                        |     1|
+|7     |            \prim_init.ram                   |blk_mem_gen_prim_wrapper_init                 |     1|
+|8     |          \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized0        |     1|
+|9     |            \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized0 |     1|
+|10    |          \ramloop[2].ram.r                  |blk_mem_gen_prim_width__parameterized1        |     1|
+|11    |            \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized1 |     1|
+|12    |          \ramloop[3].ram.r                  |blk_mem_gen_prim_width__parameterized2        |     1|
+|13    |            \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized2 |     1|
++------+---------------------------------------------+----------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:17 ; elapsed = 00:01:28 . Memory (MB): peak = 769.906 ; gain = 482.801
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 152 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:01:19 . Memory (MB): peak = 769.906 ; gain = 401.762
+Synthesis Optimization Complete : Time (s): cpu = 00:01:17 ; elapsed = 00:01:28 . Memory (MB): peak = 769.910 ; gain = 482.801
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:30 . Memory (MB): peak = 791.477 ; gain = 515.844
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/dual_port_ram_synth_1/dual_port_ram.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram.xci
+INFO: [Coretcl 2-1174] Renamed 12 cell refs.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/dual_port_ram_synth_1/dual_port_ram.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file dual_port_ram_utilization_synth.rpt -pb dual_port_ram_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 794.270 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu May  9 12:29:42 2019...
+[Thu May  9 12:29:47 2019] dual_port_ram_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:04 ; elapsed = 00:01:48 . Memory (MB): peak = 880.035 ; gain = 0.000
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: computer_top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 973.887 ; gain = 93.852
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'computer_top' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+INFO: [Synth 8-3491] module 'mips_top' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:17' bound to instance 'mips1' of component 'mips_top' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'mips_top' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:30]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mips' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:14' bound to instance 'mips1' of component 'mips' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'mips' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'controller' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:5' bound to instance 'cont' of component 'controller' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'controller' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
+INFO: [Synth 8-3491] module 'maindec' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:5' bound to instance 'md' of component 'maindec' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'maindec' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'maindec' (1#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:15]
+INFO: [Synth 8-3491] module 'aludec' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:4' bound to instance 'ad' of component 'aludec' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'aludec' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'aludec' (2#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:10]
+WARNING: [Synth 8-3848] Net regdst in module/entity controller does not have driver. [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'controller' (3#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'datapath' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:6' bound to instance 'dp' of component 'datapath' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'datapath' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'flopr' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:5' bound to instance 'pcreg' of component 'flopr' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'flopr' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr' (4#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd1' of component 'adder' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'adder' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adder' (5#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd2' of component 'adder' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:104]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcbrmux' of component 'mux2' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'mux2' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (6#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'bit_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:25' bound to instance 'zreg' of component 'bit_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'bit_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bit_reg' (7#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'regfile' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/mips_register_file.vhd:11' bound to instance 'rf' of component 'regfile' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'regfile' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/mips_register_file.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'regfile' (8#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/mips_register_file.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'resmux' of component 'mux2' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:116]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'signext' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:5' bound to instance 'se' of component 'signext' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'signext' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'signext' (9#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'srcbmux' of component 'mux2' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:123]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'mov_mux' of component 'mux2' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:126]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mips_alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:8' bound to instance 'mainalu' of component 'mips_alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'mips_alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mips_alu' (10#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (11#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'mips' (12#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'imem' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:10' bound to instance 'imem1' of component 'imem' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'imem' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'imem' (13#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
+INFO: [Synth 8-3491] module 'dmem' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:11' bound to instance 'dmem1' of component 'dmem' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'dmem' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:22]
+INFO: [Synth 8-3491] module 'dual_port_ram' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/.Xil/Vivado-6656-LAB-SCI-214-17/realtime/dual_port_ram_stub.vhdl:5' bound to instance 'MULTI_PORT_REG' of component 'dual_port_ram' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'dual_port_ram' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/.Xil/Vivado-6656-LAB-SCI-214-17/realtime/dual_port_ram_stub.vhdl:23]
+INFO: [Synth 8-256] done synthesizing module 'dmem' (14#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:22]
+INFO: [Synth 8-3491] module 'ListProc' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:10' bound to instance 'listProcessor' of component 'listProc' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'ListProc' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:23]
+INFO: [Synth 8-226] default block is never used [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:65]
+	Parameter width bound to: 128 - type: integer 
+	Parameter regCount bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'listRegFile' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/list_register_file.vhd:11' bound to instance 'listRegs' of component 'listRegFile' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'listRegFile' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/list_register_file.vhd:25]
+	Parameter width bound to: 128 - type: integer 
+	Parameter regCount bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'listRegFile' (15#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/list_register_file.vhd:25]
+INFO: [Synth 8-3491] module 'alu_block' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:6' bound to instance 'alus' of component 'alu_block' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'alu_block' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:15]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu0' of component 'list_alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'list_alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:36]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'list_alu' (16#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:36]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu1' of component 'list_alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:56]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu2' of component 'list_alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:64]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu3' of component 'list_alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'alu_block' (17#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'ListProc' (18#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'mips_top' (19#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:30]
+INFO: [Synth 8-3491] module 'display_hex' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:5' bound to instance 'display' of component 'display_hex' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'display_hex' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:17]
+WARNING: [Synth 8-614] signal 'x' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'display_hex' (20#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'computer_top' (21#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+WARNING: [Synth 8-3331] design ListProc has unconnected port reset
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[31]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[29]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[28]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[27]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[26]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[25]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[24]
+WARNING: [Synth 8-3331] design aludec has unconnected port funct[5]
+WARNING: [Synth 8-3331] design aludec has unconnected port funct[4]
+WARNING: [Synth 8-3331] design aludec has unconnected port funct[3]
+WARNING: [Synth 8-3331] design aludec has unconnected port funct[2]
+WARNING: [Synth 8-3331] design aludec has unconnected port funct[1]
+WARNING: [Synth 8-3331] design aludec has unconnected port funct[0]
+WARNING: [Synth 8-3331] design aludec has unconnected port aluop[1]
+WARNING: [Synth 8-3331] design aludec has unconnected port aluop[0]
+WARNING: [Synth 8-3331] design controller has unconnected port regdst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1019.098 ; gain = 139.063
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1019.098 ; gain = 139.063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1019.098 ; gain = 139.063
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram.dcp' for cell 'mips1/dmem1/MULTI_PORT_REG'
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2.1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1399.656 ; gain = 519.621
+81 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 1399.656 ; gain = 519.621
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'mips_testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim/dual_port_ram.mif'
+INFO: [SIM-utils-43] Exported 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim/dual_ram_init.coe'
+INFO: [SIM-utils-43] Exported 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim/memfileAdv.dat'
+INFO: [SIM-utils-43] Exported 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim/memfileSimple.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj mips_testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dual_port_ram_blk_mem_gen_prim_wrapper_init
+INFO: [VRFC 10-307] analyzing entity \dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized0\
+INFO: [VRFC 10-307] analyzing entity \dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized1\
+INFO: [VRFC 10-307] analyzing entity \dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized2\
+INFO: [VRFC 10-307] analyzing entity dual_port_ram_blk_mem_gen_prim_width
+INFO: [VRFC 10-307] analyzing entity \dual_port_ram_blk_mem_gen_prim_width__parameterized0\
+INFO: [VRFC 10-307] analyzing entity \dual_port_ram_blk_mem_gen_prim_width__parameterized1\
+INFO: [VRFC 10-307] analyzing entity \dual_port_ram_blk_mem_gen_prim_width__parameterized2\
+INFO: [VRFC 10-307] analyzing entity dual_port_ram_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-307] analyzing entity dual_port_ram_blk_mem_gen_top
+INFO: [VRFC 10-307] analyzing entity dual_port_ram_blk_mem_gen_v8_4_1_synth
+INFO: [VRFC 10-307] analyzing entity dual_port_ram_blk_mem_gen_v8_4_1
+INFO: [VRFC 10-307] analyzing entity dual_port_ram
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mips
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity imem
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity datapath
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mips_top
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mips_alu
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity adder
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dmem
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity aludec
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity maindec
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity computer_top
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity controller
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity signext
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity display_hex
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity flopr
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux2
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity bit_reg
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ListProc
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu_block
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity list_alu
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/list_register_file.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity listRegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/mips_register_file.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sim_1/imports/Desktop/mips_testbench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mips_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto bfc6d33675f34e59a51d26a1983c03b4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot mips_testbench_behav xil_defaultlib.mips_testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.std_logic_textio
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture behave of entity xil_defaultlib.maindec [maindec_default]
+Compiling architecture behave of entity xil_defaultlib.aludec [aludec_default]
+Compiling architecture struct of entity xil_defaultlib.controller [controller_default]
+Compiling architecture asynchronous of entity xil_defaultlib.flopr [\flopr(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.adder [\adder(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.mux2 [\mux2(width=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.bit_reg [\bit_reg(n=1)\]
+Compiling architecture behave of entity xil_defaultlib.regfile [\regfile(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.signext [\signext(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.mips_alu [\mips_alu(width=32)\]
+Compiling architecture struct of entity xil_defaultlib.datapath [\datapath(width=32)\]
+Compiling architecture struct of entity xil_defaultlib.mips [\mips(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.imem [\imem(width=32)\]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,do...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,dob_reg=1,in...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_prim_wrapper_init [dual_port_ram_blk_mem_gen_prim_w...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_prim_width [dual_port_ram_blk_mem_gen_prim_w...]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,do...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,dob_reg=1,re...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized0\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_width__parameterized0\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized1\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_width__parameterized1\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized2\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_width__parameterized2\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_generic_cstr [dual_port_ram_blk_mem_gen_generi...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_top [dual_port_ram_blk_mem_gen_top_de...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_v8_4_1_synth [dual_port_ram_blk_mem_gen_v8_4_1...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_v8_4_1 [dual_port_ram_blk_mem_gen_v8_4_1...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram [dual_port_ram_default]
+Compiling architecture behave of entity xil_defaultlib.dmem [dmem_default]
+Compiling architecture behave of entity xil_defaultlib.listRegFile [\listRegFile(regcount=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.list_alu [list_alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_block [alu_block_default]
+Compiling architecture listproc of entity xil_defaultlib.ListProc [listproc_default]
+Compiling architecture mips_top of entity xil_defaultlib.mips_top [mips_top_default]
+Compiling architecture mips_testbench of entity xil_defaultlib.mips_testbench
+Built simulation snapshot mips_testbench_behav
+
+****** Webtalk v2018.2.1 (64-bit)
+  **** SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+  **** IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim/xsim.dir/mips_testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim/xsim.dir/mips_testbench_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu May  9 12:33:00 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu May  9 12:33:00 2019...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1405.773 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mips_testbench_behav -key {Behavioral:sim_1:Functional:mips_testbench} -tclbatch {mips_testbench.tcl} -view {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+ERROR: [Simulator 45-7] No such file 'Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/list_register_file.vhd' in the design.
+
+ERROR: [USF-XSim-62] 'simulate' step failed with errors. Please check the Tcl console or log files for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:21 . Memory (MB): peak = 1407.348 ; gain = 1.574
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+export_ip_user_files -of_objects  [get_files Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/list_register_file.vhd] -no_script -reset -force -quiet
+remove_files  Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/list_register_file.vhd
+add_files -norecurse Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/list_register_file.vhd
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'mips_testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim/dual_port_ram.mif'
+INFO: [SIM-utils-43] Exported 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim/dual_ram_init.coe'
+INFO: [SIM-utils-43] Exported 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim/memfileAdv.dat'
+INFO: [SIM-utils-43] Exported 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim/memfileSimple.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj mips_testbench_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto bfc6d33675f34e59a51d26a1983c03b4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot mips_testbench_behav xil_defaultlib.mips_testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1422.133 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mips_testbench_behav -key {Behavioral:sim_1:Functional:mips_testbench} -tclbatch {mips_testbench.tcl} -view {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+ERROR: [Simulator 45-7] No such file 'Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/list_register_file.vhd' in the design.
+
+ERROR: [USF-XSim-62] 'simulate' step failed with errors. Please check the Tcl console or log files for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1422.133 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+export_ip_user_files -of_objects  [get_files Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/list_register_file.vhd] -no_script -reset -force -quiet
+remove_files  Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/list_register_file.vhd
+add_files -norecurse Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/list_register_file.vhd
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1442.520 ; gain = 5.883
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'computer_top' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+INFO: [Synth 8-3491] module 'mips_top' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:17' bound to instance 'mips1' of component 'mips_top' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'mips_top' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:30]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mips' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:14' bound to instance 'mips1' of component 'mips' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'mips' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'controller' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:5' bound to instance 'cont' of component 'controller' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'controller' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
+INFO: [Synth 8-3491] module 'maindec' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:5' bound to instance 'md' of component 'maindec' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'maindec' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'maindec' (1#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:15]
+INFO: [Synth 8-3491] module 'aludec' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:4' bound to instance 'ad' of component 'aludec' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'aludec' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'aludec' (2#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_decoder_alu.vhd:10]
+WARNING: [Synth 8-3848] Net regdst in module/entity controller does not have driver. [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'controller' (3#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'datapath' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:6' bound to instance 'dp' of component 'datapath' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'datapath' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'flopr' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:5' bound to instance 'pcreg' of component 'flopr' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'flopr' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr' (4#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd1' of component 'adder' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'adder' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adder' (5#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd2' of component 'adder' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:104]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcbrmux' of component 'mux2' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'mux2' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (6#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'bit_reg' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:25' bound to instance 'zreg' of component 'bit_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'bit_reg' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bit_reg' (7#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'regfile' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/mips_register_file.vhd:11' bound to instance 'rf' of component 'regfile' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'regfile' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/mips_register_file.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'regfile' (8#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/mips_register_file.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'resmux' of component 'mux2' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:116]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'signext' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:5' bound to instance 'se' of component 'signext' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'signext' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'signext' (9#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'srcbmux' of component 'mux2' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:123]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'mov_mux' of component 'mux2' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:126]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mips_alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:8' bound to instance 'mainalu' of component 'mips_alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'mips_alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mips_alu' (10#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (11#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'mips' (12#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'imem' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:10' bound to instance 'imem1' of component 'imem' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'imem' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'imem' (13#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
+INFO: [Synth 8-3491] module 'dmem' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:11' bound to instance 'dmem1' of component 'dmem' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'dmem' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:22]
+INFO: [Synth 8-3491] module 'dual_port_ram' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/.Xil/Vivado-6656-LAB-SCI-214-17/realtime/dual_port_ram_stub.vhdl:5' bound to instance 'MULTI_PORT_REG' of component 'dual_port_ram' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'dual_port_ram' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/.Xil/Vivado-6656-LAB-SCI-214-17/realtime/dual_port_ram_stub.vhdl:23]
+INFO: [Synth 8-256] done synthesizing module 'dmem' (14#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:22]
+INFO: [Synth 8-3491] module 'ListProc' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:10' bound to instance 'listProcessor' of component 'listProc' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'ListProc' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:23]
+INFO: [Synth 8-226] default block is never used [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:65]
+	Parameter width bound to: 128 - type: integer 
+	Parameter regCount bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'listRegFile' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/list_register_file.vhd:11' bound to instance 'listRegs' of component 'listRegFile' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'listRegFile' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/list_register_file.vhd:25]
+	Parameter width bound to: 128 - type: integer 
+	Parameter regCount bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'listRegFile' (15#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/list_register_file.vhd:25]
+INFO: [Synth 8-3491] module 'alu_block' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:6' bound to instance 'alus' of component 'alu_block' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'alu_block' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:15]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu0' of component 'list_alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'list_alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:36]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'list_alu' (16#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:36]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu1' of component 'list_alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:56]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu2' of component 'list_alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:64]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu3' of component 'list_alu' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'alu_block' (17#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'ListProc' (18#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'mips_top' (19#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:30]
+INFO: [Synth 8-3491] module 'display_hex' declared at 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:5' bound to instance 'display' of component 'display_hex' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'display_hex' [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:17]
+WARNING: [Synth 8-614] signal 'x' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'display_hex' (20#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/display_hex.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'computer_top' (21#1) [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+WARNING: [Synth 8-3331] design ListProc has unconnected port reset
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[31]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[29]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[28]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[27]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[26]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[25]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[24]
+WARNING: [Synth 8-3331] design aludec has unconnected port funct[5]
+WARNING: [Synth 8-3331] design aludec has unconnected port funct[4]
+WARNING: [Synth 8-3331] design aludec has unconnected port funct[3]
+WARNING: [Synth 8-3331] design aludec has unconnected port funct[2]
+WARNING: [Synth 8-3331] design aludec has unconnected port funct[1]
+WARNING: [Synth 8-3331] design aludec has unconnected port funct[0]
+WARNING: [Synth 8-3331] design aludec has unconnected port aluop[1]
+WARNING: [Synth 8-3331] design aludec has unconnected port aluop[0]
+WARNING: [Synth 8-3331] design controller has unconnected port regdst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1486.875 ; gain = 50.238
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 1486.875 ; gain = 50.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 1486.875 ; gain = 50.238
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram.dcp' for cell 'mips1/dmem1/MULTI_PORT_REG'
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 1486.875 ; gain = 50.238
+export_ip_user_files -of_objects  [get_files Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/list_register_file.vhd] -no_script -reset -force -quiet
+remove_files  Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/list_register_file.vhd
+add_files -norecurse Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/list_register_file.vhd
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'mips_testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim/dual_port_ram.mif'
+INFO: [SIM-utils-43] Exported 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim/dual_ram_init.coe'
+INFO: [SIM-utils-43] Exported 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim/memfileAdv.dat'
+INFO: [SIM-utils-43] Exported 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim/memfileSimple.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj mips_testbench_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto bfc6d33675f34e59a51d26a1983c03b4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot mips_testbench_behav xil_defaultlib.mips_testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1486.875 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mips_testbench_behav -key {Behavioral:sim_1:Functional:mips_testbench} -tclbatch {mips_testbench.tcl} -view {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+ERROR: [Simulator 45-7] No such file 'Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/list_register_file.vhd' in the design.
+
+ERROR: [USF-XSim-62] 'simulate' step failed with errors. Please check the Tcl console or log files for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:17 . Memory (MB): peak = 1486.875 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'mips_testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim/dual_port_ram.mif'
+INFO: [SIM-utils-43] Exported 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim/dual_ram_init.coe'
+INFO: [SIM-utils-43] Exported 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim/memfileAdv.dat'
+INFO: [SIM-utils-43] Exported 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim/memfileSimple.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj mips_testbench_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto bfc6d33675f34e59a51d26a1983c03b4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot mips_testbench_behav xil_defaultlib.mips_testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1486.875 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mips_testbench_behav -key {Behavioral:sim_1:Functional:mips_testbench} -tclbatch {mips_testbench.tcl} -view {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+ERROR: [Simulator 45-7] No such file 'Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/list_register_file.vhd' in the design.
+
+ERROR: [USF-XSim-62] 'simulate' step failed with errors. Please check the Tcl console or log files for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1486.875 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Thu May  9 12:47:13 2019] Launched synth_1...
+Run output will be captured here: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Thu May  9 12:48:13 2019] Launched impl_1...
+Run output will be captured here: Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.runs/impl_1/runme.log
+close_design
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 219 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.139 . Memory (MB): peak = 1941.605 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.141 . Memory (MB): peak = 1941.605 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 160 instances were transformed.
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 160 instances
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1990.820 ; gain = 503.945
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'mips_testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim/dual_port_ram.mif'
+INFO: [SIM-utils-43] Exported 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim/dual_ram_init.coe'
+INFO: [SIM-utils-43] Exported 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim/memfileAdv.dat'
+INFO: [SIM-utils-43] Exported 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim/memfileSimple.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj mips_testbench_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto bfc6d33675f34e59a51d26a1983c03b4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot mips_testbench_behav xil_defaultlib.mips_testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2009.039 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mips_testbench_behav -key {Behavioral:sim_1:Functional:mips_testbench} -tclbatch {mips_testbench.tcl} -view {Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips_testbench_behav.wcfg
+source mips_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 0 fs : File "Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.srcs/sources_1/new/list_register_file.vhd" Line 45
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mips_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 2019.680 ; gain = 10.641

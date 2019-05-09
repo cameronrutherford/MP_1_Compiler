@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="Z:/CS-401-1-CompArch/Final_Project/MP_1_Compiler/Working_MP3/mips.xpr">
+<Project Version="7" Minor="38" Path="Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/mips.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="bfc6d33675f34e59a51d26a1983c03b4"/>
@@ -35,7 +35,7 @@
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSABoardId" Val="nexys4_ddr"/>
     <Option Name="DSANumComputeUnits" Val="16"/>
-    <Option Name="WTXSimLaunchSim" Val="109"/>
+    <Option Name="WTXSimLaunchSim" Val="114"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -209,12 +209,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/list_register_file.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/new/mips_register_file.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -228,6 +222,12 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/new/memfileSimple.dat">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/list_register_file.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>

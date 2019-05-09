@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date         : Sun May  5 15:23:45 2019
-| Host         : LAB-SCI-214-20 running 64-bit major release  (build 9200)
+| Date         : Thu May  9 12:48:03 2019
+| Host         : LAB-SCI-214-17 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file computer_top_utilization_synth.rpt -pb computer_top_utilization_synth.pb
 | Design       : computer_top
 | Device       : 7a100tcsg324-1
@@ -30,14 +30,14 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                |  816 |     0 |     63400 |  1.29 |
-|   LUT as Logic             |  496 |     0 |     63400 |  0.78 |
+| Slice LUTs*                |  825 |     0 |     63400 |  1.30 |
+|   LUT as Logic             |  505 |     0 |     63400 |  0.80 |
 |   LUT as Memory            |  320 |     0 |     19000 |  1.68 |
 |     LUT as Distributed RAM |  320 |     0 |           |       |
 |     LUT as Shift Register  |    0 |     0 |           |       |
-| Slice Registers            |  174 |     0 |    126800 |  0.14 |
-|   Register as Flip Flop    |   35 |     0 |    126800 |  0.03 |
-|   Register as Latch        |  139 |     0 |    126800 |  0.11 |
+| Slice Registers            |   37 |     0 |    126800 |  0.03 |
+|   Register as Flip Flop    |   37 |     0 |    126800 |  0.03 |
+|   Register as Latch        |    0 |     0 |    126800 |  0.00 |
 | F7 Muxes                   |    0 |     0 |     31700 |  0.00 |
 | F8 Muxes                   |    0 |     0 |     15850 |  0.00 |
 +----------------------------+------+-------+-----------+-------+
@@ -57,9 +57,9 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
-| 146   |          Yes |           - |        Reset |
+| 8     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 28    |          Yes |       Reset |            - |
+| 29    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -114,7 +114,7 @@ Table of Contents
 +------------+------+-------+-----------+-------+
 |  Site Type | Used | Fixed | Available | Util% |
 +------------+------+-------+-----------+-------+
-| BUFGCTRL   |    3 |     0 |        32 |  9.38 |
+| BUFGCTRL   |    2 |     0 |        32 |  6.25 |
 | BUFIO      |    0 |     0 |        24 |  0.00 |
 | MMCME2_ADV |    0 |     0 |         6 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |         6 |  0.00 |
@@ -149,19 +149,18 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | RAMD32   |  320 |  Distributed Memory |
-| LUT3     |  254 |                 LUT |
-| LUT2     |  195 |                 LUT |
-| LUT5     |  158 |                 LUT |
-| LUT6     |  141 |                 LUT |
-| LDCE     |  139 |        Flop & Latch |
-| CARRY4   |   49 |          CarryLogic |
-| LUT4     |   44 |                 LUT |
-| FDRE     |   28 |        Flop & Latch |
+| LUT2     |  291 |                 LUT |
+| LUT4     |  158 |                 LUT |
+| LUT3     |  132 |                 LUT |
+| LUT6     |  100 |                 LUT |
+| CARRY4   |   53 |          CarryLogic |
+| FDRE     |   29 |        Flop & Latch |
 | OBUF     |   20 |                  IO |
-| FDCE     |    7 |        Flop & Latch |
-| BUFG     |    3 |               Clock |
+| LUT5     |   12 |                 LUT |
+| FDCE     |    8 |        Flop & Latch |
 | LUT1     |    2 |                 LUT |
 | IBUF     |    2 |                  IO |
+| BUFG     |    2 |               Clock |
 +----------+------+---------------------+
 
 

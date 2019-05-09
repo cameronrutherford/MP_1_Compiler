@@ -67,7 +67,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param synth.incrementalSynthesisCache Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/.Xil/Vivado-2820-LAB-SCI-214-20/incrSyn
+  set_param synth.incrementalSynthesisCache Z:/CS-401-1-CompArch/FinalProject/MP_1_Compiler/Working_MP3/.Xil/Vivado-6656-LAB-SCI-214-17/incrSyn
   create_project -in_memory -part xc7a100tcsg324-1
   set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
