@@ -1,5 +1,8 @@
 import re
 
+memfile_loc = "Working_MP3\\mips.srcs\\sources_1\\imports\\new\\NEWtestinglists.dat"
+asmFile = "input.asm"
+
 # Information holds the opcode and argument lengths for every instruction
 information = {}
 information["mov"]  =   ('00000000', 5,  5)
@@ -51,7 +54,7 @@ lines = []
 data_size_identifiers = { "dword" : 32}
 
 # Get all the code without the comments
-with open("input.asm") as f:
+with open(asmFile) as f:
     for line in f:
         line = line.partition('#')[0].strip()
         if line != '':
@@ -199,9 +202,6 @@ for line in lines:
             hex_output.append(next_hex.upper())
     else:
         print("The function " + instr + "does not exist!")
-
-
-memfile_loc = "Working_MP3\\mips.srcs\\sources_1\\imports\\new\\NEWtestinglists.dat"
 
 with open(memfile_loc, "w") as f:
     for x in hex_output:
