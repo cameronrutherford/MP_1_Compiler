@@ -1,7 +1,7 @@
 import re
 
-memfile_loc = "Working_MP3\\mips.srcs\\sources_1\\imports\\new\\NEWtestinglists.dat"
-asmFile = "input.asm"
+memfile_loc = "Working_MP3\\mips.srcs\\sources_1\\imports\\new\\judeTest.dat"
+asmFile = "judeTest.asm"
 
 # Information holds the opcode and argument lengths for every instruction
 information = {}
@@ -18,7 +18,9 @@ information["ladd"] =   ('00010001', 5,  5)
 information['land'] =   ('00010100', 5,  5)
 information["lload"] =  ('10010010', 5,  19)
 information["lstore"] = ('10010011', 5,  19)
+information["vgastore"] = ('10010011', 5,  19)
 information["jmp"]  =   ('00100000', 24, 0)
+
 
 # Registers maps the english name for the register to the binary value representing the
 # register internally
@@ -42,7 +44,8 @@ registers = {
     "$l4" : bin(4)[2:].zfill(5),
     "$l5" : bin(5)[2:].zfill(5),
     "$l6" : bin(6)[2:].zfill(5),
-    "$l7" : bin(7)[2:].zfill(5)
+    "$l7" : bin(7)[2:].zfill(5),
+    "$vga" : bin(2**19 - 1)[2:]
 }
 
 # Data will hold the name and information of all our variables
@@ -162,7 +165,11 @@ for line in lines:
                 complement = bin(2**19 + value)[2:]
                 assert len(complement) == 19, 'Negative number too negative. Be more positive.'
                 current_bin = opcode + registers[args[0]] + complement
-        elif instr in ['lw', 'sw', 'lload', 'lstore']:
+        elif instr in ['vgastore']:
+            arg2 = registers['$vga']
+            current_bin = opcode + registers[args[0]] + arg2
+            print('Opcode: {0}, arg0: {1}, arg1: {2}, current bin: {3}'.format(opcode, args[0], arg2, current_bin))
+        elif instr in ['lw', 'sw', 'lload', 'lstore', 'vgastore']:
             arg2 = args[1]
             arg2_bin = ''
             # If we are dealing with an exact memory location
