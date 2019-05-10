@@ -1,4 +1,4 @@
-NumberHits:2
-Timestamp: Fri May 03 05:41:44 UTC 2019
+NumberHits:4
+Timestamp: Thu May 09 20:09:36 UTC 2019
 VLNV: xilinx.com:ip:blk_mem_gen:8.4
 SynthRuntime: 94

@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Thu May  9 13:19:04 2019
+# Process ID: 3756
+# Current directory: Z:/CS-401-1-CompArch/CompArchFinal/Working_MP3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4628 Z:\CS-401-1-CompArch\CompArchFinal\Working_MP3\mips.xpr
+# Log file: Z:/CS-401-1-CompArch/CompArchFinal/Working_MP3/vivado.log
+# Journal file: Z:/CS-401-1-CompArch/CompArchFinal/Working_MP3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Z:/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.xpr
+reset_run dual_port_ram_synth_1
+launch_runs dual_port_ram_synth_1
+wait_on_run dual_port_ram_synth_1
+synth_design -rtl -name rtl_1
+launch_simulation
+open_wave_config Z:/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips_testbench_behav.wcfg
+source mips_testbench.tcl
+restart
+run 40 ns
+run 40 ns
+run 40 ns
+run 40 ns
+run 40 ns
+run 40 ns
+run 40 ns
+run 40 ns
+run 40 ns
+run 40 ns
+run 40 ns
+run 40 ns
+run 40 ns
+run 40 ns
+run 40 ns
+run 40 ns
+save_wave_config {Z:/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips_testbench_behav.wcfg}
+close_sim

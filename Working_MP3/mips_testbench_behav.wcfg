@@ -10,15 +10,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="144366066fs"></ZoomEndTime>
-      <Cursor1Time time="50422000fs"></Cursor1Time>
+      <ZoomStartTime time="392644000fs"></ZoomStartTime>
+      <ZoomEndTime time="489644001fs"></ZoomEndTime>
+      <Cursor1Time time="557844000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="194"></NameColumnWidth>
-      <ValueColumnWidth column_width="239"></ValueColumnWidth>
+      <ValueColumnWidth column_width="298"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="12" />
+   <WVObjectSize size="7" />
    <wvobject fp_name="/mips_testbench/out_port_1" type="array">
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">out_port_1[31:0]</obj_property>
@@ -31,44 +31,30 @@
       <obj_property name="ObjectShortName">chinchilla[127:0]</obj_property>
       <obj_property name="label">ALUout</obj_property>
    </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/listProcessor/listRegs/ra1" type="array">
-      <obj_property name="ElementShortName">ra1[4:0]</obj_property>
-      <obj_property name="ObjectShortName">ra1[4:0]</obj_property>
+   <wvobject fp_name="/mips_testbench/dut/listProcessor/A" type="array">
+      <obj_property name="ElementShortName">A[127:0]</obj_property>
+      <obj_property name="ObjectShortName">A[127:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/listProcessor/listRegs/ra2" type="array">
-      <obj_property name="ElementShortName">ra2[4:0]</obj_property>
-      <obj_property name="ObjectShortName">ra2[4:0]</obj_property>
+   <wvobject fp_name="/mips_testbench/dut/listProcessor/B" type="array">
+      <obj_property name="ElementShortName">B[127:0]</obj_property>
+      <obj_property name="ObjectShortName">B[127:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/listProcessor/listRegs/wa3" type="array">
+   <wvobject fp_name="/mips_testbench/dut/mips1/dp/rf/wa3" type="array">
+      <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">wa3[4:0]</obj_property>
       <obj_property name="ObjectShortName">wa3[4:0]</obj_property>
+      <obj_property name="label">Reg Write Addr</obj_property>
    </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/listProcessor/listRegs/wd3" type="array">
-      <obj_property name="ElementShortName">wd3[127:0]</obj_property>
-      <obj_property name="ObjectShortName">wd3[127:0]</obj_property>
+   <wvobject fp_name="/mips_testbench/dut/mips1/dp/rf/wd3" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">wd3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wd3[31:0]</obj_property>
+      <obj_property name="label">Reg Write Data</obj_property>
    </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/listProcessor/listRegs/we3" type="logic">
+   <wvobject fp_name="/mips_testbench/dut/mips1/dp/rf/we3" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">we3</obj_property>
       <obj_property name="ObjectShortName">we3</obj_property>
-   </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/listProcessor/listRegs/rd1" type="array">
-      <obj_property name="ElementShortName">rd1[127:0]</obj_property>
-      <obj_property name="ObjectShortName">rd1[127:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/listProcessor/listRegs/rd2" type="array">
-      <obj_property name="ElementShortName">rd2[127:0]</obj_property>
-      <obj_property name="ObjectShortName">rd2[127:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/listProcessor/opA" type="array">
-      <obj_property name="ElementShortName">opA[4:0]</obj_property>
-      <obj_property name="ObjectShortName">opA[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/dmem1/addrb" type="array">
-      <obj_property name="ElementShortName">addrb[4:0]</obj_property>
-      <obj_property name="ObjectShortName">addrb[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/dmem1/dinb" type="array">
-      <obj_property name="ElementShortName">dinb[127:0]</obj_property>
-      <obj_property name="ObjectShortName">dinb[127:0]</obj_property>
+      <obj_property name="label">WRITE!!!</obj_property>
    </wvobject>
 </wave_config>

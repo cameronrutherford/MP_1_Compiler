@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1557431233">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1557507877">
   <File Type="PA-TCL" Name="computer_top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="computer_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="computer_top_reports.tcl"/>
@@ -181,6 +181,22 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/list_register_file.vhd">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CS-401-1-CompArch/vga_top.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vga_top.vhd"/>
+        <Attr Name="ImportTime" Val="1511300710"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CS-401-1-CompArch/vga_sync.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vga_sync.vhd"/>
+        <Attr Name="ImportTime" Val="1511296316"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>

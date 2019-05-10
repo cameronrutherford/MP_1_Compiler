@@ -4,4 +4,62 @@ Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto bfc6d33675
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.std_logic_textio
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture behave of entity xil_defaultlib.maindec [maindec_default]
+Compiling architecture behave of entity xil_defaultlib.aludec [aludec_default]
+Compiling architecture struct of entity xil_defaultlib.controller [controller_default]
+Compiling architecture asynchronous of entity xil_defaultlib.flopr [\flopr(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.adder [\adder(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.mux2 [\mux2(width=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.bit_reg [\bit_reg(n=1)\]
+Compiling architecture behave of entity xil_defaultlib.regfile [\regfile(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.signext [\signext(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.mips_alu [\mips_alu(width=32)\]
+Compiling architecture struct of entity xil_defaultlib.datapath [\datapath(width=32)\]
+Compiling architecture struct of entity xil_defaultlib.mips [\mips(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.imem [\imem(width=32)\]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,do...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,dob_reg=1,in...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_prim_wrapper_init [dual_port_ram_blk_mem_gen_prim_w...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_prim_width [dual_port_ram_blk_mem_gen_prim_w...]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,do...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,dob_reg=1,in...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized0\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_width__parameterized0\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,do...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,dob_reg=1,in...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized1\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_width__parameterized1\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,do...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,dob_reg=1,in...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_wrapper_init__parameterized2\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\dual_port_ram_blk_mem_gen_prim_width__parameterized2\ [\dual_port_ram_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_generic_cstr [dual_port_ram_blk_mem_gen_generi...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_top [dual_port_ram_blk_mem_gen_top_de...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_v8_4_1_synth [dual_port_ram_blk_mem_gen_v8_4_1...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram_blk_mem_gen_v8_4_1 [dual_port_ram_blk_mem_gen_v8_4_1...]
+Compiling architecture structure of entity xil_defaultlib.dual_port_ram [dual_port_ram_default]
+Compiling architecture behave of entity xil_defaultlib.dmem [dmem_default]
+Compiling architecture behave of entity xil_defaultlib.listRegFile [\listRegFile(regcount=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.list_alu [list_alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_block [alu_block_default]
+Compiling architecture listproc of entity xil_defaultlib.ListProc [listproc_default]
+Compiling architecture mips_top of entity xil_defaultlib.mips_top [mips_top_default]
+Compiling architecture mips_testbench of entity xil_defaultlib.mips_testbench
+Built simulation snapshot mips_testbench_behav
