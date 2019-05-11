@@ -8,18 +8,23 @@ end;
 
 architecture mips_testbench of mips_testbench is
 
-    component mips_top is -- top-level design for testing
-      port( 
-           clk : in STD_LOGIC;
-           fast_clk : in STD_LOGIC;
-           reset: in STD_LOGIC;
-           out_port_1 : out STD_LOGIC_VECTOR(31 downto 0)
+    component computer_top is -- top-level design for testing
+     port( 
+           CLKM : in STD_LOGIC;
+           A_TO_G : out STD_LOGIC_VECTOR(6 downto 0);
+           AN : out STD_LOGIC_VECTOR(7 downto 0);
+           DP : out STD_LOGIC;
+           LED : out  STD_LOGIC_VECTOR(3 downto 0);
+           reset : in STD_LOGIC;
+           VGA_HS, VGA_VS : out STD_LOGIC;
+           VGA_R, VGA_B, VGA_G : out STD_LOGIC_VECTOR(3 downto 0)
            );
     end component;
 
     signal clk, speedy_clock : STD_LOGIC;
     signal reset : STD_LOGIC;
     signal out_port_1 : STD_LOGIC_VECTOR(31 downto 0);
+    signal vga_output : STD_LOGIC_VECTOR(127 downto 0);
     
 begin
   
@@ -47,10 +52,8 @@ end process;
   end process;
   
   -- instantiate device to be tested
-  dut: mips_top port map( 
-       clk => clk,
-       fast_clk => speedy_clock, 
-       reset => reset,
-       out_port_1 => out_port_1 );
+  dut: computer_top port map( 
+       clkm => clk, 
+       reset => reset);
 
 end mips_testbench;

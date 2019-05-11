@@ -61,5 +61,9 @@ Compiling architecture behavioral of entity xil_defaultlib.list_alu [list_alu_de
 Compiling architecture behavioral of entity xil_defaultlib.alu_block [alu_block_default]
 Compiling architecture listproc of entity xil_defaultlib.ListProc [listproc_default]
 Compiling architecture mips_top of entity xil_defaultlib.mips_top [mips_top_default]
+Compiling architecture display_hex of entity xil_defaultlib.display_hex [display_hex_default]
+Compiling architecture arch of entity xil_defaultlib.vga_sync [vga_sync_default]
+Compiling architecture vga_top of entity xil_defaultlib.vga_top [vga_top_default]
+Compiling architecture computer_top of entity xil_defaultlib.computer_top [computer_top_default]
 Compiling architecture mips_testbench of entity xil_defaultlib.mips_testbench
 Built simulation snapshot mips_testbench_behav

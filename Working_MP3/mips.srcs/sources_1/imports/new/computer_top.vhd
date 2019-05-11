@@ -42,7 +42,8 @@ architecture computer_top of computer_top is
          clk : in STD_LOGIC;
          fast_clk : in STD_LOGIC;
          reset: in STD_LOGIC;
-         out_port_1 : out STD_LOGIC_VECTOR(31 downto 0)
+         out_port_1 : out STD_LOGIC_VECTOR(31 downto 0);
+         vga_output : out STD_LOGIC_VECTOR(127 downto 0)
          );
   end component;
   
@@ -52,7 +53,8 @@ architecture computer_top of computer_top is
         hsync, vsync: out  std_logic;
         red: out std_logic_vector(3 downto 0);
         green: out std_logic_vector(3 downto 0);
-        blue: out std_logic_vector(3 downto 0)           
+        blue: out std_logic_vector(3 downto 0);  
+        vga_input : in STD_LOGIC_VECTOR(127 downto 0)       
      );
   end component;
   
@@ -68,7 +70,8 @@ architecture computer_top of computer_top is
   -- this data bus will hold a value for display by the 
   -- hex display  
   signal display_bus: STD_LOGIC_VECTOR(31 downto 0); 
-         
+  
+  signal vga_intermediary : STD_LOGIC_VECTOR(127 downto 0);
   
   begin
       -- wire up slow clock 
@@ -77,11 +80,11 @@ architecture computer_top of computer_top is
       speedy_clock <= clk_div(0); 
            
 	  -- wire up the processor and memories
-	  mips1: mips_top port map( clk => clk, reset => reset, out_port_1 => display_bus, fast_clk => speedy_clock );
+	  mips1: mips_top port map( clk => clk, reset => reset, out_port_1 => display_bus, fast_clk => speedy_clock, vga_output => vga_intermediary );
 	                                       
 	  display: display_hex port map( CLKM  => CLKM,  x => display_bus, 
 	           A_TO_G => A_TO_G,  AN => AN,  DP => DP,  LED => LED, clk_div => clk_div );
 	  
-	  vga: vga_top port map(clk => CLKM, reset => reset, hsync => VGA_HS, vsync => VGA_VS, red => VGA_R, green => VGA_G, blue => VGA_B);                                      
+	  vga: vga_top port map(clk => CLKM, reset => reset, hsync => VGA_HS, vsync => VGA_VS, red => VGA_R, green => VGA_G, blue => VGA_B, vga_input => vga_intermediary);                                      
 	  
   end computer_top;

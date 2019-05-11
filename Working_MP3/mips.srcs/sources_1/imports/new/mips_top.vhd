@@ -19,7 +19,8 @@ entity mips_top is -- top-level design for testing
        clk : in STD_LOGIC;
        fast_clk : in STD_LOGIC;
        reset: in STD_LOGIC;
-       out_port_1 : out STD_LOGIC_VECTOR(31 downto 0)
+       out_port_1 : out STD_LOGIC_VECTOR(31 downto 0);
+       vga_output : out STD_LOGIC_VECTOR(127 downto 0)
 	   );
 end;
 
@@ -73,24 +74,51 @@ architecture mips_top of mips_top is
   signal writedata, dataadr: STD_LOGIC_VECTOR(31 downto 0);
   signal memwrite: STD_LOGIC;
   signal pc: STD_LOGIC_VECTOR(31 downto 0); 
-  signal write_enable_b : STD_LOGIC;
+  signal write_enable_b, write_enable_beta : STD_LOGIC;
   signal address_b : STD_LOGIC_VECTOR(4 downto 0);
   signal data_into_b, data_out_of_b : STD_LOGIC_VECTOR(127 downto 0);
+  signal vga_out : STD_LOGIC_VECTOR(127 downto 0);
          
   
   begin     
+      -- wire the vga register out
+      vga_output <= vga_out;
+      
       -- wire output port signal
       out_port_1 <= instr;
       
       -- This is not the most elegant solution to this problem...
       address_b <= instr(11 downto 7);
       
+      -- This is here so that when we get the vga reg address we disable writing to dmem
+      process(address_b, write_enable_b) begin
+            case(address_b) is
+                when "11111" =>
+                        write_enable_beta <= '0';
+                when others =>
+                        write_enable_beta <= write_enable_b;
+            end case;
+      end process;
+      
+      -- Register that will store the information to go out to the vga
+      process(clk, data_into_b, address_b) begin
+      if rising_edge(clk) then
+            case(address_b) is
+                  when "11111" =>
+                          vga_out <= data_into_b;
+                  when others =>
+                          vga_out <= vga_out;
+            end case;
+      end if;      
+      end process;
+      
+      
 	  -- wire up the processor and memories
 	  mips1: mips generic map(32) port map(clk => clk, reset => reset, pc => pc, 
 	                                       instr => instr, memwrite => memwrite, aluout => dataadr, 
 	                                       writedata => writedata, readdata => readdata);
 	  imem1: imem generic map(32) port map( a => pc(7 downto 2), rd => instr);
-	  dmem1: dmem port map( clk => fast_clk, wea => memwrite, web => write_enable_b, addra => dataadr(6 downto 0),
+	  dmem1: dmem port map( clk => fast_clk, wea => memwrite, web => write_enable_beta, addra => dataadr(6 downto 0),
 	                        ena => '1', enb => '1', addrb => address_b, dinb => data_into_b,
 	                        doutb => data_out_of_b, dina => writedata, douta => readdata);
 	                                        
