@@ -11,14 +11,13 @@ lload $l2 listdown
 lload $l3 listup
 :startloop
 
-
 mov $d2 $d0
 addi $d2 50
 :downloop
 ladd $l1 $l2
 vgastore $l1
 mov $d1 $d0
-addi $d1 1000
+addi $d1 10000000
 :stalldown
 addi $d1 -1
 beq continuedown
