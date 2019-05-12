@@ -12,7 +12,7 @@ lload $l3 listup
 :startloop
 
 mov $d2 $d0
-addi $d2 1000
+addi $d2 400
 :downloop
 ladd $l1 $l2
 vgastore $l1
@@ -30,7 +30,7 @@ jmp downloop
 
 :startuploop
 mov $d2 $d0
-addi $d2 1000
+addi $d2 400
 :uploop
 ladd $l1 $l3
 vgastore $l1

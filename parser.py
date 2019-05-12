@@ -77,7 +77,9 @@ if lines[0] == ".data":
         print("Binary tracker : {}".format(binary_tracker))
         offset_from_start = len(binary_tracker) # maybe don't calculate this every time?
         for x in var_elements:
-            binary_tracker += format(int(x), '0%db' % data_size_identifiers[var_size])
+            mask = 2**data_size_identifiers[var_size] - 1
+            complement = int(x) & mask
+            binary_tracker += format(complement, '0%db' % data_size_identifiers[var_size])
         data[var_name] = (data_size_identifiers[var_size], offset_from_start)
 
 # contains the lines to be written to the machine code file 
