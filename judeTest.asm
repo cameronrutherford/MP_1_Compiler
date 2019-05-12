@@ -17,7 +17,7 @@ addi $d2 50
 ladd $l1 $l2
 vgastore $l1
 mov $d1 $d0
-addi $d1 10000000
+addi $d1 100000
 :stalldown
 addi $d1 -1
 beq continuedown
