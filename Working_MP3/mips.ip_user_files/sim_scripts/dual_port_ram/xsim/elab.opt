@@ -1,1 +1,0 @@
---relax --debug typical --mt auto -L xil_defaultlib -L secureip -L xpm --snapshot dual_port_ram xil_defaultlib.dual_port_ram -log elaborate.log

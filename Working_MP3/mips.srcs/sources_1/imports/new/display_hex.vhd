@@ -17,16 +17,16 @@ end	 display_hex;
 architecture display_hex of display_hex is
 
 
-signal s: STD_LOGIC_VECTOR(3 downto 0);
+signal s: STD_LOGIC_VECTOR(2 downto 0);
 signal digit: STD_LOGIC_VECTOR(3 downto 0);
-signal clkdiv: STD_LOGIC_VECTOR(28 downto 0);	
+signal clkdiv: STD_LOGIC_VECTOR(28 downto 0) := (others => '0');	
 signal clk : STD_LOGIC;
 
 begin
 
     clk <= CLKM; 
     clk_div <= clkdiv;           -- output the clkdiv counter
-    s <= clkdiv(18 downto 15);	 -- cycle through 7-seg displays
+    s <= clkdiv(17 downto 15);	 -- cycle through 7-seg displays
     		
 	dp <= '1';			   -- turn off dp
 	LED <= digit;		   -- see the code
@@ -35,13 +35,13 @@ begin
 	process(s)
 	begin
 		case s is
-		when "0000" => digit <= x(3 downto 0);
-		when "0001" => digit <= x(7 downto 4);
-		when "0010" => digit <= x(11 downto 8);
-		when "0011" => digit <= x(15 downto 12);		
-		when "0100" => digit <= x(19 downto 16);
-		when "0101" => digit <= x(23 downto 20);	
-		when "0110" => digit <= x(27 downto 24);	
+		when "000" => digit <= x(3 downto 0);
+		when "001" => digit <= x(7 downto 4);
+		when "010" => digit <= x(11 downto 8);
+		when "011" => digit <= x(15 downto 12);		
+		when "100" => digit <= x(19 downto 16);
+		when "101" => digit <= x(23 downto 20);	
+		when "110" => digit <= x(27 downto 24);	
 		when others => digit <= x(31 downto 28);				
 		end case;
 	end process;

@@ -77,7 +77,7 @@ architecture mips_top of mips_top is
   signal write_enable_b, write_enable_beta : STD_LOGIC;
   signal address_b : STD_LOGIC_VECTOR(4 downto 0);
   signal data_into_b, data_out_of_b : STD_LOGIC_VECTOR(127 downto 0);
-  signal vga_out : STD_LOGIC_VECTOR(127 downto 0);
+  signal vga_out : STD_LOGIC_VECTOR(127 downto 0) := (others => '0');
          
   
   begin     
@@ -88,7 +88,10 @@ architecture mips_top of mips_top is
       out_port_1 <= instr;
       
       -- This is not the most elegant solution to this problem...
-      address_b <= instr(11 downto 7);
+      process(instr) begin
+            address_b <= instr(11 downto 7);
+      end process;
+
       
       -- This is here so that when we get the vga reg address we disable writing to dmem
       process(address_b, write_enable_b) begin
@@ -101,10 +104,10 @@ architecture mips_top of mips_top is
       end process;
       
       -- Register that will store the information to go out to the vga
-      process(clk, data_into_b, address_b) begin
+      process(clk, data_into_b, address_b, instr) begin
       if rising_edge(clk) then
-            case(address_b) is
-                  when "11111" =>
+            case(instr(31 downto 24)) is
+                  when "10010011" =>
                           vga_out <= data_into_b;
                   when others =>
                           vga_out <= vga_out;

@@ -17,7 +17,7 @@ addi $d2 400
 ladd $l1 $l2
 vgastore $l1
 mov $d1 $d0
-addi $d1 100000
+addi $d1 16000
 :stalldown
 addi $d1 -1
 beq continuedown
@@ -35,7 +35,7 @@ addi $d2 400
 ladd $l1 $l3
 vgastore $l1
 mov $d1 $d0
-addi $d1 100000
+addi $d1 16000
 :stallup
 addi $d1 -1
 beq continueup

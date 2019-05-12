@@ -15,14 +15,16 @@ end vga_top;
 
 architecture vga_top of vga_top is
    signal pixel_x, pixel_y: std_logic_vector(9 downto 0);
+   signal player_xl, player_xr, player_yt, player_yb: integer := 0;
    signal video_on, pixel_tick: std_logic;
    signal red_reg, red_next: std_logic_vector(3 downto 0) := (others => '0');
    signal green_reg, green_next: std_logic_vector(3 downto 0) := (others => '0');
    signal blue_reg, blue_next: std_logic_vector(3 downto 0) := (others => '0'); 
    signal dir_x, dir_y : integer := 1;  
    signal x, y : integer := 0;       
-   signal box_xl, box_yt, box_xr, box_yb : integer := 0; 
+   signal box_xl, box_yt, box_xr, box_yb : integer := 50; 
    signal update_pos : std_logic := '0';  
+   signal game_over : std_logic := '0';
 begin
    -- instantiate VGA sync circuit
    vga_sync_unit: entity work.vga_sync
@@ -36,6 +38,14 @@ begin
     box_yt <= y;
     box_xr <= x + 100;
     box_yb <= y + 100;  
+    
+    -- player position
+    process(vga_input) begin
+        player_xl <= to_integer(unsigned(vga_input(63 downto 32)));
+        player_yt <= to_integer(unsigned(vga_input(31 downto 0)));
+        player_xr <= player_xl + 20;
+        player_yb <= player_yt + 20;
+    end process;
     
     -- process to generate update position signal
     process ( video_on )
@@ -79,6 +89,7 @@ begin
         
     end process;
     
+    
     -- process to generate next colors           
     process (pixel_x, pixel_y)
     begin
@@ -88,6 +99,11 @@ begin
                red_next <= "1111";
                green_next <= "1111";
                blue_next <= "0000"; 
+           elsif (unsigned(pixel_x) > player_xl) and (unsigned(pixel_x) < player_xr) and
+                 (unsigned(pixel_y) > player_yt) and (unsigned(pixel_y) < player_yb) then
+               red_next <= "0000";
+               green_next <= "1111";
+               blue_next <= "0000";
            else    
                -- background color blue
                red_next <= "0000";

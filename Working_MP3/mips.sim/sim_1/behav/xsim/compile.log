@@ -1,4 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/vga_sync.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity vga_sync
-INFO: [VRFC 10-163] Analyzing VHDL file "Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/vga_top.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity vga_top
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity imem

@@ -21,7 +21,8 @@ architecture mips_testbench of mips_testbench is
            );
     end component;
 
-    signal clk, speedy_clock : STD_LOGIC;
+    --signal clk, speedy_clock : STD_LOGIC;
+    signal clk : STD_LOGIC;
     signal reset : STD_LOGIC;
     signal out_port_1 : STD_LOGIC_VECTOR(31 downto 0);
     signal vga_output : STD_LOGIC_VECTOR(127 downto 0);
@@ -31,17 +32,17 @@ begin
   -- Generate simulated mips clock with 10 ns period
   clkproc: process begin
     clk <= '1';
-    wait for 20 ns; 
+    wait for 2.5 ns; 
     clk <= '0';
-    wait for 20 ns;
+    wait for 2.5 ns;
   end process;
   
-speedyClockProc: process begin
-    speedy_clock <= '1';
-    wait for 5 ns; 
-    speedy_clock <= '0';
-    wait for 5 ns;
-end process;
+--speedyClockProc: process begin
+--    speedy_clock <= '1';
+--    wait for 5 ns; 
+--    speedy_clock <= '0';
+--    wait for 5 ns;
+--end process;
   
   -- Generate reset for first few clock cycles
   reproc: process begin

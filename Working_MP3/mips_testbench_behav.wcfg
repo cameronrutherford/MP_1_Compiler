@@ -10,51 +10,97 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="392644000fs"></ZoomStartTime>
-      <ZoomEndTime time="489644001fs"></ZoomEndTime>
-      <Cursor1Time time="557844000fs"></Cursor1Time>
+      <ZoomStartTime time="780000000fs"></ZoomStartTime>
+      <ZoomEndTime time="22760780000001fs"></ZoomEndTime>
+      <Cursor1Time time="2400780000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="194"></NameColumnWidth>
-      <ValueColumnWidth column_width="298"></ValueColumnWidth>
+      <ValueColumnWidth column_width="266"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="7" />
-   <wvobject fp_name="/mips_testbench/out_port_1" type="array">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">out_port_1[31:0]</obj_property>
-      <obj_property name="ObjectShortName">out_port_1[31:0]</obj_property>
-      <obj_property name="label">Instruction</obj_property>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/mips_testbench/dut/mips1/instr" type="array">
+      <obj_property name="ElementShortName">instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/listProcessor/chinchilla" type="array">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">chinchilla[127:0]</obj_property>
-      <obj_property name="ObjectShortName">chinchilla[127:0]</obj_property>
-      <obj_property name="label">ALUout</obj_property>
+   <wvobject fp_name="/mips_testbench/dut/mips1/vga_out" type="array">
+      <obj_property name="ElementShortName">vga_out[127:0]</obj_property>
+      <obj_property name="ObjectShortName">vga_out[127:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/listProcessor/A" type="array">
-      <obj_property name="ElementShortName">A[127:0]</obj_property>
-      <obj_property name="ObjectShortName">A[127:0]</obj_property>
+   <wvobject fp_name="/mips_testbench/dut/mips1/vga_output" type="array">
+      <obj_property name="ElementShortName">vga_output[127:0]</obj_property>
+      <obj_property name="ObjectShortName">vga_output[127:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/listProcessor/B" type="array">
-      <obj_property name="ElementShortName">B[127:0]</obj_property>
-      <obj_property name="ObjectShortName">B[127:0]</obj_property>
+   <wvobject fp_name="/mips_testbench/dut/mips1/data_into_b" type="array">
+      <obj_property name="ElementShortName">data_into_b[127:0]</obj_property>
+      <obj_property name="ObjectShortName">data_into_b[127:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/mips1/dp/rf/wa3" type="array">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">wa3[4:0]</obj_property>
-      <obj_property name="ObjectShortName">wa3[4:0]</obj_property>
-      <obj_property name="label">Reg Write Addr</obj_property>
+   <wvobject fp_name="/mips_testbench/dut/mips1/address_b" type="array">
+      <obj_property name="ElementShortName">address_b[4:0]</obj_property>
+      <obj_property name="ObjectShortName">address_b[4:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/mips1/dp/rf/wd3" type="array">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">wd3[31:0]</obj_property>
-      <obj_property name="ObjectShortName">wd3[31:0]</obj_property>
-      <obj_property name="label">Reg Write Data</obj_property>
+   <wvobject fp_name="/mips_testbench/dut/mips1/dmem1/addrb" type="array">
+      <obj_property name="ElementShortName">addrb[4:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb[4:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/mips_testbench/dut/mips1/dp/rf/we3" type="logic">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">we3</obj_property>
-      <obj_property name="ObjectShortName">we3</obj_property>
-      <obj_property name="label">WRITE!!!</obj_property>
+   <wvobject fp_name="/mips_testbench/dut/mips1/dmem1/doutb" type="array">
+      <obj_property name="ElementShortName">doutb[127:0]</obj_property>
+      <obj_property name="ObjectShortName">doutb[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/mips1/dmem1/addrb" type="array">
+      <obj_property name="ElementShortName">addrb[4:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/vga/player_xl" type="other">
+      <obj_property name="ElementShortName">player_xl</obj_property>
+      <obj_property name="ObjectShortName">player_xl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/vga/player_xr" type="other">
+      <obj_property name="ElementShortName">player_xr</obj_property>
+      <obj_property name="ObjectShortName">player_xr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/vga/player_yt" type="other">
+      <obj_property name="ElementShortName">player_yt</obj_property>
+      <obj_property name="ObjectShortName">player_yt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/vga/player_yb" type="other">
+      <obj_property name="ElementShortName">player_yb</obj_property>
+      <obj_property name="ObjectShortName">player_yb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/vga/box_xl" type="other">
+      <obj_property name="ElementShortName">box_xl</obj_property>
+      <obj_property name="ObjectShortName">box_xl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/vga/box_yt" type="other">
+      <obj_property name="ElementShortName">box_yt</obj_property>
+      <obj_property name="ObjectShortName">box_yt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/vga/box_xr" type="other">
+      <obj_property name="ElementShortName">box_xr</obj_property>
+      <obj_property name="ObjectShortName">box_xr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/vga/box_yb" type="other">
+      <obj_property name="ElementShortName">box_yb</obj_property>
+      <obj_property name="ObjectShortName">box_yb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/vga/x" type="other">
+      <obj_property name="ElementShortName">x</obj_property>
+      <obj_property name="ObjectShortName">x</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/vga/y" type="other">
+      <obj_property name="ElementShortName">y</obj_property>
+      <obj_property name="ObjectShortName">y</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/vga/red_next" type="array">
+      <obj_property name="ElementShortName">red_next[3:0]</obj_property>
+      <obj_property name="ObjectShortName">red_next[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/vga/green_next" type="array">
+      <obj_property name="ElementShortName">green_next[3:0]</obj_property>
+      <obj_property name="ObjectShortName">green_next[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_testbench/dut/vga/blue_next" type="array">
+      <obj_property name="ElementShortName">blue_next[3:0]</obj_property>
+      <obj_property name="ObjectShortName">blue_next[3:0]</obj_property>
    </wvobject>
 </wave_config>
