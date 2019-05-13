@@ -75,14 +75,14 @@ architecture computer_top of computer_top is
   
   begin
       -- wire up slow clock 
-      clk <= clk_div(2); -- use a lower bit for a faster clock
+      clk <= clk_div(6); -- use a lower bit for a faster clock
       -- clk <= clk_div(0);  -- use this in simulation (fast clk)
-      speedy_clock <= clk_div(0); 
+      speedy_clock <= clk_div(4); 
            
 	  -- wire up the processor and memories
 	  mips1: mips_top port map( clk => clk, reset => reset, out_port_1 => display_bus, fast_clk => speedy_clock, vga_output => vga_intermediary );
 	                                       
-	  display: display_hex port map( CLKM  => CLKM,  x => display_bus, 
+	  display: display_hex port map( CLKM  => CLKM,  x => vga_intermediary(31 downto 0), 
 	           A_TO_G => A_TO_G,  AN => AN,  DP => DP,  LED => LED, clk_div => clk_div );
 	  
 	  vga: vga_top port map(clk => CLKM, reset => reset, hsync => VGA_HS, vsync => VGA_VS, red => VGA_R, green => VGA_G, blue => VGA_B, vga_input => vga_intermediary);                                      

@@ -32,9 +32,9 @@ begin
   -- Generate simulated mips clock with 10 ns period
   clkproc: process begin
     clk <= '1';
-    wait for 2.5 ns; 
+    wait for 5 ns; 
     clk <= '0';
-    wait for 2.5 ns;
+    wait for 5 ns;
   end process;
   
 --speedyClockProc: process begin

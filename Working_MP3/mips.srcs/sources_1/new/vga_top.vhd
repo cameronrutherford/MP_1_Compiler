@@ -40,9 +40,14 @@ begin
     box_yb <= y + 100;  
     
     -- player position
-    process(vga_input) begin
-        player_xl <= to_integer(unsigned(vga_input(63 downto 32)));
-        player_yt <= to_integer(unsigned(vga_input(31 downto 0)));
+    process(vga_input, update_pos) begin
+        if rising_edge(update_pos) then
+            player_xl <= to_integer(unsigned(vga_input(63 downto 32)));
+            player_yt <= to_integer(unsigned(vga_input(31 downto 0)));
+        end if;
+    end process;
+    
+    process(player_xl, player_yt) begin
         player_xr <= player_xl + 20;
         player_yb <= player_yt + 20;
     end process;
@@ -93,13 +98,13 @@ begin
     -- process to generate next colors           
     process (pixel_x, pixel_y)
     begin
-           if (unsigned(pixel_x) > box_xl) and (unsigned(pixel_x) < box_xr) and
-           (unsigned(pixel_y) > box_yt) and (unsigned(pixel_y) < box_yb) then
-               -- foreground box color yellow
-               red_next <= "1111";
-               green_next <= "1111";
-               blue_next <= "0000"; 
-           elsif (unsigned(pixel_x) > player_xl) and (unsigned(pixel_x) < player_xr) and
+--           if (unsigned(pixel_x) > box_xl) and (unsigned(pixel_x) < box_xr) and
+--           (unsigned(pixel_y) > box_yt) and (unsigned(pixel_y) < box_yb) then
+--               -- foreground box color yellow
+--               red_next <= "1111";
+--               green_next <= "1111";
+--               blue_next <= "0000"; 
+           if (unsigned(pixel_x) > player_xl) and (unsigned(pixel_x) < player_xr) and
                  (unsigned(pixel_y) > player_yt) and (unsigned(pixel_y) < player_yb) then
                red_next <= "0000";
                green_next <= "1111";
