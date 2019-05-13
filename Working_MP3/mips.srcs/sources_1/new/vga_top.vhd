@@ -97,7 +97,7 @@ begin
     
     -- process to generate next colors           
     process (pixel_x, pixel_y)
-    begin
+    begin 
 --           if (unsigned(pixel_x) > box_xl) and (unsigned(pixel_x) < box_xr) and
 --           (unsigned(pixel_y) > box_yt) and (unsigned(pixel_y) < box_yb) then
 --               -- foreground box color yellow

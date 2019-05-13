@@ -16,7 +16,8 @@ entity ListProc is
         opB : in STD_LOGIC_VECTOR(4 downto 0);      -- operand register or memory location
         mem_bus_in : in STD_LOGIC_VECTOR(127 downto 0);    -- data bus for reading from memory
         mem_bus_out : out STD_LOGIC_VECTOR(127 downto 0);   -- data bus for writing to memory
-        memWrite : out STD_LOGIC
+        memWrite : out STD_LOGIC;
+        LED_signal : in STD_LOGIC_VECTOR(3 downto 0)
     );
 end ListProc;
 
@@ -34,7 +35,8 @@ port(clk:           in  STD_LOGIC;
     -- date to write to the register file
     wd3:           in  STD_LOGIC_VECTOR((width-1) downto 0);
     -- outputs from the register file
-    rd1, rd2:      out STD_LOGIC_VECTOR((width-1) downto 0));
+    rd1, rd2:      out STD_LOGIC_VECTOR((width-1) downto 0);
+    led : in STD_LOGIC_VECTOR(3 downto 0));
 end component;
 
 
@@ -129,7 +131,8 @@ end process;
             wd3 => regDataIn,
             we3 => regWrite,
             rd1 => regDataOutA,
-            rd2 => regDataOutB
+            rd2 => regDataOutB,
+            led => LED_signal
         );
 
     alus : alu_block

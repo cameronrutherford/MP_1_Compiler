@@ -9,6 +9,8 @@ use IEEE.STD_LOGIC_UNSIGNED.all;
 entity computer_top is -- top-level design for testing
   port( 
        CLKM : in STD_LOGIC;
+       PS2_CLK : in STD_LOGIC;
+       PS2_DATA : in STD_LOGIC;
        A_TO_G : out STD_LOGIC_VECTOR(6 downto 0);
        AN : out STD_LOGIC_VECTOR(7 downto 0);
        DP : out STD_LOGIC;
@@ -43,7 +45,8 @@ architecture computer_top of computer_top is
          fast_clk : in STD_LOGIC;
          reset: in STD_LOGIC;
          out_port_1 : out STD_LOGIC_VECTOR(31 downto 0);
-         vga_output : out STD_LOGIC_VECTOR(127 downto 0)
+         vga_output : out STD_LOGIC_VECTOR(127 downto 0);
+         led_signal : in STD_LOGIC_VECTOR(3 downto 0)
          );
   end component;
   
@@ -56,6 +59,13 @@ architecture computer_top of computer_top is
         blue: out std_logic_vector(3 downto 0);  
         vga_input : in STD_LOGIC_VECTOR(127 downto 0)       
      );
+  end component;
+  
+  component keyboard_top is
+      Port ( CLK100MHZ : in STD_LOGIC;
+               PS2_CLK : in STD_LOGIC;
+               PS2_DATA : in STD_LOGIC;
+               LED : out STD_LOGIC_VECTOR(3 downto 0) );
   end component;
   
   -- this is a slowed signal clock provided to the mips_top
@@ -72,6 +82,7 @@ architecture computer_top of computer_top is
   signal display_bus: STD_LOGIC_VECTOR(31 downto 0); 
   
   signal vga_intermediary : STD_LOGIC_VECTOR(127 downto 0);
+  signal LED_signal : STD_LOGIC_VECTOR(3 downto 0);
   
   begin
       -- wire up slow clock 
@@ -80,11 +91,15 @@ architecture computer_top of computer_top is
       speedy_clock <= clk_div(4); 
            
 	  -- wire up the processor and memories
-	  mips1: mips_top port map( clk => clk, reset => reset, out_port_1 => display_bus, fast_clk => speedy_clock, vga_output => vga_intermediary );
+	  mips1: mips_top port map( clk => clk, reset => reset, out_port_1 => display_bus, fast_clk => speedy_clock, vga_output => vga_intermediary, led_signal => led_signal );
 	                                       
 	  display: display_hex port map( CLKM  => CLKM,  x => vga_intermediary(31 downto 0), 
-	           A_TO_G => A_TO_G,  AN => AN,  DP => DP,  LED => LED, clk_div => clk_div );
+	           A_TO_G => A_TO_G,  AN => AN,  DP => DP, clk_div => clk_div );
 	  
-	  vga: vga_top port map(clk => CLKM, reset => reset, hsync => VGA_HS, vsync => VGA_VS, red => VGA_R, green => VGA_G, blue => VGA_B, vga_input => vga_intermediary);                                      
+	  vga: vga_top port map(clk => CLKM, reset => reset, hsync => VGA_HS, vsync => VGA_VS, red => VGA_R, green => VGA_G, blue => VGA_B, vga_input => vga_intermediary); 
+	  
+	  keyboard_input: keyboard_top port map(  CLK100MHZ => CLKM,  PS2_CLK => PS2_CLK, PS2_DATA => PS2_DATA, LED => LED_signal );
+	  
+	  LED <= LED_signal;
 	  
   end computer_top;
