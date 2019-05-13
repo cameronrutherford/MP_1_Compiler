@@ -11,6 +11,8 @@ architecture mips_testbench of mips_testbench is
     component computer_top is -- top-level design for testing
      port( 
            CLKM : in STD_LOGIC;
+           PS2_CLK : in STD_LOGIC;
+           PS2_DATA : in STD_LOGIC;
            A_TO_G : out STD_LOGIC_VECTOR(6 downto 0);
            AN : out STD_LOGIC_VECTOR(7 downto 0);
            DP : out STD_LOGIC;
@@ -54,7 +56,9 @@ begin
   
   -- instantiate device to be tested
   dut: computer_top port map( 
-       clkm => clk, 
+       clkm => clk,
+       PS2_CLK => '0', 
+       PS2_DATA => '0', 
        reset => reset);
 
 end mips_testbench;
