@@ -45,6 +45,7 @@ registers = {
     "$l5" : bin(5)[2:].zfill(5),
     "$l6" : bin(6)[2:].zfill(5),
     "$l7" : bin(7)[2:].zfill(5),
+    "$kb" : bin(8)[2:].zfill(5),
     "$vga" : bin(2**19 - 1)[2:]
 }
 
