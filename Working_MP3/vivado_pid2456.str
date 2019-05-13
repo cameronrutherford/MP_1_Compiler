@@ -1,0 +1,434 @@
+/*
+
+Xilinx Vivado v2018.2.1 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2288692 on Thu Jul 26 18:24:02 MDT 2018
+IP Build: 2289599 on Thu Jul 26 21:09:20 MDT 2018
+
+Process ID: 2456
+License: Customer
+
+Current time: 	Mon May 13 11:33:40 PDT 2019
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 123 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	rrutherford20
+User home directory: C:/Users/rrutherford20
+User working directory: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/rrutherford20/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/rrutherford20/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/rrutherford20/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/vivado.log
+Vivado journal file location: 	Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/vivado.jou
+Engine tmp dir: 	Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/.Xil/Vivado-2456-LAB-SCI-214-16
+
+Xilinx Environment Variables
+----------------------------
+VK_SDK_PATH: C:\Dev\1.1.77.0
+VULKAN_SDK: C:\Dev\1.1.77.0
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	204 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 514 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 51 MB (+50798kb) [00:00:05]
+// [Engine Memory]: 476 MB (+347695kb) [00:00:05]
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: Z:\rrutherford20\CS-401-1-CompArch\CompArchFinal\Working_MP3\mips.xpr. Version: Vivado v2018.2.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// Tcl Message: open_project Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.xpr 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 85 MB (+33197kb) [00:00:09]
+// [Engine Memory]: 586 MB (+89822kb) [00:00:09]
+// [Engine Memory]: 616 MB (+1207kb) [00:00:12]
+// Tcl Message: open_project Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 44 MB. Current time: 5/13/19 11:33:45 AM PDT
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 874.965 ; gain = 139.832 
+// Project name: mips; location: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 2); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, dual_ram_init.coe]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, dual_ram_init.coe]", 3, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ad (aj, ck)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/dual_ram_init.coe] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/dual_ram_init.coe 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, computer_top(computer_top) (computer_top.vhd)]", 1); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, computer_top(computer_top) (computer_top.vhd), mips1 : mips_top(mips_top) (mips_top.vhd)]", 2); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, computer_top(computer_top) (computer_top.vhd), mips1 : mips_top(mips_top) (mips_top.vhd), dmem1 : dmem(behave) (mips_mem_data.vhd)]", 5); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, computer_top(computer_top) (computer_top.vhd), mips1 : mips_top(mips_top) (mips_top.vhd), dmem1 : dmem(behave) (mips_mem_data.vhd), MULTI_PORT_REG : dual_port_ram (dual_port_ram.xci)]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, computer_top(computer_top) (computer_top.vhd), mips1 : mips_top(mips_top) (mips_top.vhd), dmem1 : dmem(behave) (mips_mem_data.vhd)]", 5, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, computer_top(computer_top) (computer_top.vhd), mips1 : mips_top(mips_top) (mips_top.vhd), dmem1 : dmem(behave) (mips_mem_data.vhd)]", 5, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, computer_top(computer_top) (computer_top.vhd), mips1 : mips_top(mips_top) (mips_top.vhd), dmem1 : dmem(behave) (mips_mem_data.vhd)]", 5, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_CONSTRAINT_SETS, "Edit Constraints Sets..."); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_CONSTRAINT_SETS
+// ap (ck): Edit Constraints Sets: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ap)
+// 'ao' command handler elapsed time: 9 seconds
+dismissDialog("Edit Constraints Sets"); // ap (ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, computer_top(computer_top) (computer_top.vhd), mips1 : mips_top(mips_top) (mips_top.vhd), dmem1 : dmem(behave) (mips_mem_data.vhd), MULTI_PORT_REG : dual_port_ram (dual_port_ram.xci)]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, computer_top(computer_top) (computer_top.vhd), mips1 : mips_top(mips_top) (mips_top.vhd), dmem1 : dmem(behave) (mips_mem_data.vhd), MULTI_PORT_REG : dual_port_ram (dual_port_ram.xci)]", 6, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // aa (aj, ck)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_CONSTRAINT_SETS, "Edit Constraints Sets..."); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_CONSTRAINT_SETS
+// ap (ck): Edit Constraints Sets: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 639 MB. GUI used memory: 46 MB. Current time: 5/13/19 11:34:22 AM PDT
+selectTable(PAResourceAtoD.ConstraintsChooserPanel_FILE_TABLE, "Nexys4DDR_Master.xdc ; Z:\\rrutherford20\\CS-401-1-CompArch\\CompArchFinal\\Working_MP3\\mips.srcs\\constrs_1\\imports\\Desktop", 0, "Z:\\rrutherford20\\CS-401-1-CompArch\\CompArchFinal\\Working_MP3\\mips.srcs\\constrs_1\\imports\\Desktop", 1); // s (O, ap)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ap)
+// 'ao' command handler elapsed time: 6 seconds
+dismissDialog("Edit Constraints Sets"); // ap (ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 11); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Data Files]", 10, true); // B (D, ck) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Data Files]", 10); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Data Files]", 10); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Data Files]", 10, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// [Engine Memory]: 653 MB (+6500kb) [00:01:11]
+setFileChooser("Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/dual_ram_init.coe");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 12 seconds
+dismissDialog("Add Sources"); // c (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/dual_ram_init.coe 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 10); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 13, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Data Files]", 12, true); // B (D, ck) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Data Files]", 12); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Data Files]", 12); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, dual_ram_init.coe]", 11, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, dual_ram_init.coe]", 11, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("dual_ram_init.coe", 286, 36); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 659 MB. GUI used memory: 49 MB. Current time: 5/13/19 11:35:02 AM PDT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "dual_ram_init.coe", 1); // k (j, ck)
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // J
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, computer_top(computer_top) (computer_top.vhd), mips1 : mips_top(mips_top) (mips_top.vhd), imem1 : imem(behave) (mips_mem_instructions.vhd)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, computer_top(computer_top) (computer_top.vhd), mips1 : mips_top(mips_top) (mips_top.vhd), imem1 : imem(behave) (mips_mem_instructions.vhd)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("mips_mem_instructions.vhd", 465, 240); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// bx (ck):  Open Elaborated Design : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run dual_port_ram_synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: LOAD_FEATURE
+// Tcl Message: launch_runs dual_port_ram_synth_1 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dual_port_ram'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 688 MB (+2765kb) [00:01:43]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon May 13 11:35:17 2019] Launched dual_port_ram_synth_1... Run output will be captured here: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/dual_port_ram_synth_1/runme.log 
+// Tcl Message: wait_on_run dual_port_ram_synth_1 
+// Tcl Message: [Mon May 13 11:35:17 2019] Waiting for dual_port_ram_synth_1 to finish... 
+// Tcl Message: [Mon May 13 11:35:22 2019] Waiting for dual_port_ram_synth_1 to finish... 
+// Tcl Message: [Mon May 13 11:35:27 2019] Waiting for dual_port_ram_synth_1 to finish... 
+// Tcl Message: [Mon May 13 11:35:33 2019] Waiting for dual_port_ram_synth_1 to finish... 
+// Tcl Message: [Mon May 13 11:35:43 2019] Waiting for dual_port_ram_synth_1 to finish... 
+// [GUI Memory]: 93 MB (+3983kb) [00:02:17]
+// Tcl Message: [Mon May 13 11:35:54 2019] Waiting for dual_port_ram_synth_1 to finish... 
+// [GUI Memory]: 98 MB (+159kb) [00:02:22]
+// Tcl Message: [Mon May 13 11:36:04 2019] Waiting for dual_port_ram_synth_1 to finish... 
+// Tcl Message: [Mon May 13 11:36:15 2019] Waiting for dual_port_ram_synth_1 to finish... 
+// Tcl Message: [Mon May 13 11:36:35 2019] Waiting for dual_port_ram_synth_1 to finish... 
+// Tcl Message: [Mon May 13 11:36:56 2019] Waiting for dual_port_ram_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// Tcl Message: [Mon May 13 11:37:08 2019] dual_port_ram_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:01:51 . Memory (MB): peak = 936.473 ; gain = 0.000 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: computer_top 
+// HMemoryUtils.trashcanNow. Engine heap size: 836 MB. GUI used memory: 49 MB. Current time: 5/13/19 11:37:12 AM PDT
+// [Engine Memory]: 836 MB (+119144kb) [00:03:40]
+// [Engine Memory]: 937 MB (+61394kb) [00:03:45]
+// TclEventType: ELABORATE_FINISH
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2082 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5743 ms. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2599 ms. Increasing delay to 5000 ms.
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,087 MB. GUI used memory: 48 MB. Current time: 5/13/19 11:37:41 AM PDT
+// [Engine Memory]: 1,090 MB (+111664kb) [00:04:08]
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 1,179 MB (+36347kb) [00:04:09]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1028.668 ; gain = 92.195 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'computer_top' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:26] INFO: [Synth 8-3491] module 'mips_top' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:17' bound to instance 'mips1' of component 'mips_top' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:83] INFO: [Synth 8-638] synthesizing module 'mips_top' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:31] 
+// Tcl Message: 	Parameter width bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'mips' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:14' bound to instance 'mips1' of component 'mips' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:120] INFO: [Synth 8-638] synthesizing module 'mips' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29] 
+// Tcl Message: 	Parameter width bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'controller' (3#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_controller.vhd:17] 
+// Tcl Message: 	Parameter width bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'datapath' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:6' bound to instance 'dp' of component 'datapath' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:68] INFO: [Synth 8-638] synthesizing module 'datapath' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21] 
+// Tcl Message: 	Parameter width bound to: 32 - type: integer  	Parameter width bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'flopr' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:5' bound to instance 'pcreg' of component 'flopr' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:102] INFO: [Synth 8-638] synthesizing module 'flopr' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12] 
+// Tcl Message: 	Parameter width bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'flopr' (4#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12] 
+// Tcl Message: 	Parameter width bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'adder' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd1' of component 'adder' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:103] INFO: [Synth 8-638] synthesizing module 'adder' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13] 
+// Tcl Message: 	Parameter width bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'adder' (5#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:13] 
+// Tcl Message: 	Parameter width bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'adder' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd2' of component 'adder' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:104] 
+// Tcl Message: 	Parameter width bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcbrmux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:105] INFO: [Synth 8-638] synthesizing module 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11] 
+// Tcl Message: 	Parameter width bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'mux2' (6#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11] 
+// Tcl Message: 	Parameter N bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'bit_reg' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:25' bound to instance 'zreg' of component 'bit_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:106] INFO: [Synth 8-638] synthesizing module 'bit_reg' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35] 
+// Tcl Message: 	Parameter N bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'bit_reg' (7#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/generic_register.vhd:35] 
+// Tcl Message: 	Parameter width bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'regfile' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/mips_register_file.vhd:11' bound to instance 'rf' of component 'regfile' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:109] INFO: [Synth 8-638] synthesizing module 'regfile' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/mips_register_file.vhd:21] 
+// Tcl Message: 	Parameter width bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'regfile' (8#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/mips_register_file.vhd:21] 
+// Tcl Message: 	Parameter width bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'resmux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:116] 
+// Tcl Message: 	Parameter width bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'signext' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:5' bound to instance 'se' of component 'signext' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:120] INFO: [Synth 8-638] synthesizing module 'signext' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11] 
+// Tcl Message: 	Parameter width bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'signext' (9#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11] 
+// Tcl Message: 	Parameter width bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'srcbmux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:123] 
+// Tcl Message: 	Parameter width bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'mov_mux' of component 'mux2' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:126] 
+// Tcl Message: 	Parameter width bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'mips_alu' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:8' bound to instance 'mainalu' of component 'mips_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:129] INFO: [Synth 8-638] synthesizing module 'mips_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16] 
+// Tcl Message: 	Parameter width bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'mips_alu' (10#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_alu.vhd:16] INFO: [Synth 8-256] done synthesizing module 'datapath' (11#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21] INFO: [Synth 8-256] done synthesizing module 'mips' (12#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd:29] 
+// Tcl Message: 	Parameter width bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'imem' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:10' bound to instance 'imem1' of component 'imem' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_top.vhd:123] INFO: [Synth 8-638] synthesizing module 'imem' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16] 
+// Tcl Message: 	Parameter width bound to: 32 - type: integer  
+// Tcl Message: 	Parameter width bound to: 128 - type: integer  	Parameter regCount bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'listRegFile' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/list_register_file.vhd:11' bound to instance 'listRegs' of component 'listRegFile' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:113] INFO: [Synth 8-638] synthesizing module 'listRegFile' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/list_register_file.vhd:25] 
+// Tcl Message: 	Parameter width bound to: 128 - type: integer  	Parameter regCount bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'listRegFile' (15#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/list_register_file.vhd:25] INFO: [Synth 8-3491] module 'alu_block' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:6' bound to instance 'alus' of component 'alu_block' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/ListProc.vhd:129] INFO: [Synth 8-638] synthesizing module 'alu_block' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:15] 
+// Tcl Message: 	Parameter N bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu0' of component 'list_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:48] INFO: [Synth 8-638] synthesizing module 'list_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:36] 
+// Tcl Message: 	Parameter N bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'list_alu' (16#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:36] 
+// Tcl Message: 	Parameter N bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu1' of component 'list_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:56] 
+// Tcl Message: 	Parameter N bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'list_alu' declared at 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/listAlu.vhd:27' bound to instance 'alu2' of component 'list_alu' [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/alu_block.vhd:64] 
+// Tcl Message: 	Parameter N bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'vga_top' (22#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/new/vga_top.vhd:16] INFO: [Synth 8-256] done synthesizing module 'computer_top' (23#1) [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/computer_top.vhd:26] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1073.547 ; gain = 137.074 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1073.547 ; gain = 137.074 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1073.547 ; gain = 137.074 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram.dcp' for cell 'mips1/dmem1/MULTI_PORT_REG' INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.2.1 INFO: [Device 21-403] Loading part xc7a100tcsg324-1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc] Finished Parsing XDC File [Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// OpenDesignTask elapsed time: 150.2s
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:35 . Memory (MB): peak = 1429.145 ; gain = 492.672 
+// Tcl Message: 86 Infos, 92 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:35 . Memory (MB): peak = 1429.145 ; gain = 492.672 
+// 'dP' command handler elapsed time: 151 seconds
+// Elapsed time: 151 seconds
+dismissDialog("Open Elaborated Design"); // bx (ck)
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2265 ms. Increasing delay to 3000 ms.
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (ck):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator... 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 106 MB (+3697kb) [00:04:21]
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj mips_testbench_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '4' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim' 
+// Tcl Message: Vivado Simulator 2018.2 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto bfc6d33675f34e59a51d26a1983c03b4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot mips_testbench_behav xil_defaultlib.mips_testbench -log elaborate.log  Using 2 slave threads. Starting static elaboration 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: ERROR: [XSIM 43-3345] Unable to remove previous simulation file xsim.dir/mips_testbench_behav/xsimk.exe. Please check if you have another instance of this simulation running on your system, terminate it and then recompile your design. System Error Message: boost::filesystem::remove: Access is denied: "xsim.dir/mips_testbench_behav/xsimk.exe". ERROR: [XSIM 43-3238] Failed to link the design. 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 1465.371 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '18' seconds INFO: [USF-XSim-99] Step results log file:'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:26 . Memory (MB): peak = 1465.371 ; gain = 0.000 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 34 seconds
+// [GUI Memory]: 116 MB (+3961kb) [00:04:54]
+// Elapsed time: 34 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton (A, G)
+// a (ck): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (ck)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aE (Q, ck)
+// Elapsed time: 14 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // aA (Z, ck)

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date         : Sun May 12 14:58:33 2019
+| Date         : Mon May 13 12:24:48 2019
 | Host         : LAB-SCI-214-16 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file computer_top_control_sets_placed.rpt
 | Design       : computer_top
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    19 |
-| Unused register locations in slices containing registers |    44 |
+| Number of unique control sets                            |    15 |
+| Unused register locations in slices containing registers |    32 |
 +----------------------------------------------------------+-------+
 
 
@@ -36,9 +36,8 @@ Table of Contents
 +--------+--------------+
 |      2 |            2 |
 |      4 |            2 |
-|      8 |            3 |
-|     12 |            1 |
-|    16+ |           11 |
+|      8 |            2 |
+|    16+ |            9 |
 +--------+--------------+
 
 
@@ -48,40 +47,36 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              40 |            7 |
+| No           | No                    | No                     |             168 |           31 |
 | No           | No                    | Yes                    |              24 |            6 |
-| No           | Yes                   | No                     |             220 |           30 |
+| No           | Yes                   | No                     |              80 |           11 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |              40 |            5 |
-| Yes          | Yes                   | No                     |             128 |           22 |
+| Yes          | Yes                   | No                     |             128 |           23 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+--------------------------------------------+-------------------------------------------+---------------------------------------+------------------+----------------+
-|                Clock Signal                |               Enable Signal               |            Set/Reset Signal           | Slice Load Count | Bel Load Count |
-+--------------------------------------------+-------------------------------------------+---------------------------------------+------------------+----------------+
-|  video_on                                  |                                           |                                       |                1 |              2 |
-|  clk_div_BUFG[2]                           |                                           |                                       |                1 |              2 |
-|  vga/vga_sync_unit/clk_divider_reg_n_0_[0] |                                           | reset_IBUF                            |                2 |              4 |
-|  CLKM_IBUF_BUFG                            |                                           | reset_IBUF                            |                1 |              4 |
-|  vga/vga_sync_unit/h_count_reg_reg[0]_0[0] |                                           | vga/vga_sync_unit/red_reg_reg[3]      |                1 |              8 |
-|  vga/vga_sync_unit/h_count_reg_reg[0]_0[0] |                                           | vga/vga_sync_unit/blue_reg            |                2 |              8 |
-|  vga/vga_sync_unit/h_count_reg_reg[0]_0[0] |                                           | vga/vga_sync_unit/green_reg           |                1 |              8 |
-|  update_pos                                |                                           | vga/dir_x19_out                       |                1 |             12 |
-|  update_pos                                |                                           | vga/dir_y15_out                       |                1 |             16 |
-|  clk_div_BUFG[2]                           |                                           | reset_IBUF                            |                3 |             16 |
-|  vga/vga_sync_unit/clk_divider_reg_n_0_[0] | vga/vga_sync_unit/v_count_reg0            | reset_IBUF                            |                3 |             20 |
-|  vga/vga_sync_unit/clk_divider_reg_n_0_[0] | vga/vga_sync_unit/h_count_reg_reg[0]_0[0] | reset_IBUF                            |                2 |             20 |
-|  CLKM_IBUF_BUFG                            |                                           |                                       |                5 |             36 |
-|  update_pos                                |                                           | vga/y[31]_i_1_n_0                     |                8 |             50 |
-|  update_pos                                |                                           | vga/x[31]_i_1_n_0                     |                8 |             54 |
-|  video_on                                  |                                           | vga/clear                             |                8 |             64 |
-|  clk_div_BUFG[2]                           | mips1/mips1/dp/pcreg/vga_out              | mips1/mips1/dp/pcreg/vga_out_reg[0]_1 |               22 |            128 |
-|  clk_div_BUFG[2]                           | mips1/mips1/dp/pcreg/we3                  |                                       |                8 |            128 |
-|  clk_div_BUFG[2]                           | mips1/mips1/dp/pcreg/regWrite             |                                       |               32 |            512 |
-+--------------------------------------------+-------------------------------------------+---------------------------------------+------------------+----------------+
++--------------------------------------------+--------------------------------+------------------------------------+------------------+----------------+
+|                Clock Signal                |          Enable Signal         |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
++--------------------------------------------+--------------------------------+------------------------------------+------------------+----------------+
+|  n_0_835_BUFG                              |                                |                                    |                1 |              2 |
+|  clk_div_BUFG[6]                           |                                |                                    |                1 |              2 |
+|  vga/vga_sync_unit/clk_divider_reg_n_1_[0] |                                | reset_IBUF                         |                2 |              4 |
+|  CLKM_IBUF_BUFG                            |                                | reset_IBUF                         |                1 |              4 |
+|  vga/vga_sync_unit/Q[0]                    |                                | vga/vga_sync_unit/green_reg_reg[3] |                1 |              8 |
+|  vga/vga_sync_unit/Q[0]                    |                                | vga/vga_sync_unit/blue_reg         |                2 |              8 |
+|  clk_div_BUFG[6]                           |                                | reset_IBUF                         |                3 |             16 |
+|  vga/vga_sync_unit/clk_divider_reg_n_1_[0] | vga/vga_sync_unit/v_count_reg0 | reset_IBUF                         |                3 |             20 |
+|  vga/vga_sync_unit/clk_divider_reg_n_1_[0] | vga/vga_sync_unit/Q[0]         | reset_IBUF                         |                2 |             20 |
+|  CLKM_IBUF_BUFG                            |                                |                                    |                5 |             36 |
+|  n_0_835_BUFG                              |                                | vga/clear                          |                8 |             64 |
+|  update_pos_BUFG                           |                                |                                    |               24 |            128 |
+|  clk_div_BUFG[6]                           | mips1/mips1/dp/pcreg/vga_out   | mips1/mips1/vga_out_reg[0]_3       |               23 |            128 |
+|  clk_div_BUFG[6]                           | mips1/mips1/dp/pcreg/we3       |                                    |                8 |            128 |
+|  clk_div_BUFG[6]                           | mips1/mips1/dp/pcreg/regWrite  |                                    |               32 |            512 |
++--------------------------------------------+--------------------------------+------------------------------------+------------------+----------------+
 
 

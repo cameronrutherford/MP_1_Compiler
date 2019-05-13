@@ -103,8 +103,14 @@ process (opcode)
 begin
     case opcode is
         when "10010011" => regWrite <= '0';
-                           internalMemWrite <= '1'; 
-        when others => regWrite <= '1';
+                           internalMemWrite <= '1';
+        when "10010111" => regWrite <= '0';
+                           internalMemwrite <= '0';
+        when "00010001" => regWrite <= '1';
+                           internalMemwrite <= '0';
+        when "10010010" => regWrite <= '1';
+                           internalMemwrite <= '0';
+        when others => regWrite <= '0';
                        internalMemWrite <= '0';
     end case;
 end process;

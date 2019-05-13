@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/xsim.dir/mips_testbench_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Sun May 12 15:01:41 2019" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Mon May 13 12:28:58 2019" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2018.2.1 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2288692" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "29033652d8a559538119fae39d0a161e" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "bfc6d33675f34e59a51d26a1983c03b4" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "49" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "72" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Microsoft Windows 8 or later , 64-bit" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Xeon(R) CPU E3-1230 v3 @ 3.30GHz" -context "user_environment"
@@ -24,9 +24,9 @@ webtalk_add_data -client project -key system_ram -value "17.000 GB" -context "us
 webtalk_register_client -client xsim
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
-webtalk_add_data -client xsim -key runtime -value "27279410 ns" -context "xsim\\usage"
-webtalk_add_data -client xsim -key iteration -value "8" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "131.09_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "16392_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 458406153 -regid "" -xml Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/xsim.dir/mips_testbench_behav/webtalk/usage_statistics_ext_xsim.xml -html Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/xsim.dir/mips_testbench_behav/webtalk/usage_statistics_ext_xsim.html -wdm Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/xsim.dir/mips_testbench_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key runtime -value "334042240 ns" -context "xsim\\usage"
+webtalk_add_data -client xsim -key iteration -value "5" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Time -value "126.12_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "16396_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 1009645221 -regid "" -xml Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/xsim.dir/mips_testbench_behav/webtalk/usage_statistics_ext_xsim.xml -html Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/xsim.dir/mips_testbench_behav/webtalk/usage_statistics_ext_xsim.html -wdm Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.sim/sim_1/behav/xsim/xsim.dir/mips_testbench_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

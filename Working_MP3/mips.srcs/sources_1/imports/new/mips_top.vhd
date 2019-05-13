@@ -107,7 +107,7 @@ architecture mips_top of mips_top is
       process(clk, data_into_b, address_b, instr) begin
       if rising_edge(clk) then
             case(instr(31 downto 24)) is
-                  when "10010011" =>
+                  when "10010111" =>
                           vga_out <= data_into_b;
                   when others =>
                           vga_out <= vga_out;

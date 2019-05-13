@@ -1,5 +1,6 @@
 .data
-list1 dword 1 2 3 4		# list of dwords
+list1 dword 111 200 300 400		# list of dwords
+list2 dword 333 400 100 300
 listup dword -1 0 0 0	# move up
 listdown dword 1 0 0 0	# move down
 listleft dword 0 -1 0 0	# move left

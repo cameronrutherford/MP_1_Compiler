@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1557698210">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1557775388">
   <File Type="PA-TCL" Name="computer_top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="computer_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="computer_top_reports.tcl"/>
@@ -197,10 +197,8 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/mem_init_files/dual_ram_init.coe">
+    <File Path="$PSRCDIR/sources_1/imports/new/oscillate.dat">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PIPUSERFILESDIR/mem_init_files/dual_ram_init.coe"/>
-        <Attr Name="ImportTime" Val="1557690812"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>

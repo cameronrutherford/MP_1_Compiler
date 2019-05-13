@@ -35,7 +35,7 @@
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSABoardId" Val="nexys4_ddr"/>
     <Option Name="DSANumComputeUnits" Val="16"/>
-    <Option Name="WTXSimLaunchSim" Val="158"/>
+    <Option Name="WTXSimLaunchSim" Val="173"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -245,10 +245,8 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/mem_init_files/dual_ram_init.coe">
+      <File Path="$PSRCDIR/sources_1/imports/new/oscillate.dat">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PIPUSERFILESDIR/mem_init_files/dual_ram_init.coe"/>
-          <Attr Name="ImportTime" Val="1557690812"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>

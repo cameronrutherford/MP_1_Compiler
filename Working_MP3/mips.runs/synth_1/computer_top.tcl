@@ -17,7 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/.Xil/Vivado-8048-LAB-SCI-214-16/incrSyn
+set_param synth.incrementalSynthesisCache Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/.Xil/Vivado-6532-LAB-SCI-214-16/incrSyn
 set_param xicom.use_bs_reader 1
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
@@ -35,12 +35,12 @@ set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
 set_property ip_output_repo z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/mem_init_files/dual_ram_init.coe
-add_files z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/dual_ram_init.coe
+add_files Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/dual_ram_init.coe
 read_mem {
   Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/memfileAdv.dat
   Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/memfileSimple.dat
   Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/judeTest.dat
+  Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/oscillate.dat
 }
 read_vhdl -library xil_defaultlib {
   Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/imports/new/mips.vhd

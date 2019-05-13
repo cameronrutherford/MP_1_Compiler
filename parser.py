@@ -18,7 +18,7 @@ information["ladd"] =   ('00010001', 5,  5)
 information['land'] =   ('00010100', 5,  5)
 information["lload"] =  ('10010010', 5,  19)
 information["lstore"] = ('10010011', 5,  19)
-information["vgastore"] = ('10010011', 5,  19)
+information["vgastore"] = ('10010111', 5,  19)
 information["jmp"]  =   ('00100000', 24, 0)
 
 

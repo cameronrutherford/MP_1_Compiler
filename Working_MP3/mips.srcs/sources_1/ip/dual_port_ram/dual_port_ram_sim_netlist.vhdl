@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
--- Date        : Sun May 12 12:55:17 2019
+-- Date        : Mon May 13 11:37:03 2019
 -- Host        : LAB-SCI-214-16 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.srcs/sources_1/ip/dual_port_ram/dual_port_ram_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top dual_port_ram -prefix
+--               dual_port_ram_ dual_port_ram_sim_netlist.vhdl
 -- Design      : dual_port_ram
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -28,8 +28,6 @@ entity dual_port_ram_blk_mem_gen_prim_wrapper_init is
     wea : in STD_LOGIC_VECTOR ( 0 to 0 );
     web : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dual_port_ram_blk_mem_gen_prim_wrapper_init : entity is "blk_mem_gen_prim_wrapper_init";
 end dual_port_ram_blk_mem_gen_prim_wrapper_init;
 
 architecture STRUCTURE of dual_port_ram_blk_mem_gen_prim_wrapper_init is
@@ -50,7 +48,7 @@ begin
       DOB_REG => 1,
       EN_ECC_READ => false,
       EN_ECC_WRITE => false,
-      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000002010",
+      INITP_00 => X"00000000000000000000000000000000000000000000000000000000000201BC",
       INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
       INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
       INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
@@ -66,7 +64,7 @@ begin
       INITP_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
       INITP_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
       INITP_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_00 => X"000000000000000008070605000001000000FF0000000001000000FF04030201",
+      INIT_00 => X"0000000008070605000001000000FF0000000001000000FF2C64904D902CC86F",
       INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
       INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
       INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
@@ -324,7 +322,7 @@ begin
       DOB_REG => 1,
       EN_ECC_READ => false,
       EN_ECC_WRITE => false,
-      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000002010",
+      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000020100",
       INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
       INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
       INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
@@ -340,7 +338,7 @@ begin
       INITP_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
       INITP_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
       INITP_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_00 => X"000000000000000000000000000000000000FF0000000000000000FF00000000",
+      INIT_00 => X"0000000000000000000000000000FF0000000000000000FF0000000000000000",
       INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
       INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
       INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
@@ -598,7 +596,7 @@ begin
       DOB_REG => 1,
       EN_ECC_READ => false,
       EN_ECC_WRITE => false,
-      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000002010",
+      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000020100",
       INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
       INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
       INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
@@ -614,7 +612,7 @@ begin
       INITP_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
       INITP_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
       INITP_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_00 => X"000000000000000000000000000000000000FF0000000000000000FF00000000",
+      INIT_00 => X"0000000000000000000000000000FF0000000000000000FF0000000000000000",
       INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
       INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
       INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
@@ -908,7 +906,7 @@ begin
       INITP_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
       INITP_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
       INITP_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_00 => X"0000000000000000000000000000000000001F00000000000000001F00000000",
+      INIT_00 => X"00000000000000000000000000001F00000000000000001F0000000000000000",
       INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
       INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
       INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
@@ -1159,8 +1157,6 @@ entity dual_port_ram_blk_mem_gen_prim_width is
     wea : in STD_LOGIC_VECTOR ( 0 to 0 );
     web : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dual_port_ram_blk_mem_gen_prim_width : entity is "blk_mem_gen_prim_width";
 end dual_port_ram_blk_mem_gen_prim_width;
 
 architecture STRUCTURE of dual_port_ram_blk_mem_gen_prim_width is
@@ -1315,8 +1311,6 @@ entity dual_port_ram_blk_mem_gen_generic_cstr is
     wea : in STD_LOGIC_VECTOR ( 0 to 0 );
     web : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dual_port_ram_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_generic_cstr";
 end dual_port_ram_blk_mem_gen_generic_cstr;
 
 architecture STRUCTURE of dual_port_ram_blk_mem_gen_generic_cstr is
@@ -1420,8 +1414,6 @@ entity dual_port_ram_blk_mem_gen_top is
     wea : in STD_LOGIC_VECTOR ( 0 to 0 );
     web : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dual_port_ram_blk_mem_gen_top : entity is "blk_mem_gen_top";
 end dual_port_ram_blk_mem_gen_top;
 
 architecture STRUCTURE of dual_port_ram_blk_mem_gen_top is
@@ -1459,8 +1451,6 @@ entity dual_port_ram_blk_mem_gen_v8_4_1_synth is
     wea : in STD_LOGIC_VECTOR ( 0 to 0 );
     web : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dual_port_ram_blk_mem_gen_v8_4_1_synth : entity is "blk_mem_gen_v8_4_1_synth";
 end dual_port_ram_blk_mem_gen_v8_4_1_synth;
 
 architecture STRUCTURE of dual_port_ram_blk_mem_gen_v8_4_1_synth is
@@ -1696,8 +1686,6 @@ entity dual_port_ram_blk_mem_gen_v8_4_1 is
   attribute C_WRITE_WIDTH_B of dual_port_ram_blk_mem_gen_v8_4_1 : entity is 128;
   attribute C_XDEVICEFAMILY : string;
   attribute C_XDEVICEFAMILY of dual_port_ram_blk_mem_gen_v8_4_1 : entity is "artix7";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dual_port_ram_blk_mem_gen_v8_4_1 : entity is "blk_mem_gen_v8_4_1";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of dual_port_ram_blk_mem_gen_v8_4_1 : entity is "yes";
 end dual_port_ram_blk_mem_gen_v8_4_1;

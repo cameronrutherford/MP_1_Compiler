@@ -2,8 +2,8 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Sun May 12 14:56:54 2019
-# Process ID: 3644
+# Start of session at: Mon May 13 12:23:12 2019
+# Process ID: 4880
 # Current directory: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/synth_1
 # Command line: vivado.exe -log computer_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source computer_top.tcl
 # Log file: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/synth_1/computer_top.vds

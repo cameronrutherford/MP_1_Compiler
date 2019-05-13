@@ -2,8 +2,8 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Sun May 12 12:53:37 2019
-# Process ID: 2892
+# Start of session at: Mon May 13 12:16:53 2019
+# Process ID: 7172
 # Current directory: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/dual_port_ram_synth_1
 # Command line: vivado.exe -log dual_port_ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dual_port_ram.tcl
 # Log file: Z:/rrutherford20/CS-401-1-CompArch/CompArchFinal/Working_MP3/mips.runs/dual_port_ram_synth_1/dual_port_ram.vds

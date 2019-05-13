@@ -27,6 +27,7 @@ begin
     when "00010001" => controls <= "0X0000XX0"; -- ladd
     when "10010010" => controls <= "0X0000XX0"; -- lload
     when "10010011" => controls <= "0X0000XX0"; -- lstore
+    when "10010111" => controls <= "0X0000XX0"; -- vgastore
     when "00100000" => controls <= "0X0001XX0"; -- jmp
     when others => controls <= "---------"; -- illegal op
     end case;
